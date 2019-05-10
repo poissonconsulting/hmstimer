@@ -46,8 +46,8 @@ tmr_timer <- function(seconds = 0, start = FALSE) {
 #' @describeIn tmr_timer Start Timer
 #' @export
 tmr_start <- function(x) {
-  if(tmr_is_running(x)) {
-    wrn("tmr_timer is already started")
+  if(tmr_is_started(x)) {
+    wrn("x is already started")
     return(x)
   }
   attr(x, "start") <- as.double(Sys.time())
@@ -57,8 +57,8 @@ tmr_start <- function(x) {
 #' @describeIn tmr_timer Stop Timer
 #' @export
 tmr_stop <- function(x) {
-  if(!tmr_is_running(x)) {
-    wrn("tmr_timer is already stopped")
+  if(!tmr_is_started(x)) {
+    wrn("x is already stopped")
     return(x)
   }
   x <- tmr_elapsed(x)
@@ -69,7 +69,7 @@ tmr_stop <- function(x) {
 #' @describeIn tmr_timer Elapsed Time
 #' @export
 tmr_elapsed <- function(x) {
-  if(!tmr_is_running(x)) return(x)
+  if(!tmr_is_started(x)) return(x)
   as_hms(as.double(x) + as.double(Sys.time()) - attr(x, "start"))
 }
 
@@ -82,7 +82,7 @@ tmr_reset <- function(x, seconds = 0, start = FALSE) {
 
 #' @describeIn tmr_timer Is Running
 #' @export
-tmr_is_running <- function(x) {
+tmr_is_started <- function(x) {
   check_x(x)
   !is.null(attr(x, "start"))
 }

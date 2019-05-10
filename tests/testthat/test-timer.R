@@ -24,27 +24,27 @@ test_that("tmr_timer",{
   expect_is(attr(x, "start"), "numeric")
 })
 
-test_that("tmr_is_running",{
-  expect_false(tmr_is_running(tmr_timer()))
-  expect_true(tmr_is_running(tmr_timer(start = TRUE)))
-  expect_false(tmr_is_running(hms::as_hms(1)))
+test_that("tmr_is_started",{
+  expect_false(tmr_is_started(tmr_timer()))
+  expect_true(tmr_is_started(tmr_timer(start = TRUE)))
+  expect_false(tmr_is_started(hms::as_hms(1)))
   
-  expect_error(tmr_is_running(1), "x must be class hms")
-  expect_error(tmr_is_running(hms::as_hms(c(1, 2))),
+  expect_error(tmr_is_started(1), "x must be class hms")
+  expect_error(tmr_is_started(hms::as_hms(c(1, 2))),
                "x must be a scalar")
-  expect_error(tmr_is_running(hms::as_hms(NA)),
+  expect_error(tmr_is_started(hms::as_hms(NA)),
                "x must not be a missing value")
 })
 
-test_that("tmr_is_running",{
-  expect_false(tmr_is_running(tmr_timer()))
-  expect_true(tmr_is_running(tmr_timer(start = TRUE)))
-  expect_false(tmr_is_running(hms::as_hms(1)))
+test_that("tmr_is_started",{
+  expect_false(tmr_is_started(tmr_timer()))
+  expect_true(tmr_is_started(tmr_timer(start = TRUE)))
+  expect_false(tmr_is_started(hms::as_hms(1)))
   
-  expect_error(tmr_is_running(1), "x must be class hms")
-  expect_error(tmr_is_running(hms::as_hms(c(1, 2))),
+  expect_error(tmr_is_started(1), "x must be class hms")
+  expect_error(tmr_is_started(hms::as_hms(c(1, 2))),
                "x must be a scalar")
-  expect_error(tmr_is_running(hms::as_hms(NA)),
+  expect_error(tmr_is_started(hms::as_hms(NA)),
                "x must not be a missing value")
 })
 
@@ -52,15 +52,19 @@ test_that("tmr_reset",{
   
   expect_identical(tmr_reset(tmr_timer(1)), tmr_timer())
   expect_identical(tmr_reset(tmr_timer(1)), tmr_timer())
-
-  expect_true(tmr_is_running(tmr_timer(start = TRUE)))
-  expect_false(tmr_is_running(hms::as_hms(1)))
-  
-  expect_error(tmr_is_running(1), "x must be class hms")
-  expect_error(tmr_is_running(hms::as_hms(c(1, 2))),
-               "x must be a scalar")
-  expect_error(tmr_is_running(hms::as_hms(NA)),
-               "x must not be a missing value")
+  expect_identical(tmr_reset(tmr_timer(1), 2), tmr_timer(2))
+  expect_equal(tmr_reset(tmr_timer(1), 2, TRUE), tmr_timer(2, TRUE))
 })
 
+test_that("tmr_start",{
+  tmr <- tmr_timer()
+  expect_false(tmr_is_started(tmr))
+  tmr <- tmr_start(tmr)
+  expect_true(tmr_is_started(tmr))
+  expect_warning(tmr_start(tmr), "x is already started")
+  
+  expect_error(tmr_start(1), "x must be class hms")
+  expect_error(tmr_start(hms::as_hms(NA)), "x must not be a missing value")
+  expect_error(tmr_start(hms::as_hms(c(1,2))), "x must be a scalar")
+})
 

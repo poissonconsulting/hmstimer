@@ -6,7 +6,7 @@
 \alias{tmr_stop}
 \alias{tmr_elapsed}
 \alias{tmr_reset}
-\alias{tmr_is_running}
+\alias{tmr_is_started}
 \title{Use a tmr_timer}
 \usage{
 tmr_timer(seconds = 0, start = FALSE)
@@ -19,7 +19,7 @@ tmr_elapsed(x)
 
 tmr_reset(x, seconds = 0, start = FALSE)
 
-tmr_is_running(x)
+tmr_is_started(x)
 }
 \arguments{
 \item{seconds}{A non-negative double scalar of the start time in seconds.}
@@ -41,7 +41,7 @@ Use a tmr_timer
 
 \item \code{tmr_reset}: Reset Timer
 
-\item \code{tmr_is_running}: Is Running
+\item \code{tmr_is_started}: Is Running
 }}
 
 \examples{
