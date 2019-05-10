@@ -91,3 +91,14 @@ test_that("tmr_stop",{
   expect_error(tmr_stop(hms::as_hms(NA)), "x must not be a missing value")
   expect_error(tmr_stop(hms::as_hms(c(1,2))), "x must be a scalar")
 })
+
+test_that("tmr_elapsed",{
+  tmr <- tmr_timer()
+  expect_identical(tmr_elapsed(tmr), tmr)
+  tmr <- tmr_start(tmr)
+  Sys.sleep(1)
+  expect_null(attr(tmr_elapsed(tmr), "start"))
+  tmr <- tmr_stop(tmr)
+  expect_identical(tmr_elapsed(tmr), tmr)
+  expect_gte(as.numeric(tmr), 1)
+})
