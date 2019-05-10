@@ -80,9 +80,15 @@ tmr_reset <- function(x, seconds = 0, start = FALSE) {
   tmr_timer(seconds = seconds, start = start)
 }
 
-#' @describeIn tmr_timer Is Running
+#' @describeIn tmr_timer Is Started
 #' @export
 tmr_is_started <- function(x) {
   check_x(x)
   !is.null(attr(x, "start"))
+}
+
+#' @describeIn tmr_timer Is Stopped
+#' @export
+tmr_is_stopped <- function(x) {
+  !tmr_is_started(x)
 }
