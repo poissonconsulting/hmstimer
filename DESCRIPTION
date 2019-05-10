@@ -1,6 +1,6 @@
 Package: hmstimer
 Title: Simple Timer based on a hms Object
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: 
     person(given = "Joe",
            family = "Thorley",
