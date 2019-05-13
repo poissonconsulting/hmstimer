@@ -9,7 +9,6 @@ init:
 
 install:
   ps: Bootstrap
-  - cmd: Rscript -e "install.packages(c('vctr', 'rlang', 'pkgconfig'))"
 
 cache:
   - C:\RLibrary
