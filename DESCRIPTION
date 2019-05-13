@@ -1,6 +1,6 @@
 Package: hmstimer
-Title: Simple Timer based on a hms Object
-Version: 0.0.0.9001
+Title: hms Based Timer
+Version: 0.0.0.9002
 Authors@R: 
     person(given = "Joe",
            family = "Thorley",
@@ -8,7 +8,8 @@ Authors@R:
            email = "joe@poissonconsulting.ca",
            comment = c(ORCID = "0000-0002-7683-4592"))
 Description: 
-    Times elapsed clock time using a hms object.
+    Tracks elapsed clock time using a hms scalar 
+    (inherits from difftime with seconds as the unit).
 License: MIT + file LICENSE
 Suggests: 
     hms,

@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">hmstimer</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9001</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9002</span>
       </span>
     </div>
 
@@ -160,14 +160,14 @@
 <span class='co'># get the time elapsed</span>
 <span class='co'># time elapsed is increasing because the timer is still running</span>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Sys.sleep'>Sys.sleep</a></span>(<span class='fl'>1</span>)
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 1.00415 secs</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Sys.sleep'>Sys.sleep</a></span>(<span class='fl'>1</span>)
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.006441 secs</div><div class='input'>
+<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 1.004124 secs</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Sys.sleep'>Sys.sleep</a></span>(<span class='fl'>1</span>)
+<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.015936 secs</div><div class='input'>
 <span class='co'># stop the timer</span>
 <span class='no'>t</span> <span class='kw'>&lt;-</span> <span class='fu'>tmr_stop</span>(<span class='no'>t</span>)
 
 <span class='co'># time elapsed is now fixed</span>
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.007681 secs</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Sys.sleep'>Sys.sleep</a></span>(<span class='fl'>1</span>)
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.007681 secs</div><div class='input'>
+<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.017783 secs</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Sys.sleep'>Sys.sleep</a></span>(<span class='fl'>1</span>)
+<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.017783 secs</div><div class='input'>
 <span class='co'># reset the timer</span>
 <span class='no'>t</span> <span class='kw'>&lt;-</span> <span class='fu'>tmr_reset</span>(<span class='no'>t</span>)
 <span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 0 secs</div></pre>
