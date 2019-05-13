@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![Travis build
 status](https://travis-ci.com/poissonconsulting/hmstimer.svg?branch=master)](https://travis-ci.com/poissonconsulting/hmstimer)
 [![AppVeyor build
@@ -19,13 +19,9 @@ MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org
 status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.org/package=hmstimer)
 <!-- badges: end -->
 
-`hmstimer` is a dependency-free R package to track elapsed clock time
-using a [hms](https://github.com/tidyverse/hms) scalar (inherits from
-difftime with seconds as the unit).
-
-If the timer is running then the system time (in seconds since
-1970-01-01 UTC) is stored as the start attribute. Otherwise the start
-attribute is NULL.
+`hmstimer` is an R package to track elapsed clock time using a
+[hms](https://github.com/tidyverse/hms) scalar (inherits from difftime
+with seconds as the unit).
 
 ``` r
 library(hmstimer)
@@ -47,19 +43,19 @@ t <- tmr_start(t)
 
 # get the time elapsed (since the timer started)
 tmr_elapsed(t)
-#> 00:00:00.001983
+#> 00:00:00.001385
 # time elapsed is increasing
 tmr_elapsed(t)
-#> 00:00:00.009592
+#> 00:00:00.006927
 
 # stop the timer
 t <- tmr_stop(t)
 
 # time elapsed is now fixed
 tmr_elapsed(t)
-#> 00:00:00.012641
+#> 00:00:00.009025
 tmr_elapsed(t)
-#> 00:00:00.012641
+#> 00:00:00.009025
 ```
 
 ## Installation

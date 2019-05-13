@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 # hmstimer
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![Travis build status](https://travis-ci.com/poissonconsulting/hmstimer.svg?branch=master)](https://travis-ci.com/poissonconsulting/hmstimer)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/hmstimer?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/hmstimer)
 [![Codecov test coverage](https://codecov.io/gh/poissonconsulting/hmstimer/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/hmstimer?branch=master)
@@ -23,11 +23,8 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.org/package=hmstimer)
 <!-- badges: end -->
 
-`hmstimer` is a dependency-free R package to 
+`hmstimer` is an R package to 
 track elapsed clock time using a [hms](https://github.com/tidyverse/hms) scalar (inherits from difftime with seconds as the unit).
-
-If the timer is running then the system time (in seconds since 1970-01-01 UTC) is stored as the start attribute.
-Otherwise the start attribute is NULL.
 
 ```{r}
 library(hmstimer)
