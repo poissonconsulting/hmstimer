@@ -38,7 +38,7 @@ tmr_timer <- function(seconds = 0, start = FALSE) {
   seconds <- check_seconds(seconds)
   check_start(start)
   
-  x <- as_hmstimer(seconds)
+  x <- as_hms(seconds)
   if(start) x <- tmr_start(x)
   x
 }
@@ -70,7 +70,7 @@ tmr_stop <- function(x) {
 #' @export
 tmr_elapsed <- function(x) {
   if(!tmr_is_started(x)) return(x)
-  as_hmstimer(as.double(x) + as.double(Sys.time()) - attr(x, "start"))
+  as_hms(as.double(x) + as.double(Sys.time()) - attr(x, "start"))
 }
 
 #' @describeIn tmr_timer Reset Timer

@@ -1,10 +1,9 @@
 context("timer")
 
 test_that("tmr_timer",{
-  expect_is(tmr_timer(), c("hmstimer", "hms", "timediff"))
+  expect_is(tmr_timer(), c("hms", "timediff"))
 
   x <- tmr_timer(3)
-  class(x) <- c("hms", "timediff")
   expect_identical(x, hms::as_hms(x))
 
   expect_identical(as.double(tmr_timer()), 0)
