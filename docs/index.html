@@ -47,6 +47,9 @@
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
+<li>
+  <a href="news/index.html">Changelog</a>
+</li>
       </ul>
 <ul class="nav navbar-nav navbar-right"></ul>
 </div>
@@ -102,30 +105,30 @@
 <a class="sourceLine" id="cb1-30" title="30"></a>
 <a class="sourceLine" id="cb1-31" title="31"><span class="co"># get the time elapsed (since the timer started)</span></a>
 <a class="sourceLine" id="cb1-32" title="32"><span class="kw"><a href="reference/tmr_timer.html">tmr_elapsed</a></span>(t)</a>
-<a class="sourceLine" id="cb1-33" title="33"><span class="co">#&gt; 00:00:00.003889</span></a>
+<a class="sourceLine" id="cb1-33" title="33"><span class="co">#&gt; 00:00:00.004333</span></a>
 <a class="sourceLine" id="cb1-34" title="34"></a>
 <a class="sourceLine" id="cb1-35" title="35"><span class="co"># time elapsed is increasing</span></a>
 <a class="sourceLine" id="cb1-36" title="36"><span class="kw"><a href="reference/tmr_timer.html">tmr_elapsed</a></span>(t)</a>
-<a class="sourceLine" id="cb1-37" title="37"><span class="co">#&gt; 00:00:00.005496</span></a>
+<a class="sourceLine" id="cb1-37" title="37"><span class="co">#&gt; 00:00:00.005922</span></a>
 <a class="sourceLine" id="cb1-38" title="38"></a>
 <a class="sourceLine" id="cb1-39" title="39"><span class="co"># stop the timer</span></a>
 <a class="sourceLine" id="cb1-40" title="40">t &lt;-<span class="st"> </span><span class="kw"><a href="reference/tmr_timer.html">tmr_stop</a></span>(t)</a>
 <a class="sourceLine" id="cb1-41" title="41"></a>
 <a class="sourceLine" id="cb1-42" title="42"><span class="co"># time elapsed is now fixed</span></a>
 <a class="sourceLine" id="cb1-43" title="43"><span class="kw"><a href="reference/tmr_timer.html">tmr_elapsed</a></span>(t)</a>
-<a class="sourceLine" id="cb1-44" title="44"><span class="co">#&gt; 00:00:00.007167</span></a>
+<a class="sourceLine" id="cb1-44" title="44"><span class="co">#&gt; 00:00:00.007491</span></a>
 <a class="sourceLine" id="cb1-45" title="45"><span class="kw"><a href="reference/tmr_timer.html">tmr_elapsed</a></span>(t)</a>
-<a class="sourceLine" id="cb1-46" title="46"><span class="co">#&gt; 00:00:00.007167</span></a>
+<a class="sourceLine" id="cb1-46" title="46"><span class="co">#&gt; 00:00:00.007491</span></a>
 <a class="sourceLine" id="cb1-47" title="47"></a>
 <a class="sourceLine" id="cb1-48" title="48"><span class="co"># and the timer is now just a hms scalar with a value of the time elapsed</span></a>
 <a class="sourceLine" id="cb1-49" title="49"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/str">str</a></span>(t)</a>
-<a class="sourceLine" id="cb1-50" title="50"><span class="co">#&gt;  'hms' num 00:00:00.007167</span></a>
+<a class="sourceLine" id="cb1-50" title="50"><span class="co">#&gt;  'hms' num 00:00:00.007491</span></a>
 <a class="sourceLine" id="cb1-51" title="51"><span class="co">#&gt;  - attr(*, "units")= chr "secs"</span></a>
 <a class="sourceLine" id="cb1-52" title="52"></a>
 <a class="sourceLine" id="cb1-53" title="53"><span class="co"># the timer can be restarted</span></a>
 <a class="sourceLine" id="cb1-54" title="54">t &lt;-<span class="st"> </span><span class="kw"><a href="reference/tmr_timer.html">tmr_start</a></span>(t)</a>
 <a class="sourceLine" id="cb1-55" title="55"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/str">str</a></span>(t)</a>
-<a class="sourceLine" id="cb1-56" title="56"><span class="co">#&gt;  'hms' num 00:00:00.007167</span></a>
+<a class="sourceLine" id="cb1-56" title="56"><span class="co">#&gt;  'hms' num 00:00:00.007491</span></a>
 <a class="sourceLine" id="cb1-57" title="57"><span class="co">#&gt;  - attr(*, "units")= chr "secs"</span></a>
 <a class="sourceLine" id="cb1-58" title="58"><span class="co">#&gt;  - attr(*, "start")= num 1.56e+09</span></a></code></pre></div>
 <div id="installation" class="section level2">

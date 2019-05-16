@@ -78,6 +78,9 @@
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
+<li>
+  <a href="../news/index.html">Changelog</a>
+</li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
@@ -160,14 +163,14 @@
 <span class='co'># get the time elapsed</span>
 <span class='co'># time elapsed is increasing because the timer is still running</span>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Sys.sleep'>Sys.sleep</a></span>(<span class='fl'>1</span>)
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 1.002951 secs</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Sys.sleep'>Sys.sleep</a></span>(<span class='fl'>1</span>)
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.006288 secs</div><div class='input'>
+<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 1.006799 secs</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Sys.sleep'>Sys.sleep</a></span>(<span class='fl'>1</span>)
+<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.012328 secs</div><div class='input'>
 <span class='co'># stop the timer</span>
 <span class='no'>t</span> <span class='kw'>&lt;-</span> <span class='fu'>tmr_stop</span>(<span class='no'>t</span>)
 
 <span class='co'># time elapsed is now fixed</span>
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.007396 secs</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Sys.sleep'>Sys.sleep</a></span>(<span class='fl'>1</span>)
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.007396 secs</div><div class='input'>
+<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.014479 secs</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Sys.sleep'>Sys.sleep</a></span>(<span class='fl'>1</span>)
+<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.014479 secs</div><div class='input'>
 <span class='co'># reset the timer</span>
 <span class='no'>t</span> <span class='kw'>&lt;-</span> <span class='fu'>tmr_reset</span>(<span class='no'>t</span>)
 <span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 0 secs</div></pre>
