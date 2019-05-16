@@ -32,6 +32,9 @@ library(hmstimer)
 # create a new timer
 t <- tmr_timer()
 
+# the timer is just a hms scalar of value 0
+str(t)
+
 # no time has elapsed because the timer has not started
 tmr_elapsed(t)
 
@@ -42,8 +45,14 @@ tmr_elapsed(t)
 # start the timer
 t <- tmr_start(t)
 
+# a running timer is just a hms scalar with a start attribute
+# the start attribute indicates when the timer started
+# in decimal seconds since 1970-01-01 00:00:00 UTC
+str(t)
+
 # get the time elapsed (since the timer started)
 tmr_elapsed(t)
+
 # time elapsed is increasing
 tmr_elapsed(t)
 
@@ -53,6 +62,13 @@ t <- tmr_stop(t)
 # time elapsed is now fixed
 tmr_elapsed(t)
 tmr_elapsed(t)
+
+# and the timer is now just a hms scalar with a value of the time elapsed
+str(t)
+
+# the timer can be restarted
+t <- tmr_start(t)
+str(t)
 ```
 
 ## Installation
