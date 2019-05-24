@@ -56,35 +56,40 @@ str(t)
 
 # get the time elapsed (since the timer started)
 tmr_elapsed(t)
-#> 00:00:00.002978
+#> 00:00:00.003131
 
 # time elapsed is increasing
 tmr_elapsed(t)
-#> 00:00:00.00422
+#> 00:00:00.004797
 
 # stop the timer
 t <- tmr_stop(t)
 
 # time elapsed is now fixed
 tmr_elapsed(t)
-#> 00:00:00.00581
+#> 00:00:00.006338
 tmr_elapsed(t)
-#> 00:00:00.00581
+#> 00:00:00.006338
 
 # and the timer is now just a hms scalar with a value of the time elapsed
 str(t)
-#>  'hms' num 00:00:00.00581
+#>  'hms' num 00:00:00.006338
 #>  - attr(*, "units")= chr "secs"
 
 # the timer can be restarted
 t <- tmr_start(t)
 str(t)
-#>  'hms' num 00:00:00.00581
+#>  'hms' num 00:00:00.006338
 #>  - attr(*, "units")= chr "secs"
 #>  - attr(*, "start")= num 1.56e+09
 ```
 
 ## Installation
+
+To install the latest release version from
+[CRAN](https://cran.r-project.org)
+
+    install.packages("hmstimer")
 
 To install the latest development version from
 [GitHub](https://github.com/poissonconsulting/hmstimer)
