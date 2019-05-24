@@ -8,8 +8,8 @@ Authors@R:
            email = "joe@poissonconsulting.ca",
            comment = c(ORCID = "0000-0002-7683-4592"))
 Description: 
-    Tracks elapsed clock time using a hms scalar 
-    (inherits from difftime with seconds as the unit).
+    Tracks elapsed clock time using a hms() scalar 
+    (inherits from difftime() with seconds as the unit).
 License: MIT + file LICENSE
 Suggests: 
     hms,
