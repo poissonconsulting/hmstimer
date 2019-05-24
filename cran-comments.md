@@ -1,3 +1,9 @@
+## Resubmission
+
+This is a resubmission. In this version I have:
+
+* Added '()' behind all function names (e.g. difftime() without quotation marks) in the Description text.
+  
 ## Test environments
 
 * OS X (local) - release
