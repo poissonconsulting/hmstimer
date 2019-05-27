@@ -20,7 +20,9 @@ knitr::opts_chunk$set(
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/hmstimer?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/hmstimer)
 [![Codecov test coverage](https://codecov.io/gh/poissonconsulting/hmstimer/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/hmstimer?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![tinyverse status](https://tinyverse.netlify.com/badge/hmstimer)](https://CRAN.R-project.org/package=hmstimer)
 [![CRAN status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.org/package=hmstimer)
+![CRAN Downloads](http://cranlogs.r-pkg.org/badges/hmstimer)
 <!-- badges: end -->
 
 `hmstimer` is an R package to 
@@ -29,46 +31,27 @@ track elapsed clock time using a [hms()](https://github.com/tidyverse/hms) scala
 ```{r}
 library(hmstimer)
 
-# create a new timer
 t <- tmr_timer()
 
-# the timer is just a hms scalar of value 0
-str(t)
-
-# no time has elapsed because the timer has not started
 tmr_elapsed(t)
 
-# for prettier printing load hms
-library(hms)
+library(hms) # for prettier printing load hms
+
 tmr_elapsed(t)
 
-# start the timer
 t <- tmr_start(t)
 
-# a running timer is just a hms scalar with a start attribute
-# the start attribute indicates when the timer started
-# in decimal seconds since 1970-01-01 00:00:00 UTC
-str(t)
-
-# get the time elapsed (since the timer started)
 tmr_elapsed(t)
-
-# time elapsed is increasing
 tmr_elapsed(t)
-
-# stop the timer
 t <- tmr_stop(t)
 
 # time elapsed is now fixed
 tmr_elapsed(t)
 tmr_elapsed(t)
 
-# and the timer is now just a hms scalar with a value of the time elapsed
-str(t)
-
 # the timer can be restarted
 t <- tmr_start(t)
-str(t)
+tmr_elapsed(t)
 ```
 
 ## Installation

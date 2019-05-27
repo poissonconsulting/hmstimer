@@ -15,8 +15,11 @@ status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/hms
 coverage](https://codecov.io/gh/poissonconsulting/hmstimer/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/hmstimer?branch=master)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![tinyverse
+status](https://tinyverse.netlify.com/badge/hmstimer)](https://CRAN.R-project.org/package=hmstimer)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.org/package=hmstimer)
+![CRAN Downloads](http://cranlogs.r-pkg.org/badges/hmstimer)
 <!-- badges: end -->
 
 `hmstimer` is an R package to track elapsed clock time using a
@@ -26,62 +29,34 @@ difftime() with seconds as the unit).
 ``` r
 library(hmstimer)
 
-# create a new timer
 t <- tmr_timer()
 
-# the timer is just a hms scalar of value 0
-str(t)
-#>  'hms' num 0
-#>  - attr(*, "units")= chr "secs"
-
-# no time has elapsed because the timer has not started
 tmr_elapsed(t)
 #> Time difference of 0 secs
 
-# for prettier printing load hms
-library(hms)
+library(hms) # for prettier printing load hms
+
 tmr_elapsed(t)
 #> 00:00:00
 
-# start the timer
 t <- tmr_start(t)
 
-# a running timer is just a hms scalar with a start attribute
-# the start attribute indicates when the timer started
-# in decimal seconds since 1970-01-01 00:00:00 UTC
-str(t)
-#>  'hms' num 00:00:00
-#>  - attr(*, "units")= chr "secs"
-#>  - attr(*, "start")= num 1.56e+09
-
-# get the time elapsed (since the timer started)
 tmr_elapsed(t)
-#> 00:00:00.003131
-
-# time elapsed is increasing
+#> 00:00:00.00072
 tmr_elapsed(t)
-#> 00:00:00.004797
-
-# stop the timer
+#> 00:00:00.001858
 t <- tmr_stop(t)
 
 # time elapsed is now fixed
 tmr_elapsed(t)
-#> 00:00:00.006338
+#> 00:00:00.003393
 tmr_elapsed(t)
-#> 00:00:00.006338
-
-# and the timer is now just a hms scalar with a value of the time elapsed
-str(t)
-#>  'hms' num 00:00:00.006338
-#>  - attr(*, "units")= chr "secs"
+#> 00:00:00.003393
 
 # the timer can be restarted
 t <- tmr_start(t)
-str(t)
-#>  'hms' num 00:00:00.006338
-#>  - attr(*, "units")= chr "secs"
-#>  - attr(*, "start")= num 1.56e+09
+tmr_elapsed(t)
+#> 00:00:00.004299
 ```
 
 ## Installation
