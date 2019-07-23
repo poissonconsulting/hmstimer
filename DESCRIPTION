@@ -1,5 +1,5 @@
 Package: hmstimer
-Title: Hms Based Timer
+Title: 'hms' Based Timer
 Version: 0.0.2
 Authors@R: c(
     person("Joe", "Thorley", , "joe@poissonconsulting.ca", c("aut", "cre"), comment = c(ORCID = "0000-0002-7683-4592")),

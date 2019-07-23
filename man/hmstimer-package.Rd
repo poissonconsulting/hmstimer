@@ -4,7 +4,7 @@
 \name{hmstimer-package}
 \alias{hmstimer}
 \alias{hmstimer-package}
-\title{hmstimer: Hms Based Timer}
+\title{hmstimer: 'hms' Based Timer}
 \description{
 Tracks elapsed clock time using a 'hms()' scalar 
     (inherits from 'difftime()' with seconds as the unit).

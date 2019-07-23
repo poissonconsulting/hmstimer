@@ -42,21 +42,21 @@ tmr_elapsed(t)
 t <- tmr_start(t)
 
 tmr_elapsed(t)
-#> 00:00:00.000789
+#> 00:00:00.001
 tmr_elapsed(t)
-#> 00:00:00.002044
+#> 00:00:00.002334
 t <- tmr_stop(t)
 
 # time elapsed is now fixed
 tmr_elapsed(t)
-#> 00:00:00.003266
+#> 00:00:00.003568
 tmr_elapsed(t)
-#> 00:00:00.003266
+#> 00:00:00.003568
 
 # the timer can be restarted
 t <- tmr_start(t)
 tmr_elapsed(t)
-#> 00:00:00.004055
+#> 00:00:00.004342
 ```
 
 ## Installation
