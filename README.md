@@ -42,21 +42,21 @@ tmr_elapsed(t)
 t <- tmr_start(t)
 
 tmr_elapsed(t)
-#> 00:00:00.001
+#> 00:00:00.000857
 tmr_elapsed(t)
-#> 00:00:00.002334
+#> 00:00:00.002076
 t <- tmr_stop(t)
 
 # time elapsed is now fixed
 tmr_elapsed(t)
-#> 00:00:00.003568
+#> 00:00:00.003408
 tmr_elapsed(t)
-#> 00:00:00.003568
+#> 00:00:00.003408
 
 # the timer can be restarted
 t <- tmr_start(t)
 tmr_elapsed(t)
-#> 00:00:00.004342
+#> 00:00:00.004273
 ```
 
 ## Installation
@@ -64,22 +64,17 @@ tmr_elapsed(t)
 To install the latest release version from
 [CRAN](https://cran.r-project.org)
 
-    install.packages("hmstimer")
+``` r
+install.packages("hmstimer")
+```
 
 To install the latest development version from
 [GitHub](https://github.com/poissonconsulting/hmstimer)
 
-    if(!"devtools" %in% installed.packages()[,1]) 
-      install.packages("devtools")
-    devtools::install_github("poissonconsulting/hmstimer")
-
-To install the latest development version from the Poisson drat
-[repository](https://github.com/poissonconsulting/drat)
-
-    if(!"drat" %in% installed.packages()[,1]) 
-      install.packages("drat")
-    drat::addRepo("poissonconsulting")
-    install.packages("hmstimer")
+``` r
+# install.packages("remotes")
+remotes::install_github("poissonconsulting/hmstimer")
+```
 
 ## Contribution
 
@@ -90,5 +85,5 @@ Please report any
 always welcome.
 
 Please note that this project is released with a [Contributor Code of
-Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree
-to abide by its terms.
+Conduct](https://poissonconsulting.github.io/hmstimer/CODE_OF_CONDUCT.html).
+By contributing, you agree to abide by its terms.
