@@ -19,7 +19,7 @@ MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org
 status](https://tinyverse.netlify.com/badge/hmstimer)](https://CRAN.R-project.org/package=hmstimer)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.org/package=hmstimer)
-![CRAN Downloads](http://cranlogs.r-pkg.org/badges/hmstimer)
+![CRAN downloads](http://cranlogs.r-pkg.org/badges/hmstimer)
 <!-- badges: end -->
 
 `hmstimer` is an R package to track elapsed clock time using a
@@ -42,21 +42,21 @@ tmr_elapsed(t)
 t <- tmr_start(t)
 
 tmr_elapsed(t)
-#> 00:00:00.00072
+#> 00:00:00.000789
 tmr_elapsed(t)
-#> 00:00:00.001858
+#> 00:00:00.002044
 t <- tmr_stop(t)
 
 # time elapsed is now fixed
 tmr_elapsed(t)
-#> 00:00:00.003393
+#> 00:00:00.003266
 tmr_elapsed(t)
-#> 00:00:00.003393
+#> 00:00:00.003266
 
 # the timer can be restarted
 t <- tmr_start(t)
 tmr_elapsed(t)
-#> 00:00:00.004299
+#> 00:00:00.004055
 ```
 
 ## Installation
