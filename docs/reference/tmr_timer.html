@@ -167,14 +167,14 @@
 <span class='co'># get the time elapsed</span>
 <span class='co'># time elapsed is increasing because the timer is still running</span>
 <span class='fu'><a href='https://rdrr.io/r/base/Sys.sleep.html'>Sys.sleep</a></span>(<span class='fl'>1</span>)
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 1.006143 secs</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/Sys.sleep.html'>Sys.sleep</a></span>(<span class='fl'>1</span>)
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.01036 secs</div><div class='input'>
+<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 1.002121 secs</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/Sys.sleep.html'>Sys.sleep</a></span>(<span class='fl'>1</span>)
+<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.00446 secs</div><div class='input'>
 <span class='co'># stop the timer</span>
 <span class='no'>t</span> <span class='kw'>&lt;-</span> <span class='fu'>tmr_stop</span>(<span class='no'>t</span>)
 
 <span class='co'># time elapsed is now fixed</span>
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.011374 secs</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/Sys.sleep.html'>Sys.sleep</a></span>(<span class='fl'>1</span>)
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.011374 secs</div><div class='input'>
+<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.005585 secs</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/Sys.sleep.html'>Sys.sleep</a></span>(<span class='fl'>1</span>)
+<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.005585 secs</div><div class='input'>
 <span class='co'># reset the timer</span>
 <span class='no'>t</span> <span class='kw'>&lt;-</span> <span class='fu'>tmr_reset</span>(<span class='no'>t</span>)
 <span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 0 secs</div></pre>
