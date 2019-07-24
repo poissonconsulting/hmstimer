@@ -11,11 +11,3 @@
 ## R CMD check results
 
 0 errors | 0 warnings | 0 notes
-
-## Resubmission
-
-> Found the following (possibly) invalid file URI:
->   URI: CODE_OF_CONDUCT.md
->     From: README.md
-
-Fixed.
