@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![tinyverse status](https://tinyverse.netlify.com/badge/hmstimer)](https://CRAN.R-project.org/package=hmstimer)
 [![CRAN status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.org/package=hmstimer)
-![CRAN downloads](http://cranlogs.r-pkg.org/badges/hmstimer)
+![CRAN downloads](https://cranlogs.r-pkg.org/badges/hmstimer)
 <!-- badges: end -->
 
 `hmstimer` is an R package to 
@@ -66,6 +66,13 @@ To install the latest development version from [GitHub](https://github.com/poiss
 ```r
 # install.packages("remotes")
 remotes::install_github("poissonconsulting/hmstimer")
+```
+
+To install the latest developmental release from the Poisson drat [repository](https://github.com/poissonconsulting/drat)
+```r
+# install.packages("drat")
+drat::addRepo("poissonconsulting")
+install.packages("pkgtemplate")
 ```
 
 ## Contribution

@@ -19,7 +19,7 @@ MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org
 status](https://tinyverse.netlify.com/badge/hmstimer)](https://CRAN.R-project.org/package=hmstimer)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.org/package=hmstimer)
-![CRAN downloads](http://cranlogs.r-pkg.org/badges/hmstimer)
+![CRAN downloads](https://cranlogs.r-pkg.org/badges/hmstimer)
 <!-- badges: end -->
 
 `hmstimer` is an R package to track elapsed clock time using a
@@ -42,21 +42,21 @@ tmr_elapsed(t)
 t <- tmr_start(t)
 
 tmr_elapsed(t)
-#> 00:00:00.000857
+#> 00:00:00.00079
 tmr_elapsed(t)
-#> 00:00:00.002076
+#> 00:00:00.002047
 t <- tmr_stop(t)
 
 # time elapsed is now fixed
 tmr_elapsed(t)
-#> 00:00:00.003408
+#> 00:00:00.003308
 tmr_elapsed(t)
-#> 00:00:00.003408
+#> 00:00:00.003308
 
 # the timer can be restarted
 t <- tmr_start(t)
 tmr_elapsed(t)
-#> 00:00:00.004273
+#> 00:00:00.004217
 ```
 
 ## Installation
@@ -74,6 +74,15 @@ To install the latest development version from
 ``` r
 # install.packages("remotes")
 remotes::install_github("poissonconsulting/hmstimer")
+```
+
+To install the latest developmental release from the Poisson drat
+[repository](https://github.com/poissonconsulting/drat)
+
+``` r
+# install.packages("drat")
+drat::addRepo("poissonconsulting")
+install.packages("pkgtemplate")
 ```
 
 ## Contribution
