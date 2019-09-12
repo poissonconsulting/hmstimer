@@ -19,6 +19,6 @@ check_x <- function(x) {
     return(invisible())
   
   if (!is.hms(x)) err("`x` must be class hms.")
-  if (length(x) == 1L) err("`x` must be a scalar.")
+  if (length(x) != 1L) err("`x` must be a scalar.")
   err("`x` must not be a missing value.")
 }
