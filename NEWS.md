@@ -1,4 +1,4 @@
-- Switch to tidyverse style error and warning messages.
+- Switched to tidyverse style error and warning messages.
 
 # hmstimer 0.0.2
 
