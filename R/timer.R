@@ -35,8 +35,8 @@
 #' t <- tmr_reset(t)
 #' tmr_elapsed(t)
 tmr_timer <- function(seconds = 0, start = FALSE) {
-  check_seconds(seconds)
-  check_start(start)
+  chk_seconds(seconds)
+  chk_start(start)
   
   seconds <- as.double(seconds)
 
@@ -84,14 +84,14 @@ tmr_elapsed <- function(x) {
 #' @describeIn tmr_timer Reset Timer
 #' @export
 tmr_reset <- function(x, seconds = 0, start = FALSE) {
-  check_x(x)
+  chk_x(x)
   tmr_timer(seconds = seconds, start = start)
 }
 
 #' @describeIn tmr_timer Is Started
 #' @export
 tmr_is_started <- function(x) {
-  check_x(x)
+  chk_x(x)
   !is.null(attr(x, "start"))
 }
 

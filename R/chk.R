@@ -1,4 +1,4 @@
-check_seconds <- function(seconds) {
+chk_seconds <- function(seconds) {
   if(is.numeric(seconds) && length(seconds) == 1L && !is.na(seconds))
     return(invisible())
   if (!is.numeric(seconds)) err("`seconds` must be class numeric.")
@@ -6,7 +6,7 @@ check_seconds <- function(seconds) {
   err("`seconds` must not be a missing value.")
 }
 
-check_start <- function(start) {
+chk_start <- function(start) {
   if(is.logical(start) && length(start) == 1L && !is.na(start))
     return(invisible())
   if (!is.logical(start)) err("`start` must be class logical.")
@@ -14,7 +14,7 @@ check_start <- function(start) {
   err("`start` must not be a missing value.")
 }
 
-check_x <- function(x) {
+chk_x <- function(x) {
   if(is.hms(x) && length(x) == 1L && !is.na(x))
     return(invisible())
   
