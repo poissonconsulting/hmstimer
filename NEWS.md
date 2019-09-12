@@ -1,6 +1,8 @@
+- Switch to tidyverse style error and warning messages.
+
 # hmstimer 0.0.2
 
-- Replaced hms::as.hms with hms::as_hms for hms 0.5.0
+- Replaced hms::as.hms with hms::as_hms for hms 0.5.0.
 
 # hmstimer 0.0.1
 
