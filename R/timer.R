@@ -37,7 +37,7 @@
 tmr_timer <- function(seconds = 0, start = FALSE) {
   chk_seconds(seconds)
   chk_start(start)
-  
+
   seconds <- as.double(seconds)
 
   x <- as_hms(seconds)
