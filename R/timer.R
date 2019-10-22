@@ -100,3 +100,30 @@ tmr_is_started <- function(x) {
 tmr_is_stopped <- function(x) {
   !tmr_is_started(x)
 }
+
+#' @describeIn tmr_timer Round to Nearest Second
+#' @export
+tmr_round <- function(x) {
+  chk_x(x)
+  start <- tmr_is_started(x)
+  x <- round(as.numeric(tmr_elapsed(x)))
+  tmr_timer(x, start = start)
+}
+
+#' @describeIn tmr_timer Floor to Second
+#' @export
+tmr_floor <- function(x) {
+  chk_x(x)
+  start <- tmr_is_started(x)
+  x <- floor(as.numeric(tmr_elapsed(x)))
+  tmr_timer(x, start = start)
+}
+
+#' @describeIn tmr_timer Ceiling to Second
+#' @export
+tmr_ceiling <- function(x) {
+  chk_x(x)
+  start <- tmr_is_started(x)
+  x <- ceiling(as.numeric(tmr_elapsed(x)))
+  tmr_timer(x, start = start)
+}

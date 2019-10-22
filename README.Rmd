@@ -50,6 +50,9 @@ t <- tmr_stop(t)
 tmr_elapsed(t)
 tmr_elapsed(t)
 
+# round the time
+tmr_round(t)
+
 # the timer can be restarted
 t <- tmr_start(t)
 tmr_elapsed(t)
