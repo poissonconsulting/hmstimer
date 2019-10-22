@@ -151,6 +151,7 @@ test_that("tmr_ceiling", {
   expect_identical(tmr_ceiling(tmr), tmr)
   tmr <- tmr_ceiling(tmr_start(tmr))
   expect_lte(tmr_ceiling(tmr), 2L)
+  Sys.sleep(0.00001)
   expect_gte(tmr_ceiling(tmr), 1L)
   expect_true(tmr_is_started(tmr))
   Sys.sleep(1)
