@@ -132,6 +132,16 @@ test_that("tmr_round", {
   expect_identical(tmr, tmr_elapsed(tmr))
 })
 
+test_that("tmr_round with digits", {
+  tmr <- tmr_timer()
+  expect_identical(tmr_round(tmr, digits = 2), tmr)
+  tmr <- tmr_start(tmr)
+  tmr <- tmr_stop(tmr)
+  expect_lte(tmr_round(tmr), 0L)
+  expect_gte(tmr_round(tmr), 0L)
+  expect_gte(tmr_round(tmr, digits = 7), 0.00000001)
+})
+
 test_that("tmr_floor", {
   tmr <- tmr_timer()
   expect_identical(tmr_floor(tmr), tmr)

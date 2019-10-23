@@ -102,11 +102,13 @@ tmr_is_stopped <- function(x) {
 }
 
 #' @describeIn tmr_timer Round to Nearest Second
+#' @param digits A whole number of the number of decimal places to use. Negative values are allowed.
 #' @export
-tmr_round <- function(x) {
+tmr_round <- function(x, digits = 0) {
   chk_x(x)
+
   start <- tmr_is_started(x)
-  x <- round(as.numeric(tmr_elapsed(x)))
+  x <- round(as.numeric(tmr_elapsed(x)), digits = digits)
   tmr_timer(x, start = start)
 }
 

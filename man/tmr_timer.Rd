@@ -27,7 +27,7 @@ tmr_is_started(x)
 
 tmr_is_stopped(x)
 
-tmr_round(x)
+tmr_round(x, digits = 0)
 
 tmr_floor(x)
 
@@ -39,6 +39,8 @@ tmr_ceiling(x)
 \item{start}{A flag indicating whether to start the timer.}
 
 \item{x}{A hms scalar.}
+
+\item{digits}{A whole number of the number of decimal places to use. Negative values are allowed.}
 }
 \description{
 Use a tmr_timer
