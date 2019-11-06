@@ -7,17 +7,26 @@
 tmr_format(x, digits = 3)
 }
 \arguments{
-\item{x}{A hms scalar.}
+\item{x}{A \code{\link{hms_timer}}.}
 
-\item{digits}{xx}
+\item{digits}{A whole number of the number of decimal places.}
 }
 \value{
 A character string.
 }
 \description{
-Format hms Timer
+Converts a \code{\link{hms_timer}} to a string of the clock time 
+after rounding it to the number of digits.
+}
+\details{
+Negative values of digit are not permitted.
 }
 \examples{
-tmr_format(tmr_timer(61.36))
-tmr_format(tmr_timer(61.36), digits = 4)
+tmr_format(tmr_timer(61.66))
+tmr_format(tmr_timer(61.66), digits = 0)
 }
+\seealso{
+Other round: \code{\link{tmr_ceiling}},
+  \code{\link{tmr_floor}}, \code{\link{tmr_round}}
+}
+\concept{round}

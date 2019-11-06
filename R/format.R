@@ -1,28 +1,26 @@
 #' Format hms Timer
 #'
-#' @param x A hms scalar.
-#' @param digits xx
+#' Converts a \code{\link{hms_timer}} to a string of the clock time 
+#' after rounding it to the number of digits.
+#' 
+#' Negative values of digit are not permitted.
 #'
+#' @inheritParams params
 #' @return A character string.
+#' @family round
 #' @export
-#'
 #' @examples
-#' tmr_format(tmr_timer(61.36))
-#' tmr_format(tmr_timer(61.36), digits = 4)
+#' tmr_format(tmr_timer(61.66))
+#' tmr_format(tmr_timer(61.66), digits = 0)
 tmr_format <- function(x, digits = 3) {
-  chk_x(x)
+  chk_digits(digits)
+  if(digits < 0) err("`digits` must not be negative.")
   
   x <- tmr_round(x, digits = digits)
-  
-  if(digits > 0) {
-    msecs <- as.numeric(x) - floor(as.numeric(x))
-    msecs <- formatC(msecs, digits = digits, format = "f")
-    msecs <- substr(msecs, 2, nchar(msecs))
-  } else
-    msecs <- ""
-
+  msecs <- as.numeric(x) - floor(as.numeric(x))
   x <- tmr_floor(x)
   x <- as.character(x)
-  x <- paste0(x, msecs)
-  x
+  msecs <- formatC(msecs, digits = digits, format = "f")
+  msecs <- substr(msecs, 2, nchar(msecs))
+  paste0(x, msecs)
 }

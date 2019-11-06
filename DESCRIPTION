@@ -1,13 +1,13 @@
 Package: hmstimer
 Title: 'hms' Based Timer
-Version: 0.0.2.9005
+Version: 0.0.2.9006
 Authors@R: c(
     person("Joe", "Thorley", , "joe@poissonconsulting.ca", c("aut", "cre"), comment = c(ORCID = "0000-0002-7683-4592")),
     person("Poisson Consulting", role = c("cph", "fnd"))
     )
 Description: 
-    Tracks elapsed clock time using a 'hms()' scalar 
-    (inherits from 'difftime()' with seconds as the unit).
+    Tracks elapsed clock time using a 'hms' scalar
+    (inherits from 'difftime' with seconds as the unit).
 License: MIT + file LICENSE
 Imports:
     hms (>= 0.5.0)

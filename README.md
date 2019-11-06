@@ -15,9 +15,11 @@ status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/hms
 coverage](https://codecov.io/gh/poissonconsulting/hmstimer/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/hmstimer?branch=master)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-<!-- [![tinyverse status](https://tinyverse.netlify.com/badge/hmstimer)](https://CRAN.R-project.org/package=hmstimer) -->
-<!-- [![CRAN status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.org/package=hmstimer) -->
-<!-- ![CRAN downloads](https://cranlogs.r-pkg.org/badges/hmstimer) -->
+[![tinyverse
+status](https://tinyverse.netlify.com/badge/hmstimer)](https://CRAN.R-project.org/package=hmstimer)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.org/package=hmstimer)
+![CRAN downloads](https://cranlogs.r-pkg.org/badges/hmstimer)
 <!-- badges: end -->
 
 `hmstimer` is an R package to track elapsed clock time using a
@@ -38,16 +40,16 @@ tmr_elapsed(t)
 t <- tmr_start(t)
 
 tmr_elapsed(t)
-#> 00:00:00.000842
+#> 00:00:00.001048
 tmr_elapsed(t)
-#> 00:00:00.002145
+#> 00:00:00.002505
 t <- tmr_stop(t)
 
 # time elapsed is now fixed
 tmr_elapsed(t)
-#> 00:00:00.003475
+#> 00:00:00.003999
 tmr_elapsed(t)
-#> 00:00:00.003475
+#> 00:00:00.003999
 
 # round the time
 tmr_round(t)
@@ -56,7 +58,7 @@ tmr_round(t)
 # the timer can be restarted
 t <- tmr_start(t)
 tmr_elapsed(t)
-#> 00:00:00.004225
+#> 00:00:00.004713
 ```
 
 ## Installation

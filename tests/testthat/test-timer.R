@@ -11,7 +11,7 @@ test_that("tmr_timer", {
   expect_identical(as.double(tmr_timer(1.4)), 1.4)
   expect_identical(as.double(tmr_timer(3L)), 3)
 
-  expect_error(tmr_timer(TRUE), "^`seconds` must be class numeric[.]$")
+  expect_error(tmr_timer(TRUE), "^`seconds` must be numeric[.]$")
   expect_error(tmr_timer(NA_real_), "^`seconds` must not be a missing value[.]$")
   expect_error(tmr_timer(c(1, 2)), "^`seconds` must be a scalar[.]$")
 
