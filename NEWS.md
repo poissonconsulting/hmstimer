@@ -1,4 +1,5 @@
-- Added `tmr_round()`, `tmr_floor()` and `tmr_ceiling()` functions.
+- Added `tmr_format()`.
+- Added `tmr_round()`, `tmr_floor()` and `tmr_ceiling()`.
 - Switched to tidyverse style error and warning messages.
 
 # hmstimer 0.0.2
