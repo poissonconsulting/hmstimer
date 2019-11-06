@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Use a tmr_timer — tmr_timer • hmstimer</title>
+<title>Create hms Timer — tmr_timer • hmstimer</title>
 
 
 <!-- jquery -->
@@ -35,8 +35,8 @@
 
 
 
-<meta property="og:title" content="Use a tmr_timer — tmr_timer" />
-<meta property="og:description" content="Use a tmr_timer" />
+<meta property="og:title" content="Create hms Timer — tmr_timer" />
+<meta property="og:description" content="Creates a hms_timer()." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -69,7 +69,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">hmstimer</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.2.9002</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.2.9006</span>
       </span>
     </div>
 
@@ -103,87 +103,50 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Use a tmr_timer</h1>
+    <h1>Create hms Timer</h1>
     
     <div class="hidden name"><code>tmr_timer.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Use a tmr_timer</p>
+    <p>Creates a <code><a href='hms-timer.html'>hms_timer()</a></code>.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>tmr_timer</span>(<span class='kw'>seconds</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>start</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)
-
-<span class='fu'>tmr_start</span>(<span class='no'>x</span>)
-
-<span class='fu'>tmr_stop</span>(<span class='no'>x</span>)
-
-<span class='fu'>tmr_elapsed</span>(<span class='no'>x</span>)
-
-<span class='fu'>tmr_reset</span>(<span class='no'>x</span>, <span class='kw'>seconds</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>start</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)
-
-<span class='fu'>tmr_is_started</span>(<span class='no'>x</span>)
-
-<span class='fu'>tmr_is_stopped</span>(<span class='no'>x</span>)</pre>
+    <pre class="usage"><span class='fu'>tmr_timer</span>(<span class='kw'>seconds</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>start</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>seconds</th>
-      <td><p>A non-negative double scalar of the start time in seconds.</p></td>
+      <td><p>A non-negative numeric scalar of the initial number of seconds.</p></td>
     </tr>
     <tr>
       <th>start</th>
       <td><p>A flag indicating whether to start the timer.</p></td>
     </tr>
-    <tr>
-      <th>x</th>
-      <td><p>A hms scalar.</p></td>
-    </tr>
     </table>
 
-    <h2 class="hasAnchor" id="functions"><a class="anchor" href="#functions"></a>Functions</h2>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    
-<ul>
-<li><p><code>tmr_start</code>: Start Timer</p></li>
-<li><p><code>tmr_stop</code>: Stop Timer</p></li>
-<li><p><code>tmr_elapsed</code>: Elapsed Time</p></li>
-<li><p><code>tmr_reset</code>: Reset Timer</p></li>
-<li><p><code>tmr_is_started</code>: Is Started</p></li>
-<li><p><code>tmr_is_stopped</code>: Is Stopped</p></li>
-</ul>
+    <p>A <code><a href='hms-timer.html'>hms_timer()</a></code>.</p>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p>Other start_stop: <code><a href='tmr_elapsed.html'>tmr_elapsed</a></code>,
+  <code><a href='tmr_is_started.html'>tmr_is_started</a></code>,
+  <code><a href='tmr_is_stopped.html'>tmr_is_stopped</a></code>, <code><a href='tmr_reset.html'>tmr_reset</a></code>,
+  <code><a href='tmr_start.html'>tmr_start</a></code>, <code><a href='tmr_stop.html'>tmr_stop</a></code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='co'># create a new timer</span>
-<span class='no'>t</span> <span class='kw'>&lt;-</span> <span class='fu'>tmr_timer</span>()
-
-<span class='co'># no time has elapsed because the timer has not started</span>
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 0 secs</div><div class='input'>
-<span class='co'># start the timer</span>
-<span class='no'>t</span> <span class='kw'>&lt;-</span> <span class='fu'>tmr_start</span>(<span class='no'>t</span>)
-
-<span class='co'># get the time elapsed</span>
-<span class='co'># time elapsed is increasing because the timer is still running</span>
-<span class='fu'><a href='https://rdrr.io/r/base/Sys.sleep.html'>Sys.sleep</a></span>(<span class='fl'>1</span>)
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 1.006869 secs</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/Sys.sleep.html'>Sys.sleep</a></span>(<span class='fl'>1</span>)
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.012048 secs</div><div class='input'>
-<span class='co'># stop the timer</span>
-<span class='no'>t</span> <span class='kw'>&lt;-</span> <span class='fu'>tmr_stop</span>(<span class='no'>t</span>)
-
-<span class='co'># time elapsed is now fixed</span>
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.013216 secs</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/Sys.sleep.html'>Sys.sleep</a></span>(<span class='fl'>1</span>)
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 2.013216 secs</div><div class='input'>
-<span class='co'># reset the timer</span>
-<span class='no'>t</span> <span class='kw'>&lt;-</span> <span class='fu'>tmr_reset</span>(<span class='no'>t</span>)
-<span class='fu'>tmr_elapsed</span>(<span class='no'>t</span>)</div><div class='output co'>#&gt; Time difference of 0 secs</div></pre>
+    <pre class="examples"><div class='input'><span class='no'>tmr</span> <span class='kw'>&lt;-</span> <span class='fu'>tmr_timer</span>()
+<span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span>(<span class='no'>tmr</span>)</div><div class='output co'>#&gt; 00:00:00</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/class.html'>class</a></span>(<span class='no'>tmr</span>)</div><div class='output co'>#&gt; [1] "hms"      "difftime"</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-      <li><a href="#functions">Functions</a></li>
+      <li><a href="#value">Value</a></li>
+      <li><a href="#see-also">See also</a></li>
       <li><a href="#examples">Examples</a></li>
     </ul>
 
@@ -197,7 +160,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
 </div>
 
       </footer>
