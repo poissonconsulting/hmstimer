@@ -12,10 +12,10 @@ tmr_timer(seconds = 0, start = FALSE)
 \item{start}{A flag indicating whether to start the timer.}
 }
 \value{
-A \code{\link{hms_timer}}.
+A \code{\link[=hms_timer]{hms_timer()}}.
 }
 \description{
-Creates a \code{\link{hms_timer}}.
+Creates a \code{\link[=hms_timer]{hms_timer()}}.
 }
 \examples{
 tmr <- tmr_timer()

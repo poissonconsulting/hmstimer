@@ -1,12 +1,12 @@
 #' Start hms Timer
 #' 
-#' Starts a \code{\link{hms_timer}} by adding an attribute named 
+#' Starts a [hms_timer()] by adding an attribute named 
 #' start of the current system time.
 #' 
-#' If the \code{\link{hms_timer}} is already started, the function
+#' If the [hms_timer()] is already started, the function
 #' simply issues a warning and returns the original object.
 #' @inheritParams params
-#' @return A started \code{\link{hms_timer}}.
+#' @return A started [hms_timer()].
 #' @family start_stop
 #' @export
 #' @examples 

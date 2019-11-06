@@ -1,8 +1,8 @@
 #' Create hms Timer
 #'
-#' Creates a \code{\link{hms_timer}}.
+#' Creates a [hms_timer()].
 #' @inheritParams params
-#' @return A \code{\link{hms_timer}}.
+#' @return A [hms_timer()].
 #' @family start_stop
 #' @export
 #'

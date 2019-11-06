@@ -1,6 +1,6 @@
 #' Format hms Timer
 #'
-#' Converts a \code{\link{hms_timer}} to a string of the clock time 
+#' Converts a [hms_timer()] to a string of the clock time 
 #' after rounding it to the number of digits.
 #' 
 #' Negative values of digit are not permitted.

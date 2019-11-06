@@ -7,15 +7,15 @@
 tmr_round(x, digits = 0)
 }
 \arguments{
-\item{x}{A \code{\link{hms_timer}}.}
+\item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 
 \item{digits}{A whole number of the number of decimal places.}
 }
 \value{
-A \code{\link{hms_timer}}.
+A \code{\link[=hms_timer]{hms_timer()}}.
 }
 \description{
-Rounds a \code{\link{hms_timer}} after updating it to the elapsed time.
+Rounds a \code{\link[=hms_timer]{hms_timer()}} after updating it to the elapsed time.
 }
 \details{
 Negative values of digit are permitted.

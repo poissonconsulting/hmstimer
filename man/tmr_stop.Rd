@@ -7,16 +7,16 @@
 tmr_stop(x)
 }
 \arguments{
-\item{x}{A \code{\link{hms_timer}}.}
+\item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 }
 \value{
-A stopped \code{\link{hms_timer}}.
+A stopped \code{\link[=hms_timer]{hms_timer()}}.
 }
 \description{
-Stops a \code{\link{hms_timer}} after updating it to the elapsed time.
+Stops a \code{\link[=hms_timer]{hms_timer()}} after updating it to the elapsed time.
 }
 \details{
-If the \code{\link{hms_timer}} is already stopped, the function
+If the \code{\link[=hms_timer]{hms_timer()}} is already stopped, the function
 simply issues a warning and returns the original object.
 }
 \examples{

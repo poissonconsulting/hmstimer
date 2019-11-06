@@ -1,11 +1,11 @@
 #' Stop hms Timer
 #' 
-#' Stops a \code{\link{hms_timer}} after updating it to the elapsed time.
+#' Stops a [hms_timer()] after updating it to the elapsed time.
 #' 
-#' If the \code{\link{hms_timer}} is already stopped, the function
+#' If the [hms_timer()] is already stopped, the function
 #' simply issues a warning and returns the original object.
 #' @inheritParams params
-#' @return A stopped \code{\link{hms_timer}}.
+#' @return A stopped [hms_timer()].
 #' @family start_stop
 #' @export
 #' @examples 

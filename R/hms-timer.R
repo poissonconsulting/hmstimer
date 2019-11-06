@@ -1,6 +1,6 @@
 #' hms Timer
 #'
-#' A hms Timer is a \code{\link[hms]{hms}} scalar which if 
+#' A hms Timer is a [hms::hms()] scalar which if 
 #' running has an attribute named start 
 #' that specifies the system time when the timer was started.
 #' 

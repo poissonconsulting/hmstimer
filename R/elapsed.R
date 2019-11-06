@@ -1,14 +1,14 @@
 #' Elapsed Time hms Timer
 #' 
-#' Returns the elapsed time for a \code{\link{hms_timer}} as a \code{\link{hms_timer}}.
+#' Returns the elapsed time for a [hms_timer()] as a [hms_timer()].
 #' 
 #' The elapsed time is the value of the scalar plus the difference
 #' between the current system time and the system time when the timer was started.
 #' 
-#' If the original \code{\link{hms_timer}} was running then the new \code{\link{hms_timer}}
+#' If the original [hms_timer()] was running then the new [hms_timer()]
 #' is assigned an attribute named start of the current system time.
 #' @inheritParams params
-#' @return A \code{\link{hms_timer}} of the elapsed time.
+#' @return A [hms_timer()] of the elapsed time.
 #' @family start_stop
 #' @export
 #' @examples 

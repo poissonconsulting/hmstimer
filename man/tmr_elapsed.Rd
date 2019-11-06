@@ -7,19 +7,19 @@
 tmr_elapsed(x)
 }
 \arguments{
-\item{x}{A \code{\link{hms_timer}}.}
+\item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 }
 \value{
-A \code{\link{hms_timer}} of the elapsed time.
+A \code{\link[=hms_timer]{hms_timer()}} of the elapsed time.
 }
 \description{
-Returns the elapsed time for a \code{\link{hms_timer}} as a \code{\link{hms_timer}}.
+Returns the elapsed time for a \code{\link[=hms_timer]{hms_timer()}} as a \code{\link[=hms_timer]{hms_timer()}}.
 }
 \details{
 The elapsed time is the value of the scalar plus the difference
 between the current system time and the system time when the timer was started.
 
-If the original \code{\link{hms_timer}} was running then the new \code{\link{hms_timer}}
+If the original \code{\link[=hms_timer]{hms_timer()}} was running then the new \code{\link[=hms_timer]{hms_timer()}}
 is assigned an attribute named start of the current system time.
 }
 \examples{

@@ -7,17 +7,17 @@
 tmr_start(x)
 }
 \arguments{
-\item{x}{A \code{\link{hms_timer}}.}
+\item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 }
 \value{
-A started \code{\link{hms_timer}}.
+A started \code{\link[=hms_timer]{hms_timer()}}.
 }
 \description{
-Starts a \code{\link{hms_timer}} by adding an attribute named 
+Starts a \code{\link[=hms_timer]{hms_timer()}} by adding an attribute named
 start of the current system time.
 }
 \details{
-If the \code{\link{hms_timer}} is already started, the function
+If the \code{\link[=hms_timer]{hms_timer()}} is already started, the function
 simply issues a warning and returns the original object.
 }
 \examples{

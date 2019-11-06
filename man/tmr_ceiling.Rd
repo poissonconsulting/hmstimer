@@ -7,13 +7,13 @@
 tmr_ceiling(x)
 }
 \arguments{
-\item{x}{A \code{\link{hms_timer}}.}
+\item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 }
 \value{
-A \code{\link{hms_timer}}.
+A \code{\link[=hms_timer]{hms_timer()}}.
 }
 \description{
-Rounds a \code{\link{hms_timer}} up to the nearest second.
+Rounds a \code{\link[=hms_timer]{hms_timer()}} up to the nearest second.
 }
 \examples{
 tmr_ceiling(tmr_timer(18.9))

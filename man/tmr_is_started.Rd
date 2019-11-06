@@ -7,13 +7,13 @@
 tmr_is_started(x)
 }
 \arguments{
-\item{x}{A \code{\link{hms_timer}}.}
+\item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 }
 \value{
 A flag (TRUE or FALSE).
 }
 \description{
-Tests if a \code{\link{hms_timer}} is started (as indicated by the
+Tests if a \code{\link[=hms_timer]{hms_timer()}} is started (as indicated by the
 presence of an attribute named start).
 }
 \examples{

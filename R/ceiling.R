@@ -1,9 +1,9 @@
 #' Ceiling hms Timer
 #' 
-#' Rounds a \code{\link{hms_timer}} up to the nearest second.
+#' Rounds a [hms_timer()] up to the nearest second.
 #' 
 #' @inheritParams params
-#' @return A \code{\link{hms_timer}}.
+#' @return A [hms_timer()].
 #' @family round
 #' @export
 #' @examples 

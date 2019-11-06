@@ -1,11 +1,11 @@
 #' Round hms Timer
 #' 
-#' Rounds a \code{\link{hms_timer}} after updating it to the elapsed time.
+#' Rounds a [hms_timer()] after updating it to the elapsed time.
 #' 
 #' Negative values of digit are permitted.
 #' 
 #' @inheritParams params
-#' @return A \code{\link{hms_timer}}.
+#' @return A [hms_timer()].
 #' @family round
 #' @export
 #' @examples 

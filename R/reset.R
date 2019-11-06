@@ -1,9 +1,9 @@
 #' Reset hms Timer
 #' 
-#' Resets a \code{\link{hms_timer}} by creating a new one.
+#' Resets a [hms_timer()] by creating a new one.
 #' 
 #' @inheritParams params
-#' @return A \code{\link{hms_timer}}.
+#' @return A [hms_timer()].
 #' @family start_stop
 #' @export
 #' @examples 

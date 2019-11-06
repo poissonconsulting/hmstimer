@@ -4,7 +4,7 @@
 \alias{params}
 \title{#' Parameter Descriptions for hmstimer Functions}
 \arguments{
-\item{x}{A \code{\link{hms_timer}}.}
+\item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 
 \item{seconds}{A non-negative numeric scalar of the initial number of seconds.}
 

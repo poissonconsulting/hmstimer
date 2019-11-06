@@ -7,17 +7,17 @@
 tmr_reset(x, seconds = 0, start = FALSE)
 }
 \arguments{
-\item{x}{A \code{\link{hms_timer}}.}
+\item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 
 \item{seconds}{A non-negative numeric scalar of the initial number of seconds.}
 
 \item{start}{A flag indicating whether to start the timer.}
 }
 \value{
-A \code{\link{hms_timer}}.
+A \code{\link[=hms_timer]{hms_timer()}}.
 }
 \description{
-Resets a \code{\link{hms_timer}} by creating a new one.
+Resets a \code{\link[=hms_timer]{hms_timer()}} by creating a new one.
 }
 \examples{
 tmr <- tmr_timer(10)

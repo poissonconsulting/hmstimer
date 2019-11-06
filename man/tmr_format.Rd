@@ -7,7 +7,7 @@
 tmr_format(x, digits = 3)
 }
 \arguments{
-\item{x}{A \code{\link{hms_timer}}.}
+\item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 
 \item{digits}{A whole number of the number of decimal places.}
 }
@@ -15,7 +15,7 @@ tmr_format(x, digits = 3)
 A character string.
 }
 \description{
-Converts a \code{\link{hms_timer}} to a string of the clock time 
+Converts a \code{\link[=hms_timer]{hms_timer()}} to a string of the clock time
 after rounding it to the number of digits.
 }
 \details{

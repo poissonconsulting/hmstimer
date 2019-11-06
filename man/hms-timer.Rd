@@ -5,8 +5,8 @@
 \alias{hms_timer}
 \title{hms Timer}
 \description{
-A hms Timer is a \code{\link[hms]{hms}} scalar which if 
-running has an attribute named start 
+A hms Timer is a \code{\link[hms:hms]{hms::hms()}} scalar which if
+running has an attribute named start
 that specifies the system time when the timer was started.
 }
 \details{
