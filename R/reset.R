@@ -11,5 +11,8 @@
 #' print(tmr)
 #' tmr_reset(tmr)
 tmr_reset <- function(x, seconds = 0, start = FALSE) {
+  if(!missing(start)) 
+    wrn("`start` is deprecated; please stop or start the hms_timer before resetting.")
+  start <- tmr_is_started(x)
   tmr_timer(seconds = seconds, start = start)
 }

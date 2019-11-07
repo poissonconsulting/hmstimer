@@ -1,3 +1,4 @@
+- Deprecated `start` argument to `tmr_reset()`.
 - Added `tmr_format()`.
 - Added `tmr_round()`, `tmr_floor()` and `tmr_ceiling()`.
 - Switched to tidyverse style error and warning messages.
