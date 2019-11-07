@@ -23,42 +23,35 @@ status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.o
 <!-- badges: end -->
 
 `hmstimer` is an R package to track elapsed clock time using a
-[hms()](https://github.com/tidyverse/hms) scalar (inherits from
-difftime() with seconds as the unit).
+[hms::hms](https://github.com/tidyverse/hms) scalar, which if running
+has an attribute named start that specifies the system time when the
+timer was started.
+
+The elapsed time is the value of the scalar plus the difference between
+the current system time and the system time when the timer was started.
 
 ``` r
 library(hmstimer)
 
-t <- tmr_timer()
+tmr <- tmr_timer(seconds = 125, start = TRUE)
+tmr
+#> 00:02:05
+tmr_elapsed(tmr)
+#> 00:02:05.003366
+tmr
+#> 00:02:05
+tmr_elapsed(tmr)
+#> 00:02:05.00557
 
-tmr_elapsed(t)
-#> 00:00:00
+tmr <- tmr_stop(tmr)
 
-tmr_elapsed(t)
-#> 00:00:00
+tmr
+#> 00:02:05.006904
+tmr_elapsed(tmr)
+#> 00:02:05.006904
 
-t <- tmr_start(t)
-
-tmr_elapsed(t)
-#> 00:00:00.001048
-tmr_elapsed(t)
-#> 00:00:00.002505
-t <- tmr_stop(t)
-
-# time elapsed is now fixed
-tmr_elapsed(t)
-#> 00:00:00.003999
-tmr_elapsed(t)
-#> 00:00:00.003999
-
-# round the time
-tmr_round(t)
-#> 00:00:00
-
-# the timer can be restarted
-t <- tmr_start(t)
-tmr_elapsed(t)
-#> 00:00:00.004713
+tmr_format(tmr, digits = 4)
+#> [1] "00:02:05.0069"
 ```
 
 ## Installation

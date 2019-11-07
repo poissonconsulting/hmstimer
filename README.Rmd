@@ -27,33 +27,25 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 `hmstimer` is an R package to 
-track elapsed clock time using a [hms()](https://github.com/tidyverse/hms) scalar (inherits from difftime() with seconds as the unit).
+track elapsed clock time using a [hms::hms](https://github.com/tidyverse/hms) scalar, which if running has an attribute named start that specifies the system time when the timer was started.
+
+The elapsed time is the value of the scalar plus the difference between the current system time and the system time when the timer was started.
 
 ```{r}
 library(hmstimer)
 
-t <- tmr_timer()
+tmr <- tmr_timer(seconds = 125, start = TRUE)
+tmr
+tmr_elapsed(tmr)
+tmr
+tmr_elapsed(tmr)
 
-tmr_elapsed(t)
+tmr <- tmr_stop(tmr)
 
-tmr_elapsed(t)
+tmr
+tmr_elapsed(tmr)
 
-t <- tmr_start(t)
-
-tmr_elapsed(t)
-tmr_elapsed(t)
-t <- tmr_stop(t)
-
-# time elapsed is now fixed
-tmr_elapsed(t)
-tmr_elapsed(t)
-
-# round the time
-tmr_round(t)
-
-# the timer can be restarted
-t <- tmr_start(t)
-tmr_elapsed(t)
+tmr_format(tmr, digits = 4)
 ```
 
 ## Installation

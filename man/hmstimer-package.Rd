@@ -6,8 +6,12 @@
 \alias{hmstimer-package}
 \title{hmstimer: 'hms' Based Timer}
 \description{
-Tracks elapsed clock time using a 'hms' scalar
-    (inherits from 'difftime' with seconds as the unit).
+Tracks elapsed clock time using a `hms::hms()` scalar, 
+    which if running has an attribute named start 
+    that specifies the system time when the timer was started.
+    The elapsed time is the value of the scalar 
+    plus the difference between the current system time 
+    and the system time when the timer was started.
 }
 \author{
 \strong{Maintainer}: Joe Thorley \email{joe@poissonconsulting.ca} (0000-0002-7683-4592)
