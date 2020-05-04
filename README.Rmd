@@ -56,12 +56,6 @@ To install the latest development version from [GitHub](https://github.com/poiss
 remotes::install_github("poissonconsulting/hmstimer")
 ```
 
-To install the latest developmental release from the Poisson drat [repository](https://github.com/poissonconsulting/drat)
-```r
-# install.packages("drat")
-drat::addRepo("poissonconsulting")
-install.packages("hmstimer")
-```
 
 ## Contribution
 
