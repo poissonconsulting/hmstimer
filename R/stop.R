@@ -1,14 +1,14 @@
 #' Stop hms Timer
-#' 
+#'
 #' Stops a [hms_timer()] after updating it to the elapsed time.
-#' 
+#'
 #' If the [hms_timer()] is already stopped, the function
 #' simply issues a warning and returns the original object.
 #' @inheritParams params
 #' @return A stopped [hms_timer()].
 #' @family start_stop
 #' @export
-#' @examples 
+#' @examples
 #' tmr <- tmr_stop(tmr_timer(start = TRUE))
 #' print(tmr_elapsed(tmr))
 #' Sys.sleep(0.01)

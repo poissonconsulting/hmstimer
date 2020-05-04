@@ -27,7 +27,9 @@ tmr_round(tmr_timer(18.9), -1)
 tmr_round(tmr_timer(121), -2) # 121 is rounded to 100 seconds
 }
 \seealso{
-Other round: \code{\link{tmr_ceiling}},
-  \code{\link{tmr_floor}}, \code{\link{tmr_format}}
+Other round: 
+\code{\link{tmr_ceiling}()},
+\code{\link{tmr_floor}()},
+\code{\link{tmr_format}()}
 }
 \concept{round}

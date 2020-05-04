@@ -23,9 +23,12 @@ tmr <- tmr_stop(tmr)
 print(tmr_is_stopped(tmr))
 }
 \seealso{
-Other start_stop: \code{\link{tmr_elapsed}},
-  \code{\link{tmr_is_started}}, \code{\link{tmr_reset}},
-  \code{\link{tmr_start}}, \code{\link{tmr_stop}},
-  \code{\link{tmr_timer}}
+Other start_stop: 
+\code{\link{tmr_elapsed}()},
+\code{\link{tmr_is_started}()},
+\code{\link{tmr_reset}()},
+\code{\link{tmr_start}()},
+\code{\link{tmr_stop}()},
+\code{\link{tmr_timer}()}
 }
 \concept{start_stop}

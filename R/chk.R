@@ -1,6 +1,6 @@
 chk_digits <- function(digits) {
-  if(is.numeric(digits) && length(digits) == 1L && !anyNA(digits) && 
-     (is.integer(digits) || digits == trunc(digits))) {
+  if(is.numeric(digits) && length(digits) == 1L && !anyNA(digits) &&
+    (is.integer(digits) || digits == trunc(digits))) {
     return(invisible())
   }
   if (!is.numeric(digits)) err("`digits` must be numeric.")

@@ -1,14 +1,14 @@
 #' Round hms Timer
-#' 
+#'
 #' Rounds a [hms_timer()] after updating it to the elapsed time.
-#' 
+#'
 #' Negative values of digit are permitted.
-#' 
+#'
 #' @inheritParams params
 #' @return A [hms_timer()].
 #' @family round
 #' @export
-#' @examples 
+#' @examples
 #' tmr_round(tmr_timer(18.9))
 #' tmr_round(tmr_timer(18.9), 1)
 #' tmr_round(tmr_timer(18.9), -1)

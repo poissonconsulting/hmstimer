@@ -1,8 +1,8 @@
 #' Format hms Timer
 #'
-#' Converts a [hms_timer()] to a string of the clock time 
+#' Converts a [hms_timer()] to a string of the clock time
 #' after rounding it to the number of digits.
-#' 
+#'
 #' Negative values of digit are not permitted.
 #'
 #' @inheritParams params
@@ -15,7 +15,7 @@
 tmr_format <- function(x, digits = 3) {
   chk_digits(digits)
   if(digits < 0) err("`digits` must not be negative.")
-  
+
   x <- tmr_round(x, digits = digits)
   msecs <- as.numeric(x) - floor(as.numeric(x))
   x <- tmr_floor(x)

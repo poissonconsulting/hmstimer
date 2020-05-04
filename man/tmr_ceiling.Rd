@@ -17,10 +17,12 @@ Rounds a \code{\link[=hms_timer]{hms_timer()}} up to the nearest second.
 }
 \examples{
 tmr_ceiling(tmr_timer(18.9))
-tmr_ceiling(tmr_timer(122.1)) 
+tmr_ceiling(tmr_timer(122.1))
 }
 \seealso{
-Other round: \code{\link{tmr_floor}},
-  \code{\link{tmr_format}}, \code{\link{tmr_round}}
+Other round: 
+\code{\link{tmr_floor}()},
+\code{\link{tmr_format}()},
+\code{\link{tmr_round}()}
 }
 \concept{round}

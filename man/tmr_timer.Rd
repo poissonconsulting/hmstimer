@@ -23,9 +23,12 @@ print(tmr)
 class(tmr)
 }
 \seealso{
-Other start_stop: \code{\link{tmr_elapsed}},
-  \code{\link{tmr_is_started}},
-  \code{\link{tmr_is_stopped}}, \code{\link{tmr_reset}},
-  \code{\link{tmr_start}}, \code{\link{tmr_stop}}
+Other start_stop: 
+\code{\link{tmr_elapsed}()},
+\code{\link{tmr_is_started}()},
+\code{\link{tmr_is_stopped}()},
+\code{\link{tmr_reset}()},
+\code{\link{tmr_start}()},
+\code{\link{tmr_stop}()}
 }
 \concept{start_stop}

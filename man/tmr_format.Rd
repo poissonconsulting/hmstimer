@@ -26,7 +26,9 @@ tmr_format(tmr_timer(61.66))
 tmr_format(tmr_timer(61.66), digits = 0)
 }
 \seealso{
-Other round: \code{\link{tmr_ceiling}},
-  \code{\link{tmr_floor}}, \code{\link{tmr_round}}
+Other round: 
+\code{\link{tmr_ceiling}()},
+\code{\link{tmr_floor}()},
+\code{\link{tmr_round}()}
 }
 \concept{round}
