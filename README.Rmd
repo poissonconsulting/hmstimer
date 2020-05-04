@@ -24,6 +24,7 @@ knitr::opts_chunk$set(
 [![tinyverse status](https://tinyverse.netlify.com/badge/hmstimer)](https://CRAN.R-project.org/package=hmstimer)
 [![CRAN status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.org/package=hmstimer)
 ![CRAN downloads](https://cranlogs.r-pkg.org/badges/hmstimer)
+[![R build status](https://github.com/poissonconsulting/hmstimer/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/hmstimer/actions)
 <!-- badges: end -->
 
 `hmstimer` is an R package to 
