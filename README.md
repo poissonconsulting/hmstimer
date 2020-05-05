@@ -10,14 +10,12 @@ output: github_document
 
 <!-- badges: start -->
 [![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![Travis build status](https://travis-ci.com/poissonconsulting/hmstimer.svg?branch=master)](https://travis-ci.com/poissonconsulting/hmstimer)
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/hmstimer?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/hmstimer)
+[![R build status](https://github.com/poissonconsulting/hmstimer/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/hmstimer/actions)
 [![Codecov test coverage](https://codecov.io/gh/poissonconsulting/hmstimer/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/hmstimer?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![tinyverse status](https://tinyverse.netlify.com/badge/hmstimer)](https://CRAN.R-project.org/package=hmstimer)
 [![CRAN status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.org/package=hmstimer)
 ![CRAN downloads](https://cranlogs.r-pkg.org/badges/hmstimer)
-[![R build status](https://github.com/poissonconsulting/hmstimer/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/hmstimer/actions)
 <!-- badges: end -->
 
 `hmstimer` is an R package to 
@@ -28,26 +26,29 @@ The elapsed time is the value of the scalar plus the difference between the curr
 
 ```r
 library(hmstimer)
+#> Error in library(hmstimer): there is no package called 'hmstimer'
 
 tmr <- tmr_timer(seconds = 125, start = TRUE)
+#> Error in tmr_timer(seconds = 125, start = TRUE): could not find function "tmr_timer"
 tmr
-#> 00:02:05
+#> Error in eval(expr, envir, enclos): object 'tmr' not found
 tmr_elapsed(tmr)
-#> 00:02:05.003
+#> Error in tmr_elapsed(tmr): could not find function "tmr_elapsed"
 tmr
-#> 00:02:05
+#> Error in eval(expr, envir, enclos): object 'tmr' not found
 tmr_elapsed(tmr)
-#> 00:02:05.005001
+#> Error in tmr_elapsed(tmr): could not find function "tmr_elapsed"
 
 tmr <- tmr_stop(tmr)
+#> Error in tmr_stop(tmr): could not find function "tmr_stop"
 
 tmr
-#> 00:02:05.006953
+#> Error in eval(expr, envir, enclos): object 'tmr' not found
 tmr_elapsed(tmr)
-#> 00:02:05.006953
+#> Error in tmr_elapsed(tmr): could not find function "tmr_elapsed"
 
 tmr_format(tmr, digits = 4)
-#> [1] "00:02:05.0070"
+#> Error in tmr_format(tmr, digits = 4): could not find function "tmr_format"
 ```
 
 ## Installation
