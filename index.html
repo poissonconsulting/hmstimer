@@ -68,13 +68,6 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-
-<hr>
-<div id="output-github_document" class="section level2">
-<h2 class="hasAnchor">
-<a href="#output-github_document" class="anchor"></a>output: github_document</h2>
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-</div>
 <div id="hmstimer" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#hmstimer" class="anchor"></a>hmstimer</h1></div>
@@ -83,29 +76,26 @@
 <p><code>hmstimer</code> is an R package to track elapsed clock time using a <a href="https://github.com/tidyverse/hms">hms::hms</a> scalar, which if running has an attribute named start that specifies the system time when the timer was started.</p>
 <p>The elapsed time is the value of the scalar plus the difference between the current system time and the system time when the timer was started.</p>
 <div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">hmstimer</span>)
-<span class="co">#&gt; Error in library(hmstimer): there is no package called 'hmstimer'</span>
 
 <span class="no">tmr</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/tmr_timer.html">tmr_timer</a></span>(<span class="kw">seconds</span> <span class="kw">=</span> <span class="fl">125</span>, <span class="kw">start</span> <span class="kw">=</span> <span class="fl">TRUE</span>)
-<span class="co">#&gt; Error in tmr_timer(seconds = 125, start = TRUE): could not find function "tmr_timer"</span>
 <span class="no">tmr</span>
-<span class="co">#&gt; Error in eval(expr, envir, enclos): object 'tmr' not found</span>
+<span class="co">#&gt; 00:02:05</span>
 <span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span>(<span class="no">tmr</span>)
-<span class="co">#&gt; Error in tmr_elapsed(tmr): could not find function "tmr_elapsed"</span>
+<span class="co">#&gt; 00:02:05.005813</span>
 <span class="no">tmr</span>
-<span class="co">#&gt; Error in eval(expr, envir, enclos): object 'tmr' not found</span>
+<span class="co">#&gt; 00:02:05</span>
 <span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span>(<span class="no">tmr</span>)
-<span class="co">#&gt; Error in tmr_elapsed(tmr): could not find function "tmr_elapsed"</span>
+<span class="co">#&gt; 00:02:05.010475</span>
 
 <span class="no">tmr</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/tmr_stop.html">tmr_stop</a></span>(<span class="no">tmr</span>)
-<span class="co">#&gt; Error in tmr_stop(tmr): could not find function "tmr_stop"</span>
 
 <span class="no">tmr</span>
-<span class="co">#&gt; Error in eval(expr, envir, enclos): object 'tmr' not found</span>
+<span class="co">#&gt; 00:02:05.013098</span>
 <span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span>(<span class="no">tmr</span>)
-<span class="co">#&gt; Error in tmr_elapsed(tmr): could not find function "tmr_elapsed"</span>
+<span class="co">#&gt; 00:02:05.013098</span>
 
 <span class="fu"><a href="reference/tmr_format.html">tmr_format</a></span>(<span class="no">tmr</span>, <span class="kw">digits</span> <span class="kw">=</span> <span class="fl">4</span>)
-<span class="co">#&gt; Error in tmr_format(tmr, digits = 4): could not find function "tmr_format"</span></pre></div>
+<span class="co">#&gt; [1] "00:02:05.0131"</span></pre></div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
@@ -118,10 +108,13 @@
 <a href="#contribution" class="anchor"></a>Contribution</h2>
 <p>Please report any <a href="https://github.com/poissonconsulting/hmstimer/issues">issues</a>.</p>
 <p><a href="https://github.com/poissonconsulting/hmstimer/pulls">Pull requests</a> are always welcome.</p>
-<p>Please note that this project is released with a <a href="https://poissonconsulting.github.io/hmstimer/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing, you agree to abide by its terms.</p>
+</div>
+<div id="code-of-conduct" class="section level2">
+<h2 class="hasAnchor">
+<a href="#code-of-conduct" class="anchor"></a>Code of Conduct</h2>
+<p>Please note that the hmstimer project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 </div>
 </div>
-
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
