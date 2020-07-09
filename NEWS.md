@@ -1,7 +1,4 @@
-# hmstimer 0.0.2.9008
-
-- Internal changes only.
-
+# hmstimer 0.1.0
 
 - Deprecated `start` argument to `tmr_reset()`.
 - Added `tmr_format()`.
