@@ -1,3 +1,8 @@
+# hmstimer 0.0.2.9008
+
+- Internal changes only.
+
+
 - Deprecated `start` argument to `tmr_reset()`.
 - Added `tmr_format()`.
 - Added `tmr_round()`, `tmr_floor()` and `tmr_ceiling()`.
