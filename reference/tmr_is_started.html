@@ -113,18 +113,18 @@ presence of an attribute named start)." />
     </div>
 
     <div class="ref-description">
-    <p>Tests if a <code><a href='hms-timer.html'>hms_timer()</a></code> is started (as indicated by the
+    <p>Tests if a <code><a href='https://rdrr.io/pkg/hmstimer/man/hms-timer.html'>hms_timer()</a></code> is started (as indicated by the
 presence of an attribute named start).</p>
     </div>
 
-    <pre class="usage"><span class='fu'>tmr_is_started</span>(<span class='no'>x</span>)</pre>
+    <pre class="usage"><span class='fu'><a href='https://rdrr.io/pkg/hmstimer/man/tmr_is_started.html'>tmr_is_started</a></span>(<span class='kw'>x</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>x</th>
-      <td><p>A <code><a href='hms-timer.html'>hms_timer()</a></code>.</p></td>
+      <td><p>A <code><a href='https://rdrr.io/pkg/hmstimer/man/hms-timer.html'>hms_timer()</a></code>.</p></td>
     </tr>
     </table>
 
@@ -134,17 +134,17 @@ presence of an attribute named start).</p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p>Other start_stop: 
-<code><a href='tmr_elapsed.html'>tmr_elapsed</a>()</code>,
-<code><a href='tmr_is_stopped.html'>tmr_is_stopped</a>()</code>,
-<code><a href='tmr_reset.html'>tmr_reset</a>()</code>,
-<code><a href='tmr_start.html'>tmr_start</a>()</code>,
-<code><a href='tmr_stop.html'>tmr_stop</a>()</code>,
-<code><a href='tmr_timer.html'>tmr_timer</a>()</code></p></div>
+<code><a href='https://rdrr.io/pkg/hmstimer/man/tmr_elapsed.html'>tmr_elapsed</a>()</code>,
+<code><a href='https://rdrr.io/pkg/hmstimer/man/tmr_is_stopped.html'>tmr_is_stopped</a>()</code>,
+<code><a href='https://rdrr.io/pkg/hmstimer/man/tmr_reset.html'>tmr_reset</a>()</code>,
+<code><a href='https://rdrr.io/pkg/hmstimer/man/tmr_start.html'>tmr_start</a>()</code>,
+<code><a href='https://rdrr.io/pkg/hmstimer/man/tmr_stop.html'>tmr_stop</a>()</code>,
+<code><a href='https://rdrr.io/pkg/hmstimer/man/tmr_timer.html'>tmr_timer</a>()</code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='no'>tmr</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='tmr_timer.html'>tmr_timer</a></span>(<span class='kw'>start</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span>(<span class='fu'>tmr_is_started</span>(<span class='no'>tmr</span>))</div><div class='output co'>#&gt; [1] TRUE</div><div class='input'><span class='no'>tmr</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='tmr_stop.html'>tmr_stop</a></span>(<span class='no'>tmr</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span>(<span class='fu'>tmr_is_started</span>(<span class='no'>tmr</span>))</div><div class='output co'>#&gt; [1] FALSE</div></pre>
+    <pre class="examples"><div class='input'><span class='kw'>tmr</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/hmstimer/man/tmr_timer.html'>tmr_timer</a></span>(start = <span class='fl'>TRUE</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span>(<span class='fu'><a href='https://rdrr.io/pkg/hmstimer/man/tmr_is_started.html'>tmr_is_started</a></span>(<span class='kw'>tmr</span>))</div><div class='output co'>#&gt; [1] TRUE</div><div class='input'><span class='kw'>tmr</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/hmstimer/man/tmr_stop.html'>tmr_stop</a></span>(<span class='kw'>tmr</span>)
+<span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span>(<span class='fu'><a href='https://rdrr.io/pkg/hmstimer/man/tmr_is_started.html'>tmr_is_started</a></span>(<span class='kw'>tmr</span>))</div><div class='output co'>#&gt; [1] FALSE</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

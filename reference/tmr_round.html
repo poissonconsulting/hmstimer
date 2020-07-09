@@ -112,17 +112,17 @@
     </div>
 
     <div class="ref-description">
-    <p>Rounds a <code><a href='hms-timer.html'>hms_timer()</a></code> after updating it to the elapsed time.</p>
+    <p>Rounds a <code><a href='https://rdrr.io/pkg/hmstimer/man/hms-timer.html'>hms_timer()</a></code> after updating it to the elapsed time.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>tmr_round</span>(<span class='no'>x</span>, <span class='kw'>digits</span> <span class='kw'>=</span> <span class='fl'>0</span>)</pre>
+    <pre class="usage"><span class='fu'><a href='https://rdrr.io/pkg/hmstimer/man/tmr_round.html'>tmr_round</a></span>(<span class='kw'>x</span>, digits = <span class='fl'>0</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>x</th>
-      <td><p>A <code><a href='hms-timer.html'>hms_timer()</a></code>.</p></td>
+      <td><p>A <code><a href='https://rdrr.io/pkg/hmstimer/man/hms-timer.html'>hms_timer()</a></code>.</p></td>
     </tr>
     <tr>
       <th>digits</th>
@@ -132,19 +132,19 @@
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>A <code><a href='hms-timer.html'>hms_timer()</a></code>.</p>
+    <p>A <code><a href='https://rdrr.io/pkg/hmstimer/man/hms-timer.html'>hms_timer()</a></code>.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>Negative values of digit are permitted.</p>
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
     <div class='dont-index'><p>Other round: 
-<code><a href='tmr_ceiling.html'>tmr_ceiling</a>()</code>,
-<code><a href='tmr_floor.html'>tmr_floor</a>()</code>,
-<code><a href='tmr_format.html'>tmr_format</a>()</code></p></div>
+<code><a href='https://rdrr.io/pkg/hmstimer/man/tmr_ceiling.html'>tmr_ceiling</a>()</code>,
+<code><a href='https://rdrr.io/pkg/hmstimer/man/tmr_floor.html'>tmr_floor</a>()</code>,
+<code><a href='https://rdrr.io/pkg/hmstimer/man/tmr_format.html'>tmr_format</a>()</code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>tmr_round</span>(<span class='fu'><a href='tmr_timer.html'>tmr_timer</a></span>(<span class='fl'>18.9</span>))</div><div class='output co'>#&gt; 00:00:19</div><div class='input'><span class='fu'>tmr_round</span>(<span class='fu'><a href='tmr_timer.html'>tmr_timer</a></span>(<span class='fl'>18.9</span>), <span class='fl'>1</span>)</div><div class='output co'>#&gt; 00:00:18.9</div><div class='input'><span class='fu'>tmr_round</span>(<span class='fu'><a href='tmr_timer.html'>tmr_timer</a></span>(<span class='fl'>18.9</span>), -<span class='fl'>1</span>)</div><div class='output co'>#&gt; 00:00:20</div><div class='input'><span class='fu'>tmr_round</span>(<span class='fu'><a href='tmr_timer.html'>tmr_timer</a></span>(<span class='fl'>121</span>), -<span class='fl'>2</span>) <span class='co'># 121 is rounded to 100 seconds</span></div><div class='output co'>#&gt; 00:01:40</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/pkg/hmstimer/man/tmr_round.html'>tmr_round</a></span>(<span class='fu'><a href='https://rdrr.io/pkg/hmstimer/man/tmr_timer.html'>tmr_timer</a></span>(<span class='fl'>18.9</span>))</div><div class='output co'>#&gt; 00:00:19</div><div class='input'><span class='fu'><a href='https://rdrr.io/pkg/hmstimer/man/tmr_round.html'>tmr_round</a></span>(<span class='fu'><a href='https://rdrr.io/pkg/hmstimer/man/tmr_timer.html'>tmr_timer</a></span>(<span class='fl'>18.9</span>), <span class='fl'>1</span>)</div><div class='output co'>#&gt; 00:00:18.9</div><div class='input'><span class='fu'><a href='https://rdrr.io/pkg/hmstimer/man/tmr_round.html'>tmr_round</a></span>(<span class='fu'><a href='https://rdrr.io/pkg/hmstimer/man/tmr_timer.html'>tmr_timer</a></span>(<span class='fl'>18.9</span>), <span class='op'>-</span><span class='fl'>1</span>)</div><div class='output co'>#&gt; 00:00:20</div><div class='input'><span class='fu'><a href='https://rdrr.io/pkg/hmstimer/man/tmr_round.html'>tmr_round</a></span>(<span class='fu'><a href='https://rdrr.io/pkg/hmstimer/man/tmr_timer.html'>tmr_timer</a></span>(<span class='fl'>121</span>), <span class='op'>-</span><span class='fl'>2</span>) <span class='co'># 121 is rounded to 100 seconds</span></div><div class='output co'>#&gt; 00:01:40</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

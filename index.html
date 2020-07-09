@@ -75,33 +75,37 @@
 
 <p><code>hmstimer</code> is an R package to track elapsed clock time using a <a href="https://github.com/tidyverse/hms">hms::hms</a> scalar, which if running has an attribute named start that specifies the system time when the timer was started.</p>
 <p>The elapsed time is the value of the scalar plus the difference between the current system time and the system time when the timer was started.</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">hmstimer</span>)
+<div class="sourceCode" id="cb1"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw">hmstimer</span>)
 
-<span class="no">tmr</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/tmr_timer.html">tmr_timer</a></span>(<span class="kw">seconds</span> <span class="kw">=</span> <span class="fl">125</span>, <span class="kw">start</span> <span class="kw">=</span> <span class="fl">TRUE</span>)
-<span class="no">tmr</span>
+<span class="kw">tmr</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/tmr_timer.html">tmr_timer</a></span>(seconds = <span class="fl">125</span>, start = <span class="fl">TRUE</span>)
+<span class="kw">tmr</span>
 <span class="co">#&gt; 00:02:05</span>
-<span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span>(<span class="no">tmr</span>)
+<span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span>(<span class="kw">tmr</span>)
 <span class="co">#&gt; 00:02:05.005813</span>
-<span class="no">tmr</span>
+<span class="kw">tmr</span>
 <span class="co">#&gt; 00:02:05</span>
-<span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span>(<span class="no">tmr</span>)
+<span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span>(<span class="kw">tmr</span>)
 <span class="co">#&gt; 00:02:05.010475</span>
 
-<span class="no">tmr</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/tmr_stop.html">tmr_stop</a></span>(<span class="no">tmr</span>)
+<span class="kw">tmr</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/tmr_stop.html">tmr_stop</a></span>(<span class="kw">tmr</span>)
 
-<span class="no">tmr</span>
+<span class="kw">tmr</span>
 <span class="co">#&gt; 00:02:05.013098</span>
-<span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span>(<span class="no">tmr</span>)
+<span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span>(<span class="kw">tmr</span>)
 <span class="co">#&gt; 00:02:05.013098</span>
 
-<span class="fu"><a href="reference/tmr_format.html">tmr_format</a></span>(<span class="no">tmr</span>, <span class="kw">digits</span> <span class="kw">=</span> <span class="fl">4</span>)
-<span class="co">#&gt; [1] "00:02:05.0131"</span></pre></div>
+<span class="fu"><a href="reference/tmr_format.html">tmr_format</a></span>(<span class="kw">tmr</span>, digits = <span class="fl">4</span>)
+<span class="co">#&gt; [1] "00:02:05.0131"</span>
+</pre></div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p>To install the latest development version from <a href="https://github.com/poissonconsulting/hmstimer">GitHub</a></p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="co"># install.packages("remotes")</span>
-<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"poissonconsulting/hmstimer"</span>)</pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit">
+<span class="co"># install.packages("remotes")</span>
+<span class="kw">remotes</span>::<span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"poissonconsulting/hmstimer"</span>)
+</pre></div>
 </div>
 <div id="contribution" class="section level2">
 <h2 class="hasAnchor">
