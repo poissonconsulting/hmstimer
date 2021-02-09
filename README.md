@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![Lifecycle:
-maturing](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![R build
 status](https://github.com/poissonconsulting/hmstimer/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/hmstimer/actions)
 [![Codecov test
@@ -35,21 +35,21 @@ tmr <- tmr_timer(seconds = 125, start = TRUE)
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.005813
+#> 00:02:05.003489
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.010475
+#> 00:02:05.005042
 
 tmr <- tmr_stop(tmr)
 
 tmr
-#> 00:02:05.013098
+#> 00:02:05.005855
 tmr_elapsed(tmr)
-#> 00:02:05.013098
+#> 00:02:05.005855
 
 tmr_format(tmr, digits = 4)
-#> [1] "00:02:05.0131"
+#> [1] "00:02:05.0059"
 ```
 
 ## Installation
