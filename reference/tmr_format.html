@@ -46,6 +46,8 @@ after rounding it to the number of digits." />
 
 
 
+
+
 <!-- mathjax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script>
@@ -80,12 +82,6 @@ after rounding it to the number of digits." />
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
@@ -117,7 +113,7 @@ after rounding it to the number of digits." />
 after rounding it to the number of digits.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>tmr_format</span>(<span class='kw'>x</span>, digits = <span class='fl'>3</span>)</pre>
+    <pre class="usage"><span class='fu'>tmr_format</span><span class='op'>(</span><span class='va'>x</span>, digits <span class='op'>=</span> <span class='fl'>3</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -146,7 +142,9 @@ after rounding it to the number of digits.</p>
 <code><a href='tmr_round.html'>tmr_round</a>()</code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>tmr_format</span>(<span class='fu'><a href='tmr_timer.html'>tmr_timer</a></span>(<span class='fl'>61.66</span>))</div><div class='output co'>#&gt; [1] "00:01:01.660"</div><div class='input'><span class='fu'>tmr_format</span>(<span class='fu'><a href='tmr_timer.html'>tmr_timer</a></span>(<span class='fl'>61.66</span>), digits = <span class='fl'>0</span>)</div><div class='output co'>#&gt; [1] "00:01:02"</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>tmr_format</span><span class='op'>(</span><span class='fu'><a href='tmr_timer.html'>tmr_timer</a></span><span class='op'>(</span><span class='fl'>61.66</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] "00:01:01.660"</div><div class='input'><span class='fu'>tmr_format</span><span class='op'>(</span><span class='fu'><a href='tmr_timer.html'>tmr_timer</a></span><span class='op'>(</span><span class='fl'>61.66</span><span class='op'>)</span>, digits <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] "00:01:02"</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -162,7 +160,7 @@ after rounding it to the number of digits.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.9000.</p>
 </div>
 
       </footer>
