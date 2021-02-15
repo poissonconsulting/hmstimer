@@ -1,5 +1,3 @@
-context("round")
-
 test_that("tmr_round", {
   expect_identical(tmr_round(tmr_timer()), tmr_timer())
   expect_identical(tmr_round(tmr_timer(1)), tmr_timer(1))

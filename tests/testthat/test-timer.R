@@ -1,5 +1,3 @@
-context("timer")
-
 test_that("tmr_timer", {
   expect_is(tmr_timer(), c("hms", "timediff"))
 

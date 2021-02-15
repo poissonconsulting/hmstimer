@@ -1,5 +1,3 @@
-context("ceiling")
-
 test_that("tmr_ceiling", {
   expect_identical(tmr_ceiling(tmr_timer()), tmr_timer())
   expect_identical(tmr_ceiling(tmr_timer(1)), tmr_timer(1))

@@ -1,5 +1,3 @@
-context("tmr_reset")
-
 test_that("tmr_reset", {
   expect_identical(tmr_reset(tmr_timer(1)), tmr_timer())
   expect_true(tmr_is_stopped(tmr_reset(tmr_timer())))

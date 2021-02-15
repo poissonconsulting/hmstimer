@@ -1,5 +1,3 @@
-context("floor")
-
 test_that("tmr_floor", {
   expect_identical(tmr_floor(tmr_timer()), tmr_timer())
   expect_identical(tmr_floor(tmr_timer(1)), tmr_timer(1))
