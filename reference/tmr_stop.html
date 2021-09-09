@@ -8,6 +8,13 @@
 
 <title>Stop hms Timer — tmr_stop • hmstimer</title>
 
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -41,6 +48,7 @@
 
 <meta property="og:title" content="Stop hms Timer — tmr_stop" />
 <meta property="og:description" content="Stops a hms_timer() after updating it to the elapsed time." />
+<meta property="og:image" content="/logo.png" />
 
 
 
@@ -117,7 +125,7 @@
     <p>Stops a <code><a href='hms-timer.html'>hms_timer()</a></code> after updating it to the elapsed time.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>tmr_stop</span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span></pre>
+    <div class="ref-usage sourceCode"><pre class='sourceCode r'><code><span class='fu'>tmr_stop</span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span></code></pre></div>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -146,11 +154,13 @@ simply issues a warning and returns the original object.</p>
 <code><a href='tmr_timer.html'>tmr_timer</a>()</code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='va'>tmr</span> <span class='op'>&lt;-</span> <span class='fu'>tmr_stop</span><span class='op'>(</span><span class='fu'><a href='tmr_timer.html'>tmr_timer</a></span><span class='op'>(</span>start <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span>
-<span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='fu'><a href='tmr_elapsed.html'>tmr_elapsed</a></span><span class='op'>(</span><span class='va'>tmr</span><span class='op'>)</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; 00:00:00.000027</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/Sys.sleep.html'>Sys.sleep</a></span><span class='op'>(</span><span class='fl'>0.01</span><span class='op'>)</span>
-<span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='fu'><a href='tmr_elapsed.html'>tmr_elapsed</a></span><span class='op'>(</span><span class='va'>tmr</span><span class='op'>)</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; 00:00:00.000027</div></pre>
+    <div class="ref-examples sourceCode"><pre class='sourceCode r'><code><span class='r-in'><span class='va'>tmr</span> <span class='op'>&lt;-</span> <span class='fu'>tmr_stop</span><span class='op'>(</span><span class='fu'><a href='tmr_timer.html'>tmr_timer</a></span><span class='op'>(</span>start <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span><span class='op'>)</span></span>
+<span class='r-in'><span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='fu'><a href='tmr_elapsed.html'>tmr_elapsed</a></span><span class='op'>(</span><span class='va'>tmr</span><span class='op'>)</span><span class='op'>)</span></span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 00:00:00.000066</span>
+<span class='r-in'><span class='fu'><a href='https://rdrr.io/r/base/Sys.sleep.html'>Sys.sleep</a></span><span class='op'>(</span><span class='fl'>0.01</span><span class='op'>)</span></span>
+<span class='r-in'><span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='fu'><a href='tmr_elapsed.html'>tmr_elapsed</a></span><span class='op'>(</span><span class='va'>tmr</span><span class='op'>)</span><span class='op'>)</span></span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 00:00:00.000066</span>
+</code></pre></div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -162,11 +172,11 @@ simply issues a warning and returns the original object.</p>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Joe Thorley, Poisson Consulting.</p>
+  <p><p>Developed by Joe Thorley, Poisson Consulting.</p></p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.9000.</p>
+  <p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 1.6.1.9001.</p></p>
 </div>
 
       </footer>
