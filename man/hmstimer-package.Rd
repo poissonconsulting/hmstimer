@@ -6,6 +6,8 @@
 \alias{hmstimer-package}
 \title{hmstimer: 'hms' Based Timer}
 \description{
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
 Tracks elapsed clock time using a `hms::hms()` scalar, 
     which if running has an attribute named start 
     that specifies the system time when the timer was started.

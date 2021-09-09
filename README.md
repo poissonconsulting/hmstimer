@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# hmstimer
+# hmstimer <img src="man/figures/logo.png" align="right" />
 
 <!-- badges: start -->
 
@@ -35,21 +35,21 @@ tmr <- tmr_timer(seconds = 125, start = TRUE)
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.003489
+#> 00:02:05.00365
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.005042
+#> 00:02:05.007984
 
 tmr <- tmr_stop(tmr)
 
 tmr
-#> 00:02:05.005855
+#> 00:02:05.009108
 tmr_elapsed(tmr)
-#> 00:02:05.005855
+#> 00:02:05.009108
 
 tmr_format(tmr, digits = 4)
-#> [1] "00:02:05.0059"
+#> [1] "00:02:05.0091"
 ```
 
 ## Installation
