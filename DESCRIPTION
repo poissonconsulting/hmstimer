@@ -18,13 +18,10 @@ License: MIT + file LICENSE
 Depends:
     R (>= 3.3)
 Imports:
-    hms,
-    lifecycle
+    hms
 Suggests: 
     covr,
     testthat
-RdMacros: 
-    lifecycle
 Encoding: UTF-8
 Language: en-US
 Roxygen: list(markdown = TRUE)

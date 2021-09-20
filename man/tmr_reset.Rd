@@ -4,14 +4,12 @@
 \alias{tmr_reset}
 \title{Reset hms Timer}
 \usage{
-tmr_reset(x, seconds = 0, start = FALSE)
+tmr_reset(x, seconds = 0)
 }
 \arguments{
 \item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 
 \item{seconds}{A non-negative numeric scalar of the initial number of seconds.}
-
-\item{start}{A flag indicating whether to start the timer.}
 }
 \value{
 A \code{\link[=hms_timer]{hms_timer()}}.
