@@ -8,12 +8,11 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-Tracks elapsed clock time using a `hms::hms()` scalar, 
-    which if running has an attribute named start 
-    that specifies the system time when the timer was started.
-    The elapsed time is the value of the scalar 
-    plus the difference between the current system time 
-    and the system time when the timer was started.
+Tracks elapsed clock time using a `hms::hms()` scalar, which
+    if running has an attribute named start that specifies the system time
+    when the timer was started.  The elapsed time is the value of the
+    scalar plus the difference between the current system time and the
+    system time when the timer was started.
 }
 \author{
 \strong{Maintainer}: Joe Thorley \email{joe@poissonconsulting.ca} (\href{https://orcid.org/0000-0002-7683-4592}{ORCID})
