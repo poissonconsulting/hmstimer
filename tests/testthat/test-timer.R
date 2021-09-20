@@ -1,5 +1,5 @@
 test_that("tmr_timer", {
-  expect_is(tmr_timer(), c("hms", "timediff"))
+  expect_s3_class(tmr_timer(), c("hms", "timediff"))
 
   x <- tmr_timer(3)
   expect_identical(x, hms::as_hms(x))
@@ -18,7 +18,7 @@ test_that("tmr_timer", {
   expect_error(tmr_timer(0, c(TRUE, FALSE)), "`start` must be a scalar[.]$")
 
   x <- tmr_timer(0, start = TRUE)
-  expect_is(attr(x, "start"), "numeric")
+  expect_type(attr(x, "start"), "double")
 })
 
 test_that("tmr_is_started", {
