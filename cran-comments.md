@@ -1,12 +1,12 @@
 ## Test environments
 
-* OS X (local) - release
-* Ubuntu (travis) - oldrelease, release and devel
-* Windows (appveyor) - release
-* Windows (win-builder) - release and devel
-* Ubuntu (rhub) - release
-* Fedora (rhub) - devel
-* Windows (rhub) - devel 
+release 4.1.1
+
+* OSX (local) - release
+* OSX (actions) - release
+* Ubuntu (actions) - 3.3 to 3.6, oldrel, release and devel
+* Windows (actions) - release
+* Windows (winbuilder) - devel
 
 ## R CMD check results
 

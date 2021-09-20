@@ -4,22 +4,16 @@
 
 - Removed deprecated `start = FALSE` argument from `tmr_reset()`.
 
-
-# hmstimer 0.1.0.9000
-
-- Same as previous version.
-
-
 # hmstimer 0.1.0
 
-- Hard deprecated `start` argument to `tmr_reset()`.
+- Hard deprecated `start = FALSE` argument from `tmr_reset()`.
 - Added `tmr_format()`.
 - Added `tmr_round()`, `tmr_floor()` and `tmr_ceiling()`.
 - Switched to tidyverse style error and warning messages.
 
 # hmstimer 0.0.2
 
-- Replaced hms::as.hms with hms::as_hms for hms 0.5.0.
+- Replaced `hms::as.hms` with `hms::as_hms` for hms 0.5.0.
 
 # hmstimer 0.0.1
 
