@@ -18,13 +18,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="hms Based Timer">
-<meta property="og:description" content="
-    Tracks elapsed clock time using a `hms::hms()` scalar, 
-    which if running has an attribute named start 
-    that specifies the system time when the timer was started.
-    The elapsed time is the value of the scalar 
-    plus the difference between the current system time 
-    and the system time when the timer was started.">
+<meta property="og:description" content="Tracks elapsed clock time using a `hms::hms()` scalar, which
+    if running has an attribute named start that specifies the system time
+    when the timer was started.  The elapsed time is the value of the
+    scalar plus the difference between the current system time and the
+    system time when the timer was started.">
 <meta property="og:image" content="/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -86,21 +84,19 @@
 <span class="va">tmr</span>
 <span class="co">#&gt; 00:02:05</span>
 <span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span>
-<span class="co">#&gt; 00:02:05.00365</span>
+<span class="co">#&gt; 00:02:05.003955</span>
 <span class="va">tmr</span>
 <span class="co">#&gt; 00:02:05</span>
 <span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span>
-<span class="co">#&gt; 00:02:05.007984</span>
-
+<span class="co">#&gt; 00:02:05.010815</span>
 <span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/tmr_stop.html">tmr_stop</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span>
 
 <span class="va">tmr</span>
-<span class="co">#&gt; 00:02:05.009108</span>
+<span class="co">#&gt; 00:02:05.012567</span>
 <span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span>
-<span class="co">#&gt; 00:02:05.009108</span>
-
+<span class="co">#&gt; 00:02:05.012567</span>
 <span class="fu"><a href="reference/tmr_format.html">tmr_format</a></span><span class="op">(</span><span class="va">tmr</span>, digits <span class="op">=</span> <span class="fl">4</span><span class="op">)</span>
-<span class="co">#&gt; [1] "00:02:05.0091"</span></code></pre></div>
+<span class="co">#&gt; [1] "00:02:05.0126"</span></code></pre></div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor" aria-hidden="true"></a>Installation</h2>
@@ -160,10 +156,9 @@
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://lifecycle.r-lib.org/articles/stages.html#stable" class="external-link"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
-<li><a href="https://github.com/poissonconsulting/hmstimer/actions" class="external-link"><img src="https://github.com/poissonconsulting/hmstimer/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
+<li><a href="https://github.com/poissonconsulting/hmstimer/actions" class="external-link"><img src="https://github.com/poissonconsulting/hmstimer/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="https://codecov.io/gh/poissonconsulting/hmstimer?branch=master" class="external-link"><img src="https://codecov.io/gh/poissonconsulting/hmstimer/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
 <li><a href="https://opensource.org/licenses/MIT" class="external-link"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a></li>
-<li><a href="https://CRAN.R-project.org/package=hmstimer" class="external-link"><img src="https://tinyverse.netlify.com/badge/hmstimer" alt="tinyverse status"></a></li>
 <li><a href="https://cran.r-project.org/package=hmstimer" class="external-link"><img src="https://www.r-pkg.org/badges/version/hmstimer" alt="CRAN status"></a></li>
 </ul>
 </div>

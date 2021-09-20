@@ -158,16 +158,16 @@ is assigned an attribute named start of the current system time.</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <div class="ref-examples sourceCode"><pre class='sourceCode r'><code><span class='r-in'><span class='va'>tmr</span> <span class='op'>&lt;-</span> <span class='fu'><a href='tmr_start.html'>tmr_start</a></span><span class='op'>(</span><span class='fu'><a href='tmr_timer.html'>tmr_timer</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></span>
 <span class='r-in'><span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='fu'>tmr_elapsed</span><span class='op'>(</span><span class='va'>tmr</span><span class='op'>)</span><span class='op'>)</span></span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span> 00:00:00.001142</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 00:00:00.001188</span>
 <span class='r-in'><span class='fu'><a href='https://rdrr.io/r/base/Sys.sleep.html'>Sys.sleep</a></span><span class='op'>(</span><span class='fl'>0.01</span><span class='op'>)</span></span>
 <span class='r-in'><span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='fu'>tmr_elapsed</span><span class='op'>(</span><span class='va'>tmr</span><span class='op'>)</span><span class='op'>)</span></span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span> 00:00:00.026001</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 00:00:00.014827</span>
 <span class='r-in'><span class='va'>tmr</span> <span class='op'>&lt;-</span> <span class='fu'><a href='tmr_stop.html'>tmr_stop</a></span><span class='op'>(</span><span class='va'>tmr</span><span class='op'>)</span></span>
 <span class='r-in'><span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='fu'>tmr_elapsed</span><span class='op'>(</span><span class='va'>tmr</span><span class='op'>)</span><span class='op'>)</span></span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span> 00:00:00.027734</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 00:00:00.017109</span>
 <span class='r-in'><span class='fu'><a href='https://rdrr.io/r/base/Sys.sleep.html'>Sys.sleep</a></span><span class='op'>(</span><span class='fl'>0.01</span><span class='op'>)</span></span>
 <span class='r-in'><span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='fu'>tmr_elapsed</span><span class='op'>(</span><span class='va'>tmr</span><span class='op'>)</span><span class='op'>)</span></span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span> 00:00:00.027734</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> 00:00:00.017109</span>
 </code></pre></div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
