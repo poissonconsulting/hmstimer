@@ -108,3 +108,13 @@ test_that("tmr_elapsed", {
   expect_gte(as.numeric(tmr), 1)
   expect_identical(tmr_elapsed(tmr), tmr)
 })
+
+test_that("tmr_print", {
+  tmr <- tmr_timer(start = TRUE)
+  expect_true(tmr_is_started(tmr))
+  elapsed <- tmr_print(tmr)
+  expect_type(elapsed, "character")
+  tmr <- tmr_stop(tmr)
+  expect_identical(tmr_print(tmr), tmr)  
+  expect_type(tmr, "double")
+})
