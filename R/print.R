@@ -16,7 +16,8 @@
 tmr_print <- function(x) {
   chk_x(x)
   if (!tmr_is_started(x)) {
-    return(x)
+    print(x)
+    return(invisible(x))
   }
 
   sys_time <- as.double(Sys.time())
@@ -24,10 +25,10 @@ tmr_print <- function(x) {
   start <- as_hms(sys_time - as.double(x))
   
   start <- format(structure(start, class = "POSIXct", tzone = "UTC"), "%T")
-  x <- format(structure(x, class = "POSIXct", tzone = "UTC"), "%T")
+  time_passed <- format(structure(x, class = "POSIXct", tzone = "UTC"), "%T")
   sys_time <- format(structure(sys_time, class = "POSIXct", tzone = "UTC"), "%T")
-  x <- paste(start, " (+", x, " => ", sys_time, ")", sep = "")
-  x
+  time_passed <- paste(start, " (+", time_passed, " => ", sys_time, ")", sep = "")
+  
+  print(time_passed)
+  return(invisible(x))
 }
-
-
