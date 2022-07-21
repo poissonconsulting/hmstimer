@@ -20,12 +20,14 @@ tmr_print <- function(x) {
     return(invisible(x))
   }
 
+  x <- tmr_elapsed(x)
+  
   sys_time <- as.double(Sys.time())
-  x <- tmr_ceiling(tmr_elapsed(x))
-  start <- as_hms(sys_time - as.double(x))
+  time_passed <- tmr_ceiling(tmr_elapsed(x))
+  start <- as_hms(sys_time - as.double(time_passed))
   
   start <- format(structure(start, class = "POSIXct", tzone = "UTC"), "%T")
-  time_passed <- format(structure(x, class = "POSIXct", tzone = "UTC"), "%T")
+  time_passed <- format(structure(time_passed, class = "POSIXct", tzone = "UTC"), "%T")
   sys_time <- format(structure(sys_time, class = "POSIXct", tzone = "UTC"), "%T")
   time_passed <- paste(start, " (+", time_passed, " => ", sys_time, ")", sep = "")
   
