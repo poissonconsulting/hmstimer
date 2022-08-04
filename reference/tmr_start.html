@@ -49,17 +49,20 @@ start of the current system time.</p>
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">tmr_start</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tmr_start</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>x</dt>
 <dd><p>A <code><a href="hms-timer.html">hms_timer()</a></code>.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>A started <code><a href="hms-timer.html">hms_timer()</a></code>.</p>
+    
+
+<p>A started <code><a href="hms-timer.html">hms_timer()</a></code>.</p>
     </div>
     <div id="details">
     <h2>Details</h2>
@@ -72,6 +75,7 @@ simply issues a warning and returns the original object.</p>
 <code><a href="tmr_elapsed.html">tmr_elapsed</a>()</code>,
 <code><a href="tmr_is_started.html">tmr_is_started</a>()</code>,
 <code><a href="tmr_is_stopped.html">tmr_is_stopped</a>()</code>,
+<code><a href="tmr_print.html">tmr_print</a>()</code>,
 <code><a href="tmr_reset.html">tmr_reset</a>()</code>,
 <code><a href="tmr_stop.html">tmr_stop</a>()</code>,
 <code><a href="tmr_timer.html">tmr_timer</a>()</code></p></div>
@@ -79,12 +83,12 @@ simply issues a warning and returns the original object.</p>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu">tmr_start</span><span class="op">(</span><span class="fu"><a href="tmr_timer.html">tmr_timer</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu"><a href="tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.001212</span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html" class="external-link">Sys.sleep</a></span><span class="op">(</span><span class="fl">0.01</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu"><a href="tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.07594</span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu">tmr_start</span><span class="op">(</span><span class="fu"><a href="tmr_timer.html">tmr_timer</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu"><a href="tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.00127</span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html" class="external-link">Sys.sleep</a></span><span class="op">(</span><span class="fl">0.01</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu"><a href="tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.08896</span>
 </code></pre></div>
     </div>
   </div>
@@ -99,7 +103,7 @@ simply issues a warning and returns the original object.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.9000.</p>
 </div>
 
       </footer></div>
