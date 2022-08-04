@@ -31,6 +31,7 @@ Other start_stop:
 \code{\link{tmr_elapsed}()},
 \code{\link{tmr_is_started}()},
 \code{\link{tmr_is_stopped}()},
+\code{\link{tmr_print}()},
 \code{\link{tmr_reset}()},
 \code{\link{tmr_stop}()},
 \code{\link{tmr_timer}()}
