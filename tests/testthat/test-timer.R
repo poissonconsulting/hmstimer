@@ -108,26 +108,3 @@ test_that("tmr_elapsed", {
   expect_gte(as.numeric(tmr), 1)
   expect_identical(tmr_elapsed(tmr), tmr)
 })
-
-test_that("tmr_print", {
-  tmr <- tmr_timer(start = TRUE)
-  sys_time <- hms::as_hms(strftime(Sys.time(), format = "%H:%M:%S", tz = "UTC"))
-  start <- tmr_ceiling(hms::as_hms(sys_time - tmr_ceiling(tmr_elapsed(tmr))))
-  time_passed <- tmr_ceiling(tmr_elapsed(tmr))
-  output <- capture_output(tmr_print(tmr))
-  expect_output(print(output), paste("", start, " (+", time_passed, " => ", sys_time, ")", sep = ""), fixed = TRUE)
-  
-  tmr <- tmr_timer(start = TRUE)
-  x <- tmr_ceiling(tmr_elapsed(tmr))
-  expect_snapshot_output(tmr)
-  
-  x <- tmr_print(tmr)
-  expect_type(x, "double")
-  expect_invisible(tmr_print(tmr))
-  
-  tmr <- tmr_stop(tmr)
-  x <- tmr_print(tmr)
-  expect_identical(tmr_print(tmr), x)  
-  expect_identical(tmr_is_started(tmr), FALSE)
-  expect_invisible(tmr_print(tmr))
-})

@@ -19,8 +19,6 @@ tmr_print <- function(x) {
     print(x)
     return(invisible(x))
   }
-
-  x <- tmr_elapsed(x)
   
   sys_time <- as.double(Sys.time())
   time_passed <- tmr_ceiling(tmr_elapsed(x))
