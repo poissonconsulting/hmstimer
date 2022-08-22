@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# hmstimer <img src="man/figures/logo.png" style='text-align: right;' />
+# hmstimer <img src="man/figures/logo.png"  style="float: right;" />
 
 <!-- badges: start -->
 
@@ -33,18 +33,18 @@ tmr <- tmr_timer(seconds = 125, start = TRUE)
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.004035
+#> 00:02:05.004018
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.005714
+#> 00:02:05.005698
 
 tmr <- tmr_stop(tmr)
 
 tmr
-#> 00:02:05.006612
+#> 00:02:05.006551
 tmr_elapsed(tmr)
-#> 00:02:05.006612
+#> 00:02:05.006551
 
 tmr_format(tmr, digits = 4)
 #> [1] "00:02:05.0066"
