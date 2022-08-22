@@ -70,7 +70,7 @@
       </header><div class="row">
   <div class="contents col-md-9">
 <div class="section level1">
-<div class="page-header"><h1 id="hmstimer-">hmstimer <img src="reference/figures/logo.png" align="right"><a class="anchor" aria-label="anchor" href="#hmstimer-"></a>
+<div class="page-header"><h1 id="hmstimer-img-srcmanfigureslogopng-styletext-align-right-">hmstimer &lt;img src=“man/figures/logo.png” style=’text-align: right; /&gt;<a class="anchor" aria-label="anchor" href="#hmstimer-img-srcmanfigureslogopng-styletext-align-right-"></a>
 </h1></div>
 <!-- badges: start -->
 <p><code>hmstimer</code> is an R package to track elapsed clock time using a <a href="https://github.com/tidyverse/hms" class="external-link">hms::hms</a> scalar, which if running has an attribute named start that specifies the system time when the timer was started.</p>
@@ -82,19 +82,21 @@
 <span><span class="va">tmr</span></span>
 <span><span class="co">#&gt; 00:02:05</span></span>
 <span><span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 00:02:05.003955</span></span>
+<span><span class="co">#&gt; 00:02:05.004932</span></span>
 <span><span class="va">tmr</span></span>
 <span><span class="co">#&gt; 00:02:05</span></span>
 <span><span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 00:02:05.010815</span></span>
+<span><span class="co">#&gt; 00:02:05.00712</span></span>
+<span></span>
 <span><span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/tmr_stop.html">tmr_stop</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">tmr</span></span>
-<span><span class="co">#&gt; 00:02:05.012567</span></span>
+<span><span class="co">#&gt; 00:02:05.008335</span></span>
 <span><span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 00:02:05.012567</span></span>
+<span><span class="co">#&gt; 00:02:05.008335</span></span>
+<span></span>
 <span><span class="fu"><a href="reference/tmr_format.html">tmr_format</a></span><span class="op">(</span><span class="va">tmr</span>, digits <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "00:02:05.0126"</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] "00:02:05.0083"</span></span></code></pre></div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -165,6 +167,7 @@
 <li><a href="https://codecov.io/gh/poissonconsulting/hmstimer?branch=master" class="external-link"><img src="https://codecov.io/gh/poissonconsulting/hmstimer/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
 <li><a href="https://opensource.org/licenses/MIT" class="external-link"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a></li>
 <li><a href="https://cran.r-project.org/package=hmstimer" class="external-link"><img src="https://www.r-pkg.org/badges/version/hmstimer" alt="CRAN status"></a></li>
+<li><a href="https://github.com/poissonconsulting/hmstimer/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/poissonconsulting/hmstimer/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 </ul>
 </div>
 
