@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# hmstimer <img src="man/figures/logo.png" align="right" />
+# hmstimer \<img src=“man/figures/logo.png” style=’text-align: right; /\>
 
 <!-- badges: start -->
 
@@ -15,6 +15,7 @@ MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org
 [![CRAN
 status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.org/package=hmstimer)
 ![CRAN downloads](https://cranlogs.r-pkg.org/badges/hmstimer)
+[![R-CMD-check](https://github.com/poissonconsulting/hmstimer/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/poissonconsulting/hmstimer/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 `hmstimer` is an R package to track elapsed clock time using a
@@ -32,19 +33,21 @@ tmr <- tmr_timer(seconds = 125, start = TRUE)
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.003955
+#> 00:02:05.004932
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.010815
+#> 00:02:05.00712
+
 tmr <- tmr_stop(tmr)
 
 tmr
-#> 00:02:05.012567
+#> 00:02:05.008335
 tmr_elapsed(tmr)
-#> 00:02:05.012567
+#> 00:02:05.008335
+
 tmr_format(tmr, digits = 4)
-#> [1] "00:02:05.0126"
+#> [1] "00:02:05.0083"
 ```
 
 ## Installation
