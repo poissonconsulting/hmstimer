@@ -1,25 +1,25 @@
 destination: docs
 
 reference:
-- title: Start/Stop Timer
-  desc: Functions to start or stop timer
+- title: Create Timer
+  desc: Functions to create, start, stop or reset timer
   contents:
-  - '`hms-timer`'
-  - '`tmr_reset`'
+  - '`tmr_timer`'
   - '`tmr_start`'
   - '`tmr_stop`'
-  - '`tmr_timer`'
+  - '`tmr_reset`'
+  - '`hms_timer`'
 - title: Round Timer
   desc: Functions to round timer
   contents:
-  - '`tmr_ceiling`'
-  - '`tmr_floor`'
-  - '`tmr_format`'
   - '`tmr_round`'
+  - '`tmr_floor`'
+  - '`tmr_ceiling`'
 - title: Evaluate Timer
-  desc: Functions to evaluate and check status of timer
+  desc: Functions to evaluate, check and print timer
   contents:
-  - '`tmr_elapsed`'
   - '`tmr_is_started`'
   - '`tmr_is_stopped`'
+  - '`tmr_elapsed`'
   - '`tmr_print`'
+  - '`tmr_format`'
