@@ -15,8 +15,8 @@ Tracks elapsed clock time using a `hms::hms()` scalar, which if running has an a
 
 Other contributors:
 \itemize{
-  \item Poisson Consulting [copyright holder, funder]
   \item Nadine Hussein \email{nadine@poissonconsulting.ca} (\href{https://orcid.org/0000-0003-4470-8361}{ORCID}) [contributor]
+  \item Poisson Consulting [copyright holder, funder]
 }
 
 }

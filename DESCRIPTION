@@ -15,7 +15,7 @@ Description: Tracks elapsed clock time using a `hms::hms()` scalar, which
     system time when the timer was started.
 License: MIT + file LICENSE
 Depends:
-    R (>= 3.3)
+    R (>= 3.4)
 Imports:
     hms
 Suggests: 
