@@ -43,7 +43,7 @@
     </div>
 
     <div class="ref-description">
-    <p>Returns the elapsed time for a <code><a href="hms-timer.html">hms_timer()</a></code> as a <code><a href="hms-timer.html">hms_timer()</a></code>.</p>
+    <p>Returns the elapsed time for a <code><a href="hms_timer.html">hms_timer()</a></code> as a <code><a href="hms_timer.html">hms_timer()</a></code>.</p>
     </div>
 
     <div id="ref-usage">
@@ -53,20 +53,20 @@
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>x</dt>
-<dd><p>A <code><a href="hms-timer.html">hms_timer()</a></code>.</p></dd>
+<dd><p>A <code><a href="hms_timer.html">hms_timer()</a></code>.</p></dd>
 
 </dl></div>
     <div id="value">
     <h2>Value</h2>
     
 
-<p>A <code><a href="hms-timer.html">hms_timer()</a></code> of the elapsed time.</p>
+<p>A <code><a href="hms_timer.html">hms_timer()</a></code> of the elapsed time.</p>
     </div>
     <div id="details">
     <h2>Details</h2>
     <p>The elapsed time is the value of the scalar plus the difference
 between the current system time and the system time when the timer was started.</p>
-<p>If the original <code><a href="hms-timer.html">hms_timer()</a></code> was running then the new <code><a href="hms-timer.html">hms_timer()</a></code>
+<p>If the original <code><a href="hms_timer.html">hms_timer()</a></code> was running then the new <code><a href="hms_timer.html">hms_timer()</a></code>
 is assigned an attribute named start of the current system time.</p>
     </div>
     <div id="see-also">
@@ -85,16 +85,16 @@ is assigned an attribute named start of the current system time.</p>
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu"><a href="tmr_start.html">tmr_start</a></span><span class="op">(</span><span class="fu"><a href="tmr_timer.html">tmr_timer</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu">tmr_elapsed</span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.001367</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.001243</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html" class="external-link">Sys.sleep</a></span><span class="op">(</span><span class="fl">0.01</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu">tmr_elapsed</span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.029175</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.01943</span>
 <span class="r-in"><span><span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu"><a href="tmr_stop.html">tmr_stop</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu">tmr_elapsed</span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.031641</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.021677</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html" class="external-link">Sys.sleep</a></span><span class="op">(</span><span class="fl">0.01</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu">tmr_elapsed</span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.031641</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.021677</span>
 </code></pre></div>
     </div>
   </div>

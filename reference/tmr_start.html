@@ -44,7 +44,7 @@ start of the current system time."><meta property="og:image" content="/logo.png"
     </div>
 
     <div class="ref-description">
-    <p>Starts a <code><a href="hms-timer.html">hms_timer()</a></code> by adding an attribute named
+    <p>Starts a <code><a href="hms_timer.html">hms_timer()</a></code> by adding an attribute named
 start of the current system time.</p>
     </div>
 
@@ -55,18 +55,18 @@ start of the current system time.</p>
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>x</dt>
-<dd><p>A <code><a href="hms-timer.html">hms_timer()</a></code>.</p></dd>
+<dd><p>A <code><a href="hms_timer.html">hms_timer()</a></code>.</p></dd>
 
 </dl></div>
     <div id="value">
     <h2>Value</h2>
     
 
-<p>A started <code><a href="hms-timer.html">hms_timer()</a></code>.</p>
+<p>A started <code><a href="hms_timer.html">hms_timer()</a></code>.</p>
     </div>
     <div id="details">
     <h2>Details</h2>
-    <p>If the <code><a href="hms-timer.html">hms_timer()</a></code> is already started, the function
+    <p>If the <code><a href="hms_timer.html">hms_timer()</a></code> is already started, the function
 simply issues a warning and returns the original object.</p>
     </div>
     <div id="see-also">
@@ -85,10 +85,10 @@ simply issues a warning and returns the original object.</p>
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu">tmr_start</span><span class="op">(</span><span class="fu"><a href="tmr_timer.html">tmr_timer</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu"><a href="tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.001319</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.001403</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html" class="external-link">Sys.sleep</a></span><span class="op">(</span><span class="fl">0.01</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu"><a href="tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.045463</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.014967</span>
 </code></pre></div>
     </div>
   </div>
