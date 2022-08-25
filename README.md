@@ -7,15 +7,15 @@
 
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![R-CMD-check](https://github.com/poissonconsulting/hmstimer/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/hmstimer/actions)
+[![R-CMD-check](https://github.com/poissonconsulting/hmstimer/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/poissonconsulting/hmstimer/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
-coverage](https://codecov.io/gh/poissonconsulting/hmstimer/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/hmstimer?branch=master)
+coverage](https://codecov.io/gh/poissonconsulting/hmstimer/branch/main/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/hmstimer?branch=main)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.org/package=hmstimer)
 ![CRAN downloads](https://cranlogs.r-pkg.org/badges/hmstimer)
-[![R-CMD-check](https://github.com/poissonconsulting/hmstimer/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/poissonconsulting/hmstimer/actions/workflows/R-CMD-check.yaml)
+
 <!-- badges: end -->
 
 `hmstimer` is an R package to track elapsed clock time using a
@@ -33,21 +33,21 @@ tmr <- tmr_timer(seconds = 125, start = TRUE)
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.004018
+#> 00:02:05.004202
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.005698
+#> 00:02:05.005991
 
 tmr <- tmr_stop(tmr)
 
 tmr
-#> 00:02:05.006551
+#> 00:02:05.007028
 tmr_elapsed(tmr)
-#> 00:02:05.006551
+#> 00:02:05.007028
 
 tmr_format(tmr, digits = 4)
-#> [1] "00:02:05.0066"
+#> [1] "00:02:05.0070"
 ```
 
 ## Installation
