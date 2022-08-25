@@ -1,14 +1,13 @@
 Package: hmstimer
 Title: 'hms' Based Timer
 Version: 0.2.0
-Authors@R: 
-    c(person(given = "Joe",
-             family = "Thorley",
-             role = c("aut", "cre"),
-             email = "joe@poissonconsulting.ca",
-             comment = c(ORCID = "0000-0002-7683-4592")),
-      person(given = "Poisson Consulting",
-             role = c("cph", "fnd")))
+Authors@R: c(
+    person("Joe", "Thorley", , "joe@poissonconsulting.ca", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7683-4592")),
+    person("Poisson Consulting", role = c("cph", "fnd")),
+    person("Nadine", "Hussein", , "nadine@poissonconsulting.ca", role = "ctb",
+           comment = c(ORCID = "0000-0003-4470-8361"))
+  )
 Description: Tracks elapsed clock time using a `hms::hms()` scalar, which
     if running has an attribute named start that specifies the system time
     when the timer was started.  The elapsed time is the value of the
