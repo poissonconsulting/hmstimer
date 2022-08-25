@@ -73,7 +73,7 @@
 <div class="page-header"><h1 id="hmstimer-">hmstimer <img src="reference/figures/logo.png" style="float: right;"><a class="anchor" aria-label="anchor" href="#hmstimer-"></a>
 </h1></div>
 <!-- badges: start -->
-<!-- badges: end --><p><code>hmstimer</code> is an R package to track elapsed clock time using a <a href="https://github.com/tidyverse/hms" class="external-link">hms::hms</a> scalar, which if running has an attribute named start that specifies the system time when the timer was started.</p>
+<p><code>hmstimer</code> is an R package to track elapsed clock time using a <a href="https://github.com/tidyverse/hms" class="external-link">hms::hms</a> scalar, which if running has an attribute named start that specifies the system time when the timer was started.</p>
 <p>The elapsed time is the value of the scalar plus the difference between the current system time and the system time when the timer was started.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">hmstimer</span><span class="op">)</span></span>
@@ -82,21 +82,21 @@
 <span><span class="va">tmr</span></span>
 <span><span class="co">#&gt; 00:02:05</span></span>
 <span><span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 00:02:05.004202</span></span>
+<span><span class="co">#&gt; 00:02:05.003945</span></span>
 <span><span class="va">tmr</span></span>
 <span><span class="co">#&gt; 00:02:05</span></span>
 <span><span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 00:02:05.005991</span></span>
+<span><span class="co">#&gt; 00:02:05.005618</span></span>
 <span></span>
 <span><span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/tmr_stop.html">tmr_stop</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">tmr</span></span>
-<span><span class="co">#&gt; 00:02:05.007028</span></span>
+<span><span class="co">#&gt; 00:02:05.006615</span></span>
 <span><span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 00:02:05.007028</span></span>
+<span><span class="co">#&gt; 00:02:05.006615</span></span>
 <span></span>
 <span><span class="fu"><a href="reference/tmr_format.html">tmr_format</a></span><span class="op">(</span><span class="va">tmr</span>, digits <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "00:02:05.0070"</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] "00:02:05.0066"</span></span></code></pre></div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
