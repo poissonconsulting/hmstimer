@@ -85,16 +85,16 @@ is assigned an attribute named start of the current system time.</p>
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu"><a href="tmr_start.html">tmr_start</a></span><span class="op">(</span><span class="fu"><a href="tmr_timer.html">tmr_timer</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu">tmr_elapsed</span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.001243</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.001246</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html" class="external-link">Sys.sleep</a></span><span class="op">(</span><span class="fl">0.01</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu">tmr_elapsed</span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.01943</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.015343</span>
 <span class="r-in"><span><span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu"><a href="tmr_stop.html">tmr_stop</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu">tmr_elapsed</span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.021677</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.017248</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html" class="external-link">Sys.sleep</a></span><span class="op">(</span><span class="fl">0.01</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu">tmr_elapsed</span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.021677</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:00.017248</span>
 </code></pre></div>
     </div>
   </div>
