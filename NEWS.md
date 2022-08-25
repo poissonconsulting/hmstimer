@@ -2,12 +2,7 @@
 
 # hmstimer 0.2.0
 
-- Added `tmr_print()`
-
-
-# hmstimer 0.1.1.9000
-
-- Same as previous version.
+- Added `tmr_print()`.
 
 
 # hmstimer 0.1.1
