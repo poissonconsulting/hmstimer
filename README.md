@@ -8,8 +8,7 @@
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![R-CMD-check](https://github.com/poissonconsulting/hmstimer/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/poissonconsulting/hmstimer/actions/workflows/R-CMD-check.yaml)
-[![Codecov test
-coverage](https://codecov.io/gh/poissonconsulting/hmstimer/branch/main/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/hmstimer?branch=main)
+[![codecov](https://codecov.io/gh/poissonconsulting/hmstimer/branch/main/graph/badge.svg?token=Jf1fnN2HRT)](https://app.codecov.io/gh/poissonconsulting/hmstimer)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![CRAN
@@ -32,21 +31,21 @@ tmr <- tmr_timer(seconds = 125, start = TRUE)
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.003945
+#> 00:02:05.004107
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.005618
+#> 00:02:05.005799
 
 tmr <- tmr_stop(tmr)
 
 tmr
-#> 00:02:05.006615
+#> 00:02:05.00676
 tmr_elapsed(tmr)
-#> 00:02:05.006615
+#> 00:02:05.00676
 
 tmr_format(tmr, digits = 4)
-#> [1] "00:02:05.0066"
+#> [1] "00:02:05.0068"
 ```
 
 ## Installation
