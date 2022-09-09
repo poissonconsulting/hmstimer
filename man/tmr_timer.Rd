@@ -4,12 +4,15 @@
 \alias{tmr_timer}
 \title{Create hms Timer}
 \usage{
-tmr_timer(seconds = 0, start = FALSE)
+tmr_timer(seconds = 0, start = FALSE, title = TRUE)
 }
 \arguments{
 \item{seconds}{A non-negative numeric scalar of the initial number of seconds.}
 
 \item{start}{A flag indicating whether to start the timer.}
+
+\item{title}{A flag specifing whether to add a title to the timer
+(based on \code{sys.call()}) or a string of the title to add.}
 }
 \value{
 A \code{\link[=hms_timer]{hms_timer()}}.
@@ -27,7 +30,6 @@ Other start_stop:
 \code{\link{tmr_elapsed}()},
 \code{\link{tmr_is_started}()},
 \code{\link{tmr_is_stopped}()},
-\code{\link{tmr_print}()},
 \code{\link{tmr_reset}()},
 \code{\link{tmr_start}()},
 \code{\link{tmr_stop}()}

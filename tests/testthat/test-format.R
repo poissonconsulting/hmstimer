@@ -22,3 +22,10 @@ test_that("tmr_round digit errors", {
   expect_error(tmr_format(tmr, digits = NA_real_), "`digits` must not be a missing value[.]$")
   expect_error(tmr_format(tmr, digits = 0.5), "`digits` must be a whole number[.]$")
 })
+
+test_that("tmr_format title", {
+  expect_identical(tmr_format(tmr_timer(0)), "00:00:00.000")
+  expect_identical(tmr_format(tmr_timer(0, title = "x"), title = TRUE), "00:00:00.000 [x]")
+  expect_identical(tmr_format(tmr_timer(0, title = "x"), title = FALSE), "00:00:00.000")
+  expect_identical(tmr_format(tmr_timer(0, title = FALSE), title = TRUE), "00:00:00.000 []")
+})

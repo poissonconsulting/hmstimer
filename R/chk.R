@@ -36,3 +36,14 @@ chk_x <- function(x) {
   if (length(x) != 1L) err("`x` must be a scalar.")
   err("`x` must not be a missing value.")
 }
+
+chk_flag_or_string <- function(title) {
+  if(is.atomic(title) && length(title) == 1L && !is.na(title) && class(title) %in% c("logical", "character")) {
+    return(invisible(title))
+  }
+  if(!is.atomic(title) || !class(title) %in% c("logical", "character")) {
+    err("`title` must be class logical or character")
+  }
+  if(length(title) != 1L) err("`title` must be a scalar")
+  err("`title` must not be a missing value.")
+}

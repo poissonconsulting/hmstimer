@@ -27,25 +27,31 @@ the current system time and the system time when the timer was started.
 ``` r
 library(hmstimer)
 
-tmr <- tmr_timer(seconds = 125, start = TRUE)
+tmr <- tmr_timer(seconds = 125, start = TRUE, title = "tmr2")
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.004107
+#> 00:02:05.004543
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.005799
+#> 00:02:05.006269
+
+tmr_print(tmr)
+#> [1] "22:11:46 (+00:02:06 => 22:13:52) [tmr2]"
 
 tmr <- tmr_stop(tmr)
 
 tmr
-#> 00:02:05.00676
+#> 00:02:05.024644
 tmr_elapsed(tmr)
-#> 00:02:05.00676
+#> 00:02:05.024644
 
 tmr_format(tmr, digits = 4)
-#> [1] "00:02:05.0068"
+#> [1] "00:02:05.0246"
+
+tmr_print(tmr)
+#> [1] "00:02:05.025 [tmr2]"
 ```
 
 ## Installation

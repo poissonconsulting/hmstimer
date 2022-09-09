@@ -4,10 +4,12 @@
 \alias{tmr_print}
 \title{Print hms Timer}
 \usage{
-tmr_print(x)
+tmr_print(x, title = TRUE)
 }
 \arguments{
 \item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
+
+\item{title}{A flag indicating whether to print the timer with a title as the system call for where the timer was created or a string of the title to use.}
 }
 \value{
 A character string.
@@ -25,13 +27,7 @@ x <- tmr_start(tmr_timer())
 tmr_print(x)
 }
 \seealso{
-Other start_stop: 
-\code{\link{tmr_elapsed}()},
-\code{\link{tmr_is_started}()},
-\code{\link{tmr_is_stopped}()},
-\code{\link{tmr_reset}()},
-\code{\link{tmr_start}()},
-\code{\link{tmr_stop}()},
-\code{\link{tmr_timer}()}
+Other print: 
+\code{\link{tmr_title}()}
 }
-\concept{start_stop}
+\concept{print}
