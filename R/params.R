@@ -5,5 +5,6 @@
 #' @param title A flag indicating whether to print the timer with a title as the system call for where the timer was created or a string of the title to use.
 #' @param digits A whole number of the number of decimal places.
 #' @keywords internal
+#' @param envir The environment to use for scoping
 #' @name params
 NULL

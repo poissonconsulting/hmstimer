@@ -17,5 +17,5 @@ tmr_timer <- function(seconds = 0, start = FALSE, title = TRUE) {
   chk_start(start)
   chk_flag_or_string(title)
   
-  tmr(seconds, start, title)
+  tmr_(seconds = seconds, start = start, title = title)
 }

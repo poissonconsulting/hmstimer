@@ -32,21 +32,20 @@ The elapsed time is the value of the scalar plus the difference between the curr
 ```{r}
 library(hmstimer)
 
-tmr <- tmr_timer(seconds = 125, start = TRUE, title = "tmr2")
-tmr
-tmr_elapsed(tmr)
-tmr
-tmr_elapsed(tmr)
+tmr <- tmr_timer(start = TRUE, title = "tmr2")
 
+Sys.sleep(1)
+
+tmr
+tmr_elapsed(tmr)
+tmr_format(tmr, digits = 4)
 tmr_print(tmr)
 
 tmr <- tmr_stop(tmr)
 
 tmr
 tmr_elapsed(tmr)
-
 tmr_format(tmr, digits = 4)
-
 tmr_print(tmr)
 ```
 

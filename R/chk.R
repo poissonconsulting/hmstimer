@@ -47,3 +47,10 @@ chk_flag_or_string <- function(title) {
   if(length(title) != 1L) err("`title` must be a scalar")
   err("`title` must not be a missing value.")
 }
+
+chk_env <- function(env) {
+  if(is.environment(env)) {
+    return(invisible(env))
+  }
+  err("`env` must be an environment.")
+}

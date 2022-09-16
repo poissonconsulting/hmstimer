@@ -13,6 +13,8 @@
 \item{title}{A flag indicating whether to print the timer with a title as the system call for where the timer was created or a string of the title to use.}
 
 \item{digits}{A whole number of the number of decimal places.}
+
+\item{envir}{The environment to use for scoping}
 }
 \description{
 #' Parameter Descriptions for hmstimer Functions
