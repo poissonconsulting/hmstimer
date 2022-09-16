@@ -8,27 +8,15 @@
 #'
 #' @inheritParams params
 #' @return A character string. 
-#' @family start_stop
+#' @family print
 #' @export
 #' @examples
 #' x <- tmr_start(tmr_timer())
 #' tmr_print(x)
-tmr_print <- function(x) {
+tmr_print <- function(x, title = TRUE) {
   chk_x(x)
-  if (!tmr_is_started(x)) {
-    print(x)
-    return(invisible(x))
-  }
+  chk_flag_or_string(title)
   
-  sys_time <- as.double(Sys.time())
-  time_passed <- tmr_ceiling(tmr_elapsed(x))
-  start <- as_hms(sys_time - as.double(time_passed))
-  
-  start <- format(structure(start, class = "POSIXct", tzone = "UTC"), "%T")
-  time_passed <- format(structure(time_passed, class = "POSIXct", tzone = "UTC"), "%T")
-  sys_time <- format(structure(sys_time, class = "POSIXct", tzone = "UTC"), "%T")
-  time_passed <- paste(start, " (+", time_passed, " => ", sys_time, ")", sep = "")
-  
-  print(time_passed)
+  print(format_(x, title = title))
   return(invisible(x))
 }
