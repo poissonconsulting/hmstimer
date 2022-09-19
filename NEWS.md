@@ -2,12 +2,7 @@
 
 # hmstimer 0.2.1
 
-- Same as previous version.
-
-
-# hmstimer 0.2.0.9000
-
-- Same as previous version.
+- Fix CRAN tests.
 
 
 # hmstimer 0.2.0
