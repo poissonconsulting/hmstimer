@@ -1,5 +1,21 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# hmstimer 0.2.1.9001
+
+## Continuous integration
+
+- Use action from actions-sync.
+
+- Use action from actions-sync.
+
+- Use action from dm.
+
+- Reusable workflows need a hook, vendoring the two actions needed for now.
+
+  This reverts commit bfe7970.
+
+- Try reusable workflow.
+
 # hmstimer 0.2.1.9000
 
 - Same as previous version.
