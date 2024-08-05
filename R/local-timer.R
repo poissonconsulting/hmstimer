@@ -14,15 +14,7 @@ local_timer <- function(.local_envir = rlang::caller_env()) {
     err("Package 'withr' must be installed to create a local_timer().")
   }
   
-  tmr <- tmr_(seconds  = 0, start = TRUE, caller = sys.call(-1))
+  tmr <- tmr_start(as_hms(0))
   withr::defer(message(tmr_format(tmr)), envir = .local_envir)
   invisible(tmr)
-}
-
-tmr_ <- function(seconds, start, caller = sys.call(-1)) {
-  seconds <- as.double(seconds)
-  
-  x <- as_hms(seconds)
-  if (start) x <- tmr_start(x)
-  x
 }
