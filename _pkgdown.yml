@@ -4,26 +4,26 @@ reference:
 - title: Create Timer
   desc: Functions to create, start, stop or reset timer
   contents:
-  - '`tmr_timer`'
-  - '`tmr_start`'
-  - '`tmr_stop`'
-  - '`tmr_reset`'
-  - '`hms_timer`'
+  - tmr_timer
+  - tmr_start
+  - tmr_stop
+  - tmr_reset
+  - hms_timer
 - title: Round Timer
   desc: Functions to round timer
   contents:
-  - '`tmr_round`'
-  - '`tmr_floor`'
-  - '`tmr_ceiling`'
+  - tmr_round
+  - tmr_floor
+  - tmr_ceiling
 - title: Evaluate Timer
   desc: Functions to evaluate, check and print timer
   contents:
-  - '`tmr_is_started`'
-  - '`tmr_is_stopped`'
-  - '`tmr_elapsed`'
-  - '`tmr_print`'
-  - '`tmr_format`'
+  - tmr_is_started
+  - tmr_is_stopped
+  - tmr_elapsed
+  - tmr_print
+  - tmr_format
 - title: Miscellaneous Functions
   desc: Miscellaneous functions
   contents:
-  - '`local_timer`'
+  - local_timer
