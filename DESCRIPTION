@@ -4,6 +4,8 @@ Version: 0.2.1.9000
 Authors@R: c(
     person("Joe", "Thorley", , "joe@poissonconsulting.ca", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7683-4592")),
+    person("Kirill", "Müller", , "kirill@cynkra.com", role = "aut",
+           comment = c(ORCID = "0000-0002-1416-3412")),
     person("Nadine", "Hussein", , "nadine@poissonconsulting.ca", role = "ctb",
            comment = c(ORCID = "0000-0003-4470-8361")),
     person("Poisson Consulting", role = c("cph", "fnd"))
@@ -15,7 +17,7 @@ Description: Tracks elapsed clock time using a `hms::hms()` scalar, which
     system time when the timer was started.
 License: MIT + file LICENSE
 Depends:
-    R (>= 3.4)
+    R (>= 3.6)
 Imports:
     hms
 Suggests: 
