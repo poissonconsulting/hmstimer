@@ -10,9 +10,7 @@
 local_timer <- function(.local_envir = rlang::caller_env()) {
   chk_env(.local_envir)
   
-  if(!requireNamespace("withr", quietly = TRUE)) {
-    err("Package 'withr' must be installed to create a local_timer().")
-  }
+  rlang::check_installed("withr", reason = "to create a local_timer().")
   
   tmr <- tmr_start(as_hms(0))
   withr::defer(message(tmr_format(tmr)), envir = .local_envir)
