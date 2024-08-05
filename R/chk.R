@@ -9,6 +9,13 @@ chk_digits <- function(digits) {
   err("`digits` must be a whole number.")
 }
 
+chk_env <- function(env) {
+  if(is.environment(env)) {
+    return(invisible(env))
+  }
+  err("`env` must be an environment.")
+}
+
 chk_seconds <- function(seconds) {
   if (is.numeric(seconds) && length(seconds) == 1L && !is.na(seconds)) {
     return(invisible())
