@@ -7,7 +7,7 @@
 local_timer(.local_envir = rlang::caller_env())
 }
 \arguments{
-\item{.local_envir}{The environment to use for scoping}
+\item{.local_envir}{The environment to use for scoping.}
 }
 \value{
 An invisible copy of the hmstimer object.
@@ -18,6 +18,7 @@ Local Timer
 \examples{
 fun <- function() {
   local_timer()
+  Sys.sleep(0.1)
 }
 fun()
 }

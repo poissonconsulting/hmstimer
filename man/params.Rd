@@ -4,7 +4,9 @@
 \alias{params}
 \title{Parameter Descriptions for hmstimer Functions}
 \arguments{
-\item{.local_envir}{The environment to use for scoping}
+\item{.local_envir}{The environment to use for scoping.}
+
+\item{code}{Code to time.}
 
 \item{digits}{A whole number of the number of decimal places.}
 

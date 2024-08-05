@@ -8,6 +8,7 @@
 #' @examples
 #' fun <- function() {
 #'   local_timer()
+#'   Sys.sleep(0.1)
 #' }
 #' fun()
 local_timer <- function(.local_envir = rlang::caller_env()) {
