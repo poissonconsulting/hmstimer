@@ -4,7 +4,7 @@ test_that("local_timer", {
     Sys.sleep(0.1)
     NULL
   }
-  expect_message(print(fun()), "^00:00:00.1\\d{2,2}\\s$")
+  expect_message(fun(), "^00:00:00\\.\\d{3,3}\\s$")
 })
 
 test_that("test_local_timer()", {
@@ -14,5 +14,5 @@ test_that("test_local_timer()", {
     NULL
   }
   
-  test_local_timer()
+  expect_message(test_local_timer(), "^00:00:00\\.\\d{3,3}\\s$")
 })
