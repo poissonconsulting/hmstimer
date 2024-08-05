@@ -10,6 +10,15 @@
 
 Tracks elapsed clock time using a `hms::hms()` scalar, which if running has an attribute named start that specifies the system time when the timer was started. The elapsed time is the value of the scalar plus the difference between the current system time and the system time when the timer was started.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://poissonconsulting.github.io/hmstimer/}
+  \item \url{https://github.com/poissonconsulting/hmstimer/}
+  \item Report bugs at \url{https://github.com/poissonconsulting/hmstimer/issues/}
+}
+
+}
 \author{
 \strong{Maintainer}: Joe Thorley \email{joe@poissonconsulting.ca} (\href{https://orcid.org/0000-0002-7683-4592}{ORCID})
 
