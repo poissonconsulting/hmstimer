@@ -2,11 +2,14 @@
 #'
 #' @inheritParams params
 #'
-#' @return xx
+#' @return An invisible copy of the hmstimer object.
 #' @export
 #'
 #' @examples
-#' local_timer()
+#' fun <- function() {
+#'   local_timer()
+#' }
+#' fun()
 local_timer <- function(.local_envir = rlang::caller_env()) {
   chk_env(.local_envir)
   
