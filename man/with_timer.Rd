@@ -10,17 +10,25 @@ with_timer(code)
 \item{code}{Code to time.}
 }
 \value{
-The result of executing code.
+The result of executing the code.
 }
 \description{
 With Timer
 }
 \examples{
-with_timer(Sys.sleep(0.1))
+fun <- function() {
+  Sys.sleep(0.1)
+  10
+}
+with_timer(fun())
 
 with_timer({
  for(i in 1:2) {
   Sys.sleep(0.1)
  }
+ 20
 })
+}
+\seealso{
+\code{\link[=local_timer]{local_timer()}}
 }

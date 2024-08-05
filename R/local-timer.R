@@ -1,14 +1,18 @@
 #' Local Timer
 #'
+#' Called for the side effect of providing a message of the time 
+#' required to execute the rest of the function.
+#' 
 #' @inheritParams params
+#' @seealso [with_timer()]
 #'
-#' @return An invisible copy of the hmstimer object.
 #' @export
 #'
 #' @examples
 #' fun <- function() {
 #'   local_timer()
 #'   Sys.sleep(0.1)
+#'   10
 #' }
 #' fun()
 local_timer <- function(.local_envir = rlang::caller_env()) {
