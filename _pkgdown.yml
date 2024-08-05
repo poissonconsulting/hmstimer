@@ -23,3 +23,7 @@ reference:
   - '`tmr_elapsed`'
   - '`tmr_print`'
   - '`tmr_format`'
+- title: Miscellaneous Functions
+  desc: Miscellaneous functions
+  contents:
+  - '`local_timer`'
