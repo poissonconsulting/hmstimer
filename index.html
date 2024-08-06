@@ -53,7 +53,14 @@
   <a href="news/index.html">Changelog</a>
 </li>
       </ul>
-<ul class="nav navbar-nav navbar-right"></ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+  <a href="https://github.com/poissonconsulting/hmstimer/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
+
+  </a>
+</li>
+      </ul>
 </div>
 <!--/.nav-collapse -->
   </div>
@@ -73,7 +80,7 @@
 <p><code>hmstimer</code> is an R package to track elapsed clock time using a <a href="https://github.com/tidyverse/hms" class="external-link">hms::hms</a> scalar, which if running has an attribute named start that specifies the system time when the timer was started.</p>
 <p>The elapsed time is the value of the scalar plus the difference between the current system time and the system time when the timer was started.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">hmstimer</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://poissonconsulting.github.io/hmstimer/" class="external-link">hmstimer</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/tmr_timer.html">tmr_timer</a></span><span class="op">(</span>seconds <span class="op">=</span> <span class="fl">125</span>, start <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span><span class="va">tmr</span></span>
@@ -121,6 +128,8 @@
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
 <li><a href="https://cloud.r-project.org/package=hmstimer" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/poissonconsulting/hmstimer/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/poissonconsulting/hmstimer/issues/" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
