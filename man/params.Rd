@@ -2,17 +2,19 @@
 % Please edit documentation in R/params.R
 \name{params}
 \alias{params}
-\title{#' Parameter Descriptions for hmstimer Functions}
+\title{Parameter Descriptions for hmstimer Functions}
 \arguments{
-\item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
+\item{.local_envir}{The environment to use for scoping}
+
+\item{digits}{A whole number of the number of decimal places.}
 
 \item{seconds}{A non-negative numeric scalar of the initial number of seconds.}
 
 \item{start}{A flag indicating whether to start the timer.}
 
-\item{digits}{A whole number of the number of decimal places.}
+\item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 }
 \description{
-#' Parameter Descriptions for hmstimer Functions
+Parameter Descriptions for hmstimer Functions
 }
 \keyword{internal}
