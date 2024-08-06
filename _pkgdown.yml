@@ -27,3 +27,4 @@ reference:
   desc: Miscellaneous functions
   contents:
   - local_timer
+  - with_timer
