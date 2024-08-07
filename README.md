@@ -32,31 +32,51 @@ tmr <- tmr_timer(seconds = 125, start = TRUE)
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.002097
+#> 00:02:05.002463
 tmr
 #> 00:02:05
 tmr_elapsed(tmr)
-#> 00:02:05.003157
+#> 00:02:05.00374
 
 tmr <- tmr_stop(tmr)
 
 tmr
-#> 00:02:05.003792
+#> 00:02:05.004366
 tmr_elapsed(tmr)
-#> 00:02:05.003792
+#> 00:02:05.004366
 
 tmr_format(tmr, digits = 4)
-#> [1] "00:02:05.0038"
+#> [1] "00:02:05.0044"
+
+with_timer({
+  Sys.sleep(1)
+  1
+})
+#> 00:00:01.005
+#> [1] 1
 ```
 
 ## Installation
+
+To install the latest release version from CRAN.
+
+``` r
+install.packages("hmstimer")
+```
+
+To install the latest development version from
+[r-universe](https://poissonconsulting.r-universe.dev/hmstimer).
+
+``` r
+install.packages("hmstimer", repos = c("https://poissonconsulting.r-universe.dev", "https://cloud.r-project.org"))
+```
 
 To install the latest development version from
 [GitHub](https://github.com/poissonconsulting/hmstimer)
 
 ``` r
-# install.packages("remotes")
-remotes::install_github("poissonconsulting/hmstimer")
+# install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch))
+pak::pak("poissonconsulting/hmstimer")
 ```
 
 ## Contribution
