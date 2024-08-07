@@ -18,7 +18,9 @@ tmr_stop <- function(x) {
     wrn("`x` is already stopped.")
     return(x)
   }
+  title <- tmr_title(x)
   x <- tmr_elapsed(x)
   attr(x, "start") <- NULL
+  tmr_title(x) <- title
   x
 }

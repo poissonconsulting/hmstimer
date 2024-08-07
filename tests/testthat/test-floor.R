@@ -16,3 +16,8 @@ test_that("tmr_floor elapsed", {
   Sys.sleep(0.001)
   expect_identical(tmr_floor(tmr_stop(tmr)), tmr_timer())
 })
+
+test_that("tmr_floor title preserved", {
+  tmr <- tmr_timer(start = TRUE, title = "a title")
+  expect_identical(tmr_title(tmr_floor(tmr)), "a title")
+})

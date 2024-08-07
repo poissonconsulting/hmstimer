@@ -12,5 +12,6 @@
 #' tmr_reset(tmr)
 tmr_reset <- function(x, seconds = 0) {
   start <- tmr_is_started(x)
-  tmr_timer(seconds = seconds, start = start)
+  title <- tmr_title(x)
+  tmr_timer(seconds = seconds, start = start, title = title)
 }

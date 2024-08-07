@@ -11,6 +11,7 @@
 #' tmr_floor(tmr_timer(122.1))
 tmr_floor <- function(x) {
   start <- tmr_is_started(x)
+  title <- tmr_title(x)
   x <- floor(as.numeric(tmr_elapsed(x)))
-  tmr_timer(x, start = start)
+  tmr_timer(x, start = start, title = title)
 }
