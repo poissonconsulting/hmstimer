@@ -4,7 +4,7 @@
 \alias{tmr_timer}
 \title{Create hms Timer}
 \usage{
-tmr_timer(seconds = 0, start = FALSE, ..., title = NULL)
+tmr_timer(seconds = 0, start = FALSE, ..., title = "")
 }
 \arguments{
 \item{seconds}{A non-negative numeric scalar of the initial number of seconds.}

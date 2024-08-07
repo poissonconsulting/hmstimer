@@ -9,6 +9,5 @@
 #' tmr_is_title(tmr_timer())
 #' tmr_is_title(tmr_timer(title = "my timer"))
 tmr_is_title <- function(x) {
-  chk_x(x)
-  !is.null(attr(x, "title"))
+  tmr_title(x) != ""
 }

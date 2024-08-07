@@ -13,7 +13,7 @@
 tmr_title <- function(x) {
   title <-  attr(x, "title")
   if(is.null(title)) return ("")
-  title
+  unname(title)
 }
 
 #' Set Title hms Timer
@@ -33,6 +33,7 @@ tmr_title <- function(x) {
 #' tmr_print(tmr)
 `tmr_title<-` <- function(x, value) {
   chk_title(value)
+  value <- unname(value)
   attr(x, "title") <- value
   x
 }
