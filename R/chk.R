@@ -25,6 +25,15 @@ chk_seconds <- function(seconds) {
   err("`seconds` must not be a missing value.")
 }
 
+chk_title <- function(title) {
+  if(is.null(title) || (is.character(title) && length(title) == 1L && !is.na(title))) {
+    return(invisible())
+  }
+  if (!is.character(title)) err("`title` must be numeric.")
+  if (length(title) != 1L) err("`title` must be a scalar.")
+  err("`title` must not be a missing value.")
+}
+
 chk_start <- function(start) {
   if (is.logical(start) && length(start) == 1L && !is.na(start)) {
     return(invisible())

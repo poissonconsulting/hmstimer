@@ -4,6 +4,8 @@
 \alias{params}
 \title{Parameter Descriptions for hmstimer Functions}
 \arguments{
+\item{...}{Must not be used.}
+
 \item{.local_envir}{The environment to use for scoping.}
 
 \item{code}{Code to time.}
@@ -14,9 +16,11 @@
 
 \item{start}{A flag indicating whether to start the timer.}
 
+\item{title}{A string of the title.}
+
 \item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 }
 \description{
 Parameter Descriptions for hmstimer Functions
 }
-\keyword{internal}
+\keyword{NoRd}

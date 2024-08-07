@@ -16,7 +16,8 @@
 tmr_print <- function(x) {
   chk_x(x)
   if (!tmr_is_started(x)) {
-    print(x)
+    time <- format(x)
+    print(time)
     return(invisible(x))
   }
 
