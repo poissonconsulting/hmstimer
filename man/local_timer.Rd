@@ -7,17 +7,20 @@
 local_timer(.local_envir = rlang::caller_env())
 }
 \arguments{
-\item{.local_envir}{The environment to use for scoping}
-}
-\value{
-An invisible copy of the hmstimer object.
+\item{.local_envir}{The environment to use for scoping.}
 }
 \description{
-Local Timer
+Called for the side effect of providing a message of the time
+required to execute the rest of the function.
 }
 \examples{
 fun <- function() {
   local_timer()
+  Sys.sleep(0.1)
+  10
 }
 fun()
+}
+\seealso{
+\code{\link[=with_timer]{with_timer()}}
 }
