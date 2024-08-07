@@ -8,10 +8,9 @@ test_that("with_timer", {
 
 test_that("with_timer", {
   expect_message(expect_identical(with_timer({
-    for(i in 1:2) {
+    for (i in 1:2) {
       Sys.sleep(0.1)
     }
     20
-  }
-    ), 20), "^00:00:00\\.\\d{3,3}\\s$")
+  }), 20), "^00:00:00\\.\\d{3,3}\\s$")
 })
