@@ -17,6 +17,7 @@ tmr_print <- function(x) {
   chk_x(x)
   if (!tmr_is_started(x)) {
     time <- format(x)
+    time <- add_title(time, attr(x, "title"))
     print(time)
     return(invisible(x))
   }
@@ -29,6 +30,8 @@ tmr_print <- function(x) {
   time_passed <- format(structure(time_passed, class = "POSIXct", tzone = "UTC"), "%T")
   sys_time <- format(structure(sys_time, class = "POSIXct", tzone = "UTC"), "%T")
   time_passed <- paste(start, " (+", time_passed, " => ", sys_time, ")", sep = "")
+
+  time_passed <- add_title(time_passed, attr(x, "title"))
 
   print(time_passed)
   return(invisible(x))
