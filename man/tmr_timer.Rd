@@ -9,7 +9,7 @@ tmr_timer(seconds = 0, start = FALSE, ..., title = "")
 \arguments{
 \item{seconds}{A non-negative numeric scalar of the initial number of seconds.}
 
-\item{start}{A flag indicating whether to start the timer.}
+\item{start}{A flag specifying whether to start the timer.}
 
 \item{...}{Must not be used.}
 

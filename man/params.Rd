@@ -12,9 +12,11 @@
 
 \item{digits}{A whole number of the number of decimal places.}
 
+\item{print_title}{A flag specifying whether to print the title.}
+
 \item{seconds}{A non-negative numeric scalar of the initial number of seconds.}
 
-\item{start}{A flag indicating whether to start the timer.}
+\item{start}{A flag specifying whether to start the timer.}
 
 \item{title}{A string of the title.}
 
