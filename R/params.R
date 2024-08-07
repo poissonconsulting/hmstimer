@@ -1,5 +1,5 @@
 #' Parameter Descriptions for hmstimer Functions
-#' 
+#'
 #' @param .local_envir The environment to use for scoping.
 #' @param code Code to time.
 #' @param digits A whole number of the number of decimal places.

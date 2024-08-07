@@ -13,9 +13,9 @@ Tracks elapsed clock time using a `hms::hms()` scalar, which if running has an a
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://github.com/poissonconsulting/hmstimer}
   \item \url{https://poissonconsulting.github.io/hmstimer/}
-  \item \url{https://github.com/poissonconsulting/hmstimer/}
-  \item Report bugs at \url{https://github.com/poissonconsulting/hmstimer/issues/}
+  \item Report bugs at \url{https://github.com/poissonconsulting/hmstimer/issues}
 }
 
 }

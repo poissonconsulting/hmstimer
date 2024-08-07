@@ -12,8 +12,7 @@ test_that("format", {
   expect_identical(tmr_format(tmr_timer(59.60001), digits = 0), "00:01:00")
   expect_identical(tmr_format(tmr_timer(58.40001), digits = 0), "00:00:58")
   expect_identical(tmr_format(tmr_timer(123.40001), digits = 0), "00:02:03")
-}
-)
+})
 
 test_that("tmr_round digit errors", {
   tmr <- tmr_timer()

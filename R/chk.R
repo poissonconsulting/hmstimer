@@ -1,5 +1,5 @@
 chk_digits <- function(digits) {
-  if(is.numeric(digits) && length(digits) == 1L && !anyNA(digits) &&
+  if (is.numeric(digits) && length(digits) == 1L && !anyNA(digits) &&
     (is.integer(digits) || digits == trunc(digits))) {
     return(invisible())
   }
@@ -10,7 +10,7 @@ chk_digits <- function(digits) {
 }
 
 chk_env <- function(env) {
-  if(is.environment(env)) {
+  if (is.environment(env)) {
     return(invisible(env))
   }
   err("`env` must be an environment.")

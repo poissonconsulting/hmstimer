@@ -1,4 +1,6 @@
-destination: docs
+url: https://poissonconsulting.github.io/hmstimer/
+template:
+  bootstrap: 5
 
 reference:
 - title: Create Timer

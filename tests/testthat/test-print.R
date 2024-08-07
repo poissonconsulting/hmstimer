@@ -9,7 +9,6 @@ test_that("test class", {
   x <- tmr_print(tmr)
   expect_s3_class(x, "hms")
   expect_s3_class(x, "difftime")
-  expect_invisible(tmr_print(tmr))  
-  expect_identical(tmr, x)  
+  expect_invisible(tmr_print(tmr))
+  expect_identical(tmr, x)
 })
-

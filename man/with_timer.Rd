@@ -23,10 +23,10 @@ fun <- function() {
 with_timer(fun())
 
 with_timer({
- for(i in 1:2) {
-  Sys.sleep(0.1)
- }
- 20
+  for (i in 1:2) {
+    Sys.sleep(0.1)
+  }
+  20
 })
 }
 \seealso{
