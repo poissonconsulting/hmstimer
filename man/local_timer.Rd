@@ -4,9 +4,13 @@
 \alias{local_timer}
 \title{Local Timer}
 \usage{
-local_timer(.local_envir = rlang::caller_env())
+local_timer(..., title = "", .local_envir = rlang::caller_env())
 }
 \arguments{
+\item{...}{Must not be used.}
+
+\item{title}{A string of the title.}
+
 \item{.local_envir}{The environment to use for scoping.}
 }
 \description{

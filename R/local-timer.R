@@ -15,12 +15,13 @@
 #'   10
 #' }
 #' fun()
-local_timer <- function(.local_envir = rlang::caller_env()) {
+local_timer <- function(..., title = "", .local_envir = rlang::caller_env()) {
+  chk_title(title)
   chk_env(.local_envir)
 
   rlang::check_installed("withr", reason = "to create a local_timer().")
 
-  tmr <- tmr_start(as_hms(0))
+  tmr <- tmr_start(as_hms(0), title = title)
   withr::defer(message(tmr_format(tmr)), envir = .local_envir)
   invisible(tmr)
 }

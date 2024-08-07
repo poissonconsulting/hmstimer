@@ -14,11 +14,15 @@
 #' print(tmr_elapsed(tmr))
 #' Sys.sleep(0.01)
 #' print(tmr_elapsed(tmr))
-tmr_start <- function(x) {
+tmr_start <- function(x, title = NULL) {
+  chk_title(title)
   if (tmr_is_started(x)) {
     wrn("`x` is already started.")
     return(x)
   }
   attr(x, "start") <- as.double(Sys.time())
+  if(!tmr_is_title(x) && !is.null(title)) {
+    tmr_title(x) <- title
+  }
   x
 }
