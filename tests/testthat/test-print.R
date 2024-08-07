@@ -28,6 +28,11 @@ test_that("test print started with title", {
   expect_output(tmr_print(tmr), "^\\[1\\] \"(\\d{2}:){2}\\d{2} \\(\\+(0{2}:){2}\\d{2} => (\\d{2}:){2}\\d{2}\\) \\[a title\\]\"$")
 })
 
+test_that("test print print_title = FALSE", {
+  tmr <- tmr_timer(start = TRUE, title = "a title")
+  expect_output(tmr_print(tmr, print_title = FALSE), "^\\[1\\] \"(\\d{2}:){2}\\d{2} \\(\\+(0{2}:){2}\\d{2} => (\\d{2}:){2}\\d{2}\\)\"$")
+})
+
 test_that("test print not started no title", {
   tmr <- tmr_timer()
   expect_output(tmr_print(tmr), "^\\[1\\] \"00:00:00\"$")

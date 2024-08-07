@@ -4,7 +4,7 @@
 \alias{tmr_print}
 \title{Print hms Timer}
 \usage{
-tmr_print(x)
+tmr_print(x, print_title = TRUE)
 }
 \arguments{
 \item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
