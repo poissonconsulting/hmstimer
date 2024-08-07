@@ -7,6 +7,7 @@
 #' @param seconds A non-negative numeric scalar of the initial number of seconds.
 #' @param start A flag indicating whether to start the timer.
 #' @param title A string of the title.
+#' @param value A string of the title.
 #' @param x A [hms_timer()].
 #' @keywords NoRd
 #' @name params

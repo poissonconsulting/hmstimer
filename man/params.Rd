@@ -18,6 +18,8 @@
 
 \item{title}{A string of the title.}
 
+\item{value}{A string of the title.}
+
 \item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 }
 \description{

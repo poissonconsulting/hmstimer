@@ -2,7 +2,7 @@
 % Please edit documentation in R/title.R
 \name{tmr_title}
 \alias{tmr_title}
-\title{Title hms Timer}
+\title{Get Title hms Timer}
 \usage{
 tmr_title(x)
 }
@@ -19,4 +19,7 @@ Returns a flag (character vector) of the title.
 tmr_title(tmr_timer())
 tmr_title(tmr_timer(title = ""))
 tmr_title(tmr_timer(title = "A Title"))
+}
+\seealso{
+\code{\link[=tmr_title<-]{tmr_title<-()}}
 }
