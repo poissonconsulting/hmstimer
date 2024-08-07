@@ -14,10 +14,20 @@ test_that("format", {
   expect_identical(tmr_format(tmr_timer(123.40001), digits = 0), "00:02:03")
 })
 
-test_that("tmr_round digit errors", {
+test_that("tmr_format digit errors", {
   tmr <- tmr_timer()
   expect_error(tmr_format(tmr, digits = 1:2), "^`digits` must be a scalar[.]$")
   expect_error(tmr_format(tmr, digits = NA), "^`digits` must be numeric[.]$")
   expect_error(tmr_format(tmr, digits = NA_real_), "`digits` must not be a missing value[.]$")
   expect_error(tmr_format(tmr, digits = 0.5), "`digits` must be a whole number[.]$")
+})
+
+test_that("format title", {
+  expect_identical(tmr_format(tmr_timer(title = "")), "00:00:00.000")
+  expect_identical(tmr_format(tmr_timer(title = NULL)), "00:00:00.000")
+  expect_identical(tmr_format(tmr_timer(title = "a title")), "00:00:00.000 [a title]")
+})
+
+test_that("format title print_title = FALSE", {
+  expect_identical(tmr_format(tmr_timer(title = "a title"), print_title = FALSE), "00:00:00.000")
 })
