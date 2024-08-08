@@ -29,4 +29,4 @@
 \description{
 Parameter Descriptions for hmstimer Functions
 }
-\keyword{NoRd}
+\keyword{internal}

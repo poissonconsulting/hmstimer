@@ -11,6 +11,6 @@
 #' @param title A string of the title.
 #' @param value A string of the title.
 #' @param x A [hms_timer()].
-#' @keywords NoRd
+#' @keywords internal
 #' @name params
 NULL

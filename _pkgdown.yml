@@ -25,6 +25,12 @@ reference:
   - tmr_elapsed
   - tmr_print
   - tmr_format
+- title: Title
+  desc: Functions to confirm, get and set title
+  contents:
+  - tmr_is_title
+  - tmr_title
+  - tmr_title<-
 - title: Miscellaneous Functions
   desc: Miscellaneous functions
   contents:
