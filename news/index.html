@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">hmstimer</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.1.9001</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,23 +32,24 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.2.1.9001" id="hmstimer-0219001">hmstimer 0.2.1.9001<a class="anchor" aria-label="anchor" href="#hmstimer-0219001"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.3.0" id="hmstimer-030">hmstimer 0.3.0<a class="anchor" aria-label="anchor" href="#hmstimer-030"></a></h2>
 <div class="section level3">
-<h3 id="continuous-integration-0-2-1-9001">Continuous integration<a class="anchor" aria-label="anchor" href="#continuous-integration-0-2-1-9001"></a></h3>
-<ul><li><p>Use action from actions-sync.</p></li>
-<li><p>Use action from actions-sync.</p></li>
-<li><p>Use action from dm.</p></li>
-<li>
-<p>Reusable workflows need a hook, vendoring the two actions needed for now.</p>
-<p>This reverts commit bfe7970.</p>
-</li>
-<li><p>Try reusable workflow.</p></li>
+<h3 id="features-0-3-0">Features<a class="anchor" aria-label="anchor" href="#features-0-3-0"></a></h3>
+<ul><li>Added functions to get, set and test if title
+<ul><li><code><a href="../reference/tmr_title.html">tmr_title()</a></code></li>
+<li><code>tmr_title&lt;-</code></li>
+<li><code><a href="../reference/tmr_is_titled.html">tmr_is_titled()</a></code></li>
+</ul></li>
+<li>Added <code>print_title = TRUE</code> argument to print/format functions
+<ul><li><code>tmr_print(print_title = TRUE)</code></li>
+<li><code>tmr_format(print_title = TRUE)</code></li>
+</ul></li>
+<li>Added functions to time individual functions or blocks of code
+<ul><li><code><a href="../reference/local_timer.html">local_timer()</a></code></li>
+<li><code><a href="../reference/with_timer.html">with_timer()</a></code></li>
+</ul></li>
 </ul></div>
 </div>
-    <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.2.1.9000" id="hmstimer-0219000">hmstimer 0.2.1.9000<a class="anchor" aria-label="anchor" href="#hmstimer-0219000"></a></h2>
-<ul><li>Same as previous version.</li>
-</ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.2.1" id="hmstimer-021">hmstimer 0.2.1<a class="anchor" aria-label="anchor" href="#hmstimer-021"></a></h2><p class="text-muted">CRAN release: 2022-09-20</p>
 <ul><li>Fix CRAN tests.</li>
