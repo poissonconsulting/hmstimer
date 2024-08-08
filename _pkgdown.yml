@@ -28,7 +28,7 @@ reference:
 - title: Title
   desc: Functions to confirm, get and set title
   contents:
-  - tmr_is_title
+  - tmr_is_titled
   - tmr_title
   - tmr_title<-
 - title: Miscellaneous Functions

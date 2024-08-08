@@ -6,8 +6,8 @@
 #' @return A flag (TRUE or FALSE).
 #' @export
 #' @examples
-#' tmr_is_title(tmr_timer())
-#' tmr_is_title(tmr_timer(title = "my timer"))
-tmr_is_title <- function(x) {
+#' tmr_is_titled(tmr_timer())
+#' tmr_is_titled(tmr_timer(title = "my timer"))
+tmr_is_titled <- function(x) {
   tmr_title(x) != ""
 }
