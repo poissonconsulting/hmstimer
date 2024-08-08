@@ -24,4 +24,6 @@
 #' @keywords internal
 #' @aliases parameters arguments args
 #' @usage NULL
+# nocov start 
 params <- function(...) NULL
+# nocov end
