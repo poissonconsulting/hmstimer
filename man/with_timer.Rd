@@ -7,7 +7,7 @@
 with_timer(code, ..., srcref = FALSE)
 }
 \arguments{
-\item{code}{Code to time.}
+\item{code}{A line or block of R code.}
 
 \item{...}{These dots are for future extensions and must be empty.}
 

@@ -9,7 +9,7 @@ tmr_round(x, digits = 0)
 \arguments{
 \item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 
-\item{digits}{A whole number of the number of decimal places.}
+\item{digits}{A count of the number of decimal places.}
 }
 \value{
 A \code{\link[=hms_timer]{hms_timer()}}.

@@ -2,15 +2,16 @@
 % Please edit documentation in R/params.R
 \name{params}
 \alias{params}
-\title{Default Parameter Descriptions}
+\alias{parameters}
+\alias{arguments}
+\alias{args}
+\title{Parameter Descriptions}
 \arguments{
 \item{...}{These dots are for future extensions and must be empty.}
 
-\item{.local_envir}{The environment to use for scoping.}
+\item{code}{A line or block of R code.}
 
-\item{code}{Code to time.}
-
-\item{digits}{A whole number of the number of decimal places.}
+\item{digits}{A count of the number of decimal places.}
 
 \item{print_title}{A flag specifying whether to print the title.}
 
@@ -25,9 +26,19 @@
 \item{value}{A string of the title.}
 
 \item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
+
+\item{.local_envir}{The environment to use for scoping.}
 }
 \description{
 Default parameter descriptions which may be overridden in individual
 functions.
+}
+\details{
+A flag is a non-missing logical scalar.
+
+A string is a non-missing character scalar.
+
+A count is a non-missing non-negative integer scalar or double
+scalar with no fractional part.
 }
 \keyword{internal}
