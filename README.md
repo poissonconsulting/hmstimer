@@ -20,6 +20,10 @@ status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.o
 `hmstimer` is an R package to track elapsed clock time using a
 [hms::hms](https://github.com/tidyverse/hms) scalar.
 
+`hmstimer` was originally developed to time Bayesian model runs. It
+should not be used to estimate how long extremely fast code takes to
+execute as the package code adds a small time cost.
+
 Create and start a timer with `tmr_timer(start = TRUE)`.
 
 ``` r
@@ -43,11 +47,11 @@ tmr <- tmr_timer(start = TRUE, title = "my timer")
 
 Sys.sleep(0.1)
 tmr_elapsed(tmr)
-#> 00:00:00.102337
+#> 00:00:00.103417
 
 Sys.sleep(0.1)
 tmr_elapsed(tmr)
-#> 00:00:00.211844
+#> 00:00:00.212112
 ```
 
 Stop the timer with `tmr_stop()`.
@@ -55,11 +59,11 @@ Stop the timer with `tmr_stop()`.
 ``` r
 tmr <- tmr_stop(tmr)
 tmr_elapsed(tmr)
-#> 00:00:00.220493
+#> 00:00:00.216109
 
 Sys.sleep(1)
 tmr_elapsed(tmr)
-#> 00:00:00.220493
+#> 00:00:00.216109
 ```
 
 Restart the timer with `tmr_start()`.
@@ -67,10 +71,10 @@ Restart the timer with `tmr_start()`.
 ``` r
 tmr <- tmr_start(tmr)
 tmr_elapsed(tmr)
-#> 00:00:00.221183
+#> 00:00:00.21697
 Sys.sleep(0.1)
 tmr_elapsed(tmr)
-#> 00:00:00.32875
+#> 00:00:00.324928
 ```
 
 There are several options for printing and formatting including coercing
@@ -79,11 +83,11 @@ to a hms object.
 ``` r
 tmr <- tmr_stop(tmr)
 print(tmr)
-#> 00:00:00.339606
+#> 00:00:00.333247
 tmr_print(tmr)
-#> [1] "00:00:00.339606 [my timer]"
+#> [1] "00:00:00.333247 [my timer]"
 tmr_format(tmr, digits = 5)
-#> [1] "00:00:00.33961 [my timer]"
+#> [1] "00:00:00.33325 [my timer]"
 ```
 
 If running `tmr_print()` behaves differently.
@@ -91,7 +95,7 @@ If running `tmr_print()` behaves differently.
 ``` r
 tmr <- tmr_start(tmr)
 tmr_print(tmr)
-#> [1] "01:10:56 (+00:00:01 => 01:10:57) [my timer]"
+#> [1] "14:44:58 (+00:00:01 => 14:44:59) [my timer]"
 ```
 
 The time for a block of code to complete can be printed using
@@ -103,7 +107,7 @@ with_timer({
   Sys.sleep(0.1)
   1 + 1
 })
-#> 00:00:00.208
+#> 00:00:00.207
 #> [1] 2
 ```
 

@@ -27,6 +27,7 @@ knitr::opts_chunk$set(
 `hmstimer` is an R package to 
 track elapsed clock time using a [hms::hms](https://github.com/tidyverse/hms) scalar.
 
+`hmstimer` was originally developed to time Bayesian model runs. It should not be used to estimate how long extremely fast code takes to execute as the package code adds a small time cost.
 
 Create and start a timer with `tmr_timer(start = TRUE)`.
 

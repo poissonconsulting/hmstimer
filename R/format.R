@@ -14,6 +14,8 @@
 #' tmr_format(tmr_timer(61.66), digits = 0)
 tmr_format <- function(x, digits = 3, ..., print_title = TRUE) {
   chk_digits(digits)
+  rlang::check_dots_empty(...)
+  
   if (digits < 0) err("`digits` must not be negative.")
 
   x <- tmr_round(x, digits = digits)

@@ -20,6 +20,7 @@
 #'   20
 #' })
 with_timer <- function(code, ..., srcref = FALSE) {
+  rlang::check_dots_empty(...)
   local_timer(srcref = srcref)
   force(code)
 }
