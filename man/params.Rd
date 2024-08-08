@@ -16,6 +16,8 @@
 
 \item{seconds}{A non-negative numeric scalar of the initial number of seconds.}
 
+\item{srcref}{A flag specifying whether to print the source reference.}
+
 \item{start}{A flag specifying whether to start the timer.}
 
 \item{title}{A string of the title.}

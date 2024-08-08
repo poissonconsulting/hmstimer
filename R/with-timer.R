@@ -19,7 +19,7 @@
 #'   }
 #'   20
 #' })
-with_timer <- function(code) {
-  local_timer()
+with_timer <- function(code, srcref = FALSE) {
+  local_timer(srcref = srcref)
   force(code)
 }
