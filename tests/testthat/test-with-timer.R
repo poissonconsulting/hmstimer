@@ -20,6 +20,7 @@ test_that("with_timer srcref = TRUE", {
     Sys.sleep(0.1)
     10
   }
+  # Can't do .+ to match file:line because in some settings no file/line info is present
   expect_message(expect_identical(with_timer(fun(), srcref = TRUE), 10), "^00:00:00\\.\\d{3,3} \\[.*:.*\\]\\s$")
 })
 
