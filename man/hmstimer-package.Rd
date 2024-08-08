@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Tracks elapsed clock time using a `hms::hms()` scalar, which if running has an attribute named start that specifies the system time when the timer was started. The elapsed time is the value of the scalar plus the difference between the current system time and the system time when the timer was started.
+Tracks elapsed clock time using a `hms::hms()` scalar. It was was originally developed to time Bayesian model runs. It should not be used to estimate how long extremely fast code takes to execute as the package code adds a small time cost.
 }
 \seealso{
 Useful links:

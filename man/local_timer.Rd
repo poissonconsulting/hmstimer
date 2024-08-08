@@ -4,9 +4,15 @@
 \alias{local_timer}
 \title{Local Timer}
 \usage{
-local_timer(.local_envir = rlang::caller_env())
+local_timer(..., title = "", srcref = TRUE, .local_envir = rlang::caller_env())
 }
 \arguments{
+\item{...}{These dots are for future extensions and must be empty.}
+
+\item{title}{A string of the title.}
+
+\item{srcref}{A flag specifying whether to print the source reference.}
+
 \item{.local_envir}{The environment to use for scoping.}
 }
 \description{

@@ -16,3 +16,8 @@ test_that("tmr_ceiling elapsed", {
   Sys.sleep(0.001)
   expect_identical(tmr_ceiling(tmr_stop(tmr)), tmr_timer(1))
 })
+
+test_that("tmr_ceiling title preserved", {
+  tmr <- tmr_timer(start = TRUE, title = "a title")
+  expect_identical(tmr_title(tmr_ceiling(tmr)), "a title")
+})

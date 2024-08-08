@@ -4,12 +4,16 @@
 \alias{tmr_format}
 \title{Format hms Timer}
 \usage{
-tmr_format(x, digits = 3)
+tmr_format(x, digits = 3, ..., print_title = TRUE)
 }
 \arguments{
 \item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 
-\item{digits}{A whole number of the number of decimal places.}
+\item{digits}{A count of the number of decimal places.}
+
+\item{...}{These dots are for future extensions and must be empty.}
+
+\item{print_title}{A flag specifying whether to print the title.}
 }
 \value{
 A character string.

@@ -22,3 +22,8 @@ test_that("tmr_round digits", {
   expect_identical(tmr_round(tmr_timer(1.09), digits = 1), tmr_timer(1.1))
   expect_identical(tmr_round(tmr_timer(1.09), digits = 2), tmr_timer(1.09))
 })
+
+test_that("tmr_round title preserved", {
+  tmr <- tmr_timer(start = TRUE, title = "a title")
+  expect_identical(tmr_title(tmr_round(tmr)), "a title")
+})

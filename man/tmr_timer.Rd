@@ -4,12 +4,16 @@
 \alias{tmr_timer}
 \title{Create hms Timer}
 \usage{
-tmr_timer(seconds = 0, start = FALSE)
+tmr_timer(seconds = 0, start = FALSE, ..., title = "")
 }
 \arguments{
 \item{seconds}{A non-negative numeric scalar of the initial number of seconds.}
 
-\item{start}{A flag indicating whether to start the timer.}
+\item{start}{A flag specifying whether to start the timer.}
+
+\item{...}{These dots are for future extensions and must be empty.}
+
+\item{title}{A string of the title.}
 }
 \value{
 A \code{\link[=hms_timer]{hms_timer()}}.
@@ -18,9 +22,10 @@ A \code{\link[=hms_timer]{hms_timer()}}.
 Creates a \code{\link[=hms_timer]{hms_timer()}}.
 }
 \examples{
-tmr <- tmr_timer()
-print(tmr)
-class(tmr)
+tmr_timer()
+tmr_timer(1, start = TRUE, title = "my timer")
+class(tmr_timer(2))
+str(tmr_timer(2, start = TRUE, title = "a timer"))
 }
 \seealso{
 Other start_stop: 

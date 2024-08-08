@@ -4,10 +4,14 @@
 \alias{tmr_print}
 \title{Print hms Timer}
 \usage{
-tmr_print(x)
+tmr_print(x, ..., print_title = TRUE)
 }
 \arguments{
 \item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
+
+\item{...}{These dots are for future extensions and must be empty.}
+
+\item{print_title}{A flag specifying whether to print the title.}
 }
 \value{
 A character string.

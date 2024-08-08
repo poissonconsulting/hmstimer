@@ -2,21 +2,43 @@
 % Please edit documentation in R/params.R
 \name{params}
 \alias{params}
-\title{Parameter Descriptions for hmstimer Functions}
+\alias{parameters}
+\alias{arguments}
+\alias{args}
+\title{Parameter Descriptions}
 \arguments{
-\item{.local_envir}{The environment to use for scoping.}
+\item{...}{These dots are for future extensions and must be empty.}
 
-\item{code}{Code to time.}
+\item{code}{A line or block of R code.}
 
-\item{digits}{A whole number of the number of decimal places.}
+\item{digits}{A count of the number of decimal places.}
+
+\item{print_title}{A flag specifying whether to print the title.}
 
 \item{seconds}{A non-negative numeric scalar of the initial number of seconds.}
 
-\item{start}{A flag indicating whether to start the timer.}
+\item{srcref}{A flag specifying whether to print the source reference.}
+
+\item{start}{A flag specifying whether to start the timer.}
+
+\item{title}{A string of the title.}
+
+\item{value}{A string of the title.}
 
 \item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
+
+\item{.local_envir}{The environment to use for scoping.}
 }
 \description{
-Parameter Descriptions for hmstimer Functions
+Default parameter descriptions which may be overridden in individual
+functions.
+}
+\details{
+A flag is a non-missing logical scalar.
+
+A string is a non-missing character scalar.
+
+A count is a non-missing non-negative integer scalar or double
+scalar with no fractional part.
 }
 \keyword{internal}
