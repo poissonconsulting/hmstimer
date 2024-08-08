@@ -54,9 +54,11 @@ between the current system time and the system time when the timer was started.<
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="fu"><a href="tmr_timer.html">tmr_timer</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  'hms' num 00:00:00</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  - attr(*, "units")= chr "secs"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  - attr(*, "title")= chr ""</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="fu"><a href="tmr_timer.html">tmr_timer</a></span><span class="op">(</span><span class="fl">1.5</span>, start <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  'hms' num 00:00:01.5</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  - attr(*, "units")= chr "secs"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  - attr(*, "title")= chr ""</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  - attr(*, "start")= num 1.72e+09</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="tmr_timer.html">tmr_timer</a></span><span class="op">(</span><span class="fl">1</span>, start <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
@@ -66,7 +68,7 @@ between the current system time and the system time when the timer was started.<
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:01</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu"><a href="tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:01.104649</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:01.1043</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 00:00:01</span>
 </code></pre></div>

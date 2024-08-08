@@ -41,7 +41,7 @@ timer was started and the current system time as an hms time.</p>
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tmr_print</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tmr_print</span><span class="op">(</span><span class="va">x</span>, <span class="va">...</span>, print_title <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -50,6 +50,14 @@ timer was started and the current system time as an hms time.</p>
 
 <dl><dt id="arg-x">x<a class="anchor" aria-label="anchor" href="#arg-x"></a></dt>
 <dd><p>A <code><a href="hms_timer.html">hms_timer()</a></code>.</p></dd>
+
+
+<dt id="arg--">...<a class="anchor" aria-label="anchor" href="#arg--"></a></dt>
+<dd><p>These dots are for future extensions and must be empty.</p></dd>
+
+
+<dt id="arg-print-title">print_title<a class="anchor" aria-label="anchor" href="#arg-print-title"></a></dt>
+<dd><p>A flag specifying whether to print the title.</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -77,7 +85,7 @@ between the current system time and the system time when the timer was started.<
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="tmr_start.html">tmr_start</a></span><span class="op">(</span><span class="fu"><a href="tmr_timer.html">tmr_timer</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu">tmr_print</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "18:10:23 (+00:00:01 =&gt; 18:10:24)"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "18:19:36 (+00:00:01 =&gt; 18:19:37)"</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
