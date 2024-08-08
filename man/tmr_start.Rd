@@ -4,10 +4,12 @@
 \alias{tmr_start}
 \title{Start hms Timer}
 \usage{
-tmr_start(x, title = NULL)
+tmr_start(x, ..., title = NULL)
 }
 \arguments{
 \item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
+
+\item{...}{Must not be used.}
 
 \item{title}{A string of the title.}
 }

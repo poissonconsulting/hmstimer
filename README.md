@@ -18,42 +18,93 @@ status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.o
 <!-- badges: end -->
 
 `hmstimer` is an R package to track elapsed clock time using a
-[hms::hms](https://github.com/tidyverse/hms) scalar, which if running
-has an attribute named start that specifies the system time when the
-timer was started.
+[hms::hms](https://github.com/tidyverse/hms) scalar.
 
-The elapsed time is the value of the scalar plus the difference between
-the current system time and the system time when the timer was started.
+Create and start a timer with `tmr_timer(start = TRUE)`.
 
 ``` r
 library(hmstimer)
 
-tmr <- tmr_timer(seconds = 125, start = TRUE)
-tmr
-#> 00:02:05
-tmr_elapsed(tmr)
-#> 00:02:05.002463
-tmr
-#> 00:02:05
-tmr_elapsed(tmr)
-#> 00:02:05.00374
+tmr <- tmr_timer(start = TRUE)
+Sys.sleep(0.1)
+str(tmr)
+#>  'hms' num 00:00:00
+#>  - attr(*, "units")= chr "secs"
+#>  - attr(*, "title")= chr ""
+#>  - attr(*, "start")= num 1.72e+09
+hms::as_hms(tmr)
+#> 00:00:00
+```
 
+Get the elapsed time with `tmr_elapsed()`. The title is optional.
+
+``` r
+tmr <- tmr_timer(start = TRUE, title = "my timer")
+
+Sys.sleep(0.1)
+tmr_elapsed(tmr)
+#> 00:00:00.102337
+
+Sys.sleep(0.1)
+tmr_elapsed(tmr)
+#> 00:00:00.211844
+```
+
+Stop the timer with `tmr_stop()`.
+
+``` r
 tmr <- tmr_stop(tmr)
-
-tmr
-#> 00:02:05.004366
 tmr_elapsed(tmr)
-#> 00:02:05.004366
+#> 00:00:00.220493
 
-tmr_format(tmr, digits = 4)
-#> [1] "00:02:05.0044"
+Sys.sleep(1)
+tmr_elapsed(tmr)
+#> 00:00:00.220493
+```
 
+Restart the timer with `tmr_start()`.
+
+``` r
+tmr <- tmr_start(tmr)
+tmr_elapsed(tmr)
+#> 00:00:00.221183
+Sys.sleep(0.1)
+tmr_elapsed(tmr)
+#> 00:00:00.32875
+```
+
+There are several options for printing and formatting including coercing
+to a hms object.
+
+``` r
+tmr <- tmr_stop(tmr)
+print(tmr)
+#> 00:00:00.339606
+tmr_print(tmr)
+#> [1] "00:00:00.339606 [my timer]"
+tmr_format(tmr, digits = 5)
+#> [1] "00:00:00.33961 [my timer]"
+```
+
+If running `tmr_print()` behaves differently.
+
+``` r
+tmr <- tmr_start(tmr)
+tmr_print(tmr)
+#> [1] "01:10:56 (+00:00:01 => 01:10:57) [my timer]"
+```
+
+The time for a block of code to complete can be printed using
+`with_timer()`.
+
+``` r
 with_timer({
-  Sys.sleep(1)
-  1
+  Sys.sleep(0.1)
+  Sys.sleep(0.1)
+  1 + 1
 })
-#> 00:00:01.005
-#> [1] 1
+#> 00:00:00.208
+#> [1] 2
 ```
 
 ## Installation

@@ -13,10 +13,10 @@
 #' @examples
 #' x <- tmr_start(tmr_timer())
 #' tmr_print(x)
-tmr_print <- function(x, print_title = TRUE) {
+tmr_print <- function(x, ..., print_title = TRUE) {
   chk_x(x)
   chk_flag(print_title, "print_title")
-  
+
   if (!tmr_is_started(x)) {
     time <- format(x)
     if(print_title) {

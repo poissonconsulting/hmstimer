@@ -12,7 +12,7 @@
 #' @examples
 #' tmr_format(tmr_timer(61.66))
 #' tmr_format(tmr_timer(61.66), digits = 0)
-tmr_format <- function(x, digits = 3, print_title = TRUE) {
+tmr_format <- function(x, digits = 3, ..., print_title = TRUE) {
   chk_digits(digits)
   if (digits < 0) err("`digits` must not be negative.")
 

@@ -4,10 +4,12 @@
 \alias{with_timer}
 \title{With Timer}
 \usage{
-with_timer(code, srcref = FALSE)
+with_timer(code, ..., srcref = FALSE)
 }
 \arguments{
 \item{code}{Code to time.}
+
+\item{...}{Must not be used.}
 
 \item{srcref}{A flag specifying whether to print the source reference.}
 }

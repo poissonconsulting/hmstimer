@@ -14,7 +14,7 @@
 #' print(tmr_elapsed(tmr))
 #' Sys.sleep(0.01)
 #' print(tmr_elapsed(tmr))
-tmr_start <- function(x, title = NULL) {
+tmr_start <- function(x, ..., title = NULL) {
   chk_title(title)
   if (tmr_is_started(x)) {
     wrn("`x` is already started.")
