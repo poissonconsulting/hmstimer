@@ -1,10 +1,6 @@
 as_hms <- function(x) {
-  x <- as.difftime(x, units = "secs")
-  class(x) <- c("hms", "difftime")
-  x
+  hms::new_hms(x)
 }
-
-is.hms <- function(x) inherits(x, "hms")
 
 err <- function(...) stop(..., call. = FALSE)
 
