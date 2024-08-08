@@ -1,25 +1,22 @@
-<!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
+<!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
-# hmstimer 0.2.1.9001
+# hmstimer 0.3.0
 
-## Continuous integration
+## Features
 
-- Use action from actions-sync.
-
-- Use action from actions-sync.
-
-- Use action from dm.
-
-- Reusable workflows need a hook, vendoring the two actions needed for now.
-
-  This reverts commit bfe7970.
-
-- Try reusable workflow.
-
-# hmstimer 0.2.1.9000
-
-- Same as previous version.
-
+- Added functions to get, set and test if title
+  - `tmr_title()`
+  - `tmr_title<-`
+  - `tmr_is_titled()`
+  
+- Added `print_title = TRUE` argument to print/format functions
+  - `tmr_print(print_title = TRUE)`
+  - `tmr_format(print_title = TRUE)`
+  
+- Added functions to time individual functions or blocks of code
+  - `local_timer()`
+  - `with_timer()`
+  
 
 # hmstimer 0.2.1
 
