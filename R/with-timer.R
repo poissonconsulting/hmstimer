@@ -1,6 +1,7 @@
 #' With Timer
 #'
 #' @inheritParams params
+#' @param title A flag specifying whether to add a title based on code.
 #'
 #' @return The result of executing the code.
 #' @seealso [local_timer()]
@@ -19,8 +20,15 @@
 #'   }
 #'   20
 #' })
-with_timer <- function(code, ..., srcref = FALSE) {
+with_timer <- function(code, ..., title = FALSE, srcref = FALSE) {
   rlang::check_dots_empty()
-  local_timer(srcref = srcref)
+  chk_flag(title)
+
+  if(title) {
+    title <- rlang::expr_label(rlang::enexpr(code))
+  } else {
+    title <- ""
+  }
+  local_timer(title = title, srcref = srcref)
   force(code)
 }
