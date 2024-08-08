@@ -1,4 +1,7 @@
-#' Parameter Descriptions for hmstimer Functions
+#' Default Parameter Descriptions
+#'
+#' Default parameter descriptions which may be overridden in individual
+#' functions.
 #'
 #' @inheritParams rlang::args_dots_empty
 #' @param .local_envir The environment to use for scoping.
@@ -12,5 +15,5 @@
 #' @param value A string of the title.
 #' @param x A [hms_timer()].
 #' @keywords internal
-#' @name params
-NULL
+#' @usage NULL
+params <- function(...) NULL

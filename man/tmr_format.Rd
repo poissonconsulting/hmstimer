@@ -11,7 +11,7 @@ tmr_format(x, digits = 3, ..., print_title = TRUE)
 
 \item{digits}{A whole number of the number of decimal places.}
 
-\item{...}{Must not be used.}
+\item{...}{These dots are for future extensions and must be empty.}
 
 \item{print_title}{A flag specifying whether to print the title.}
 }

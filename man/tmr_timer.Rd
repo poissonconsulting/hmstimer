@@ -11,7 +11,7 @@ tmr_timer(seconds = 0, start = FALSE, ..., title = "")
 
 \item{start}{A flag specifying whether to start the timer.}
 
-\item{...}{Must not be used.}
+\item{...}{These dots are for future extensions and must be empty.}
 
 \item{title}{A string of the title.}
 }

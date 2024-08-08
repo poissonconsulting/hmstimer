@@ -15,7 +15,7 @@
 #' tmr_print(x)
 tmr_print <- function(x, ..., print_title = TRUE) {
   chk_x(x)
-  rlang::check_dots_empty(...)
+  rlang::check_dots_empty()
   chk_flag(print_title, "print_title")
 
   if (!tmr_is_started(x)) {

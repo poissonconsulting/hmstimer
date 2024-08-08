@@ -9,7 +9,7 @@ tmr_start(x, ..., title = NULL)
 \arguments{
 \item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 
-\item{...}{Must not be used.}
+\item{...}{These dots are for future extensions and must be empty.}
 
 \item{title}{A string of the title.}
 }

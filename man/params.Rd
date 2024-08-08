@@ -2,9 +2,9 @@
 % Please edit documentation in R/params.R
 \name{params}
 \alias{params}
-\title{Parameter Descriptions for hmstimer Functions}
+\title{Default Parameter Descriptions}
 \arguments{
-\item{...}{Must not be used.}
+\item{...}{These dots are for future extensions and must be empty.}
 
 \item{.local_envir}{The environment to use for scoping.}
 
@@ -27,6 +27,7 @@
 \item{x}{A \code{\link[=hms_timer]{hms_timer()}}.}
 }
 \description{
-Parameter Descriptions for hmstimer Functions
+Default parameter descriptions which may be overridden in individual
+functions.
 }
 \keyword{internal}

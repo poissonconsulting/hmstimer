@@ -7,7 +7,7 @@
 local_timer(..., title = "", srcref = TRUE, .local_envir = rlang::caller_env())
 }
 \arguments{
-\item{...}{Must not be used.}
+\item{...}{These dots are for future extensions and must be empty.}
 
 \item{title}{A string of the title.}
 

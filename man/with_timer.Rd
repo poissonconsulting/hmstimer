@@ -9,7 +9,7 @@ with_timer(code, ..., srcref = FALSE)
 \arguments{
 \item{code}{Code to time.}
 
-\item{...}{Must not be used.}
+\item{...}{These dots are for future extensions and must be empty.}
 
 \item{srcref}{A flag specifying whether to print the source reference.}
 }

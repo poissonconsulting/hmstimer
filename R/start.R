@@ -15,7 +15,7 @@
 #' Sys.sleep(0.01)
 #' print(tmr_elapsed(tmr))
 tmr_start <- function(x, ..., title = NULL) {
-  rlang::check_dots_empty(...)
+  rlang::check_dots_empty()
   chk_title(title)
   if (tmr_is_started(x)) {
     wrn("`x` is already started.")

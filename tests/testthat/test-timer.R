@@ -26,3 +26,7 @@ test_that("tmr_timer title errors", {
   expect_error(tmr_timer(title = c("1",  "2")), "`title` must be a scalar\\.$")
   expect_error(tmr_timer(title = NA_character_), "`title` must not be a missing value\\.$")
 })
+
+test_that("tmr_timer dots empty", {
+  expect_error(tmr_timer(title2 = 1))
+})
