@@ -1,6 +1,6 @@
 #' Parameter Descriptions for hmstimer Functions
 #'
-#' @param ... Must not be used.
+#' @inheritParams rlang::args_dots_empty
 #' @param .local_envir The environment to use for scoping.
 #' @param code Code to time.
 #' @param digits A whole number of the number of decimal places.
