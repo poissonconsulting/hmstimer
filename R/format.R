@@ -15,7 +15,7 @@
 tmr_format <- function(x, digits = 3, ..., print_title = TRUE) {
   chk_digits(digits)
   rlang::check_dots_empty()
-  
+
   if (digits < 0) err("`digits` must not be negative.")
 
   x <- tmr_round(x, digits = digits)
@@ -26,7 +26,7 @@ tmr_format <- function(x, digits = 3, ..., print_title = TRUE) {
   msecs <- formatC(msecs, digits = digits, format = "f")
   msecs <- substr(msecs, 2, nchar(msecs))
   x <- paste0(x, msecs)
-  if(print_title) {
+  if (print_title) {
     x <- paste_title(x, title)
   }
   x

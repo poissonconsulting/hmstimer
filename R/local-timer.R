@@ -22,15 +22,15 @@ local_timer <- function(..., title = "", srcref = TRUE, .local_envir = rlang::ca
   chk_flag(srcref, "srcref")
 
   rlang::check_installed("withr", reason = "to create a local_timer().")
-  
-  
-  if(srcref) {
+
+
+  if (srcref) {
     caller <- sys.call()
     srcref <- utils::getSrcref(caller)
     file <- utils::getSrcFilename(srcref)
     file_line <- paste0(file, ":", srcref[[1]])
-    
-    if(!is.null(title) && title != "") {
+
+    if (!is.null(title) && title != "") {
       file_line <- paste0(file_line, " - ", title)
     }
   } else {

@@ -24,7 +24,7 @@ with_timer <- function(code, ..., title = FALSE, srcref = FALSE) {
   rlang::check_dots_empty()
   chk_flag(title)
 
-  if(title) {
+  if (title) {
     title <- rlang::expr_label(rlang::enexpr(code))
   } else {
     title <- ""

@@ -6,7 +6,7 @@
 #' A flag is a non-missing logical scalar.
 #'
 #' A string is a non-missing character scalar.
-#' 
+#'
 #' A count is a non-missing non-negative integer scalar or double
 #' scalar with no fractional part.
 #
@@ -24,6 +24,6 @@
 #' @keywords internal
 #' @aliases parameters arguments args
 #' @usage NULL
-# nocov start 
+# nocov start
 params <- function(...) NULL
 # nocov end

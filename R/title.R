@@ -11,8 +11,10 @@
 #' tmr_title(tmr_timer(title = ""))
 #' tmr_title(tmr_timer(title = "A Title"))
 tmr_title <- function(x) {
-  title <-  attr(x, "title")
-  if(is.null(title)) return ("")
+  title <- attr(x, "title")
+  if (is.null(title)) {
+    return("")
+  }
   unname(title)
 }
 

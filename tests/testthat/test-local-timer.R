@@ -13,7 +13,7 @@ test_that("test_local_timer()", {
     Sys.sleep(0.1)
     20
   }
-  
+
   expect_message(expect_identical(test_local_timer(), 20), "^00:00:00\\.\\d{3,3} \\[test-local-timer\\.R:12\\]\\s$")
 })
 
@@ -32,7 +32,7 @@ test_that("test_local_timer() title", {
     Sys.sleep(0.1)
     20
   }
-  
+
   expect_message(expect_identical(test_local_timer(), 20), "^00:00:00\\.\\d{3,3} \\[a title\\]\\s$")
 })
 
@@ -70,7 +70,7 @@ test_that("test_local_timer() title", {
     Sys.sleep(0.1)
     20
   }
-  
+
   expect_message(expect_identical(test_local_timer(), 20), "^00:00:00\\.\\d{3,3} \\[a title\\]\\s$")
 })
 

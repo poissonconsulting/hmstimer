@@ -22,7 +22,7 @@ tmr_start <- function(x, ..., title = NULL) {
     return(x)
   }
   attr(x, "start") <- as.double(Sys.time())
-  if(!tmr_is_titled(x) && !is.null(title)) {
+  if (!tmr_is_titled(x) && !is.null(title)) {
     tmr_title(x) <- title
   }
   x

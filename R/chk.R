@@ -26,7 +26,7 @@ chk_seconds <- function(seconds) {
 }
 
 chk_title <- function(title) {
-  if(is.null(title) || (is.character(title) && length(title) == 1L && !is.na(title))) {
+  if (is.null(title) || (is.character(title) && length(title) == 1L && !is.na(title))) {
     return(invisible())
   }
   if (!is.character(title)) err("`title` must be numeric.")
