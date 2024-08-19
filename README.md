@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# hmstimer <img src="man/figures/logo.png"  style="float: right;" />
+# ssdtools <img src="man/figures/logo.png" align="right" />
 
 <!-- badges: start -->
 
@@ -47,11 +47,11 @@ tmr <- tmr_timer(start = TRUE, title = "my timer")
 
 Sys.sleep(0.1)
 tmr_elapsed(tmr)
-#> 00:00:00.103417
+#> 00:00:00.106536
 
 Sys.sleep(0.1)
 tmr_elapsed(tmr)
-#> 00:00:00.212112
+#> 00:00:00.219374
 ```
 
 Stop the timer with `tmr_stop()`.
@@ -59,11 +59,11 @@ Stop the timer with `tmr_stop()`.
 ``` r
 tmr <- tmr_stop(tmr)
 tmr_elapsed(tmr)
-#> 00:00:00.216109
+#> 00:00:00.227311
 
 Sys.sleep(1)
 tmr_elapsed(tmr)
-#> 00:00:00.216109
+#> 00:00:00.227311
 ```
 
 Restart the timer with `tmr_start()`.
@@ -71,10 +71,10 @@ Restart the timer with `tmr_start()`.
 ``` r
 tmr <- tmr_start(tmr)
 tmr_elapsed(tmr)
-#> 00:00:00.21697
+#> 00:00:00.228075
 Sys.sleep(0.1)
 tmr_elapsed(tmr)
-#> 00:00:00.324928
+#> 00:00:00.338415
 ```
 
 There are several options for printing and formatting including coercing
@@ -83,11 +83,11 @@ to a hms object.
 ``` r
 tmr <- tmr_stop(tmr)
 print(tmr)
-#> 00:00:00.333247
+#> 00:00:00.352069
 tmr_print(tmr)
-#> [1] "00:00:00.333247 [my timer]"
+#> [1] "00:00:00.352069 [my timer]"
 tmr_format(tmr, digits = 5)
-#> [1] "00:00:00.33325 [my timer]"
+#> [1] "00:00:00.35207 [my timer]"
 ```
 
 If running `tmr_print()` behaves differently.
@@ -95,7 +95,7 @@ If running `tmr_print()` behaves differently.
 ``` r
 tmr <- tmr_start(tmr)
 tmr_print(tmr)
-#> [1] "14:44:58 (+00:00:01 => 14:44:59) [my timer]"
+#> [1] "19:57:37 (+00:00:01 => 19:57:38) [my timer]"
 ```
 
 The time for a block of code to complete can be printed using
@@ -107,7 +107,7 @@ with_timer({
   Sys.sleep(0.1)
   1 + 1
 })
-#> 00:00:00.207
+#> 00:00:00.211
 #> [1] 2
 ```
 
