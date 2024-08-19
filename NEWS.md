@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# hmstimer 0.3.0.9000
+
+- Same as previous version.
+
+
 # hmstimer 0.3.0
 
 ## Features
