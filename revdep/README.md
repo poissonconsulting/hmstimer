@@ -10,15 +10,15 @@
 |collate  |en_US.UTF-8                                |
 |ctype    |en_US.UTF-8                                |
 |tz       |America/Vancouver                          |
-|date     |2024-08-08                                 |
+|date     |2024-08-19                                 |
 |rstudio  |2024.04.2+764 Chocolate Cosmos (desktop)   |
 |pandoc   |3.2.1 @ /opt/homebrew/bin/ (via rmarkdown) |
 
 # Dependencies
 
-|package  |old        |new   |Δ  |
-|:--------|:----------|:-----|:--|
-|hmstimer |0.2.1.9001 |0.3.0 |*  |
+|package  |old   |new   |Δ  |
+|:--------|:-----|:-----|:--|
+|hmstimer |0.3.0 |0.3.0 |NA |
 
 # Revdeps
 
