@@ -55,7 +55,7 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header">
-<img src="logo.png" class="logo" alt=""><h1 id="hmstimer-">hmstimer <a class="anchor" aria-label="anchor" href="#hmstimer-"></a>
+<img src="logo.png" class="logo" alt=""><h1 id="ssdtools-">ssdtools <a class="anchor" aria-label="anchor" href="#ssdtools-"></a>
 </h1>
 </div>
 <!-- badges: start -->
@@ -81,42 +81,42 @@
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html" class="external-link">Sys.sleep</a></span><span class="op">(</span><span class="fl">0.1</span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 00:00:00.103417</span></span>
+<span><span class="co">#&gt; 00:00:00.106536</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html" class="external-link">Sys.sleep</a></span><span class="op">(</span><span class="fl">0.1</span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 00:00:00.212112</span></span></code></pre></div>
+<span><span class="co">#&gt; 00:00:00.219374</span></span></code></pre></div>
 <p>Stop the timer with <code><a href="reference/tmr_stop.html">tmr_stop()</a></code>.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/tmr_stop.html">tmr_stop</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 00:00:00.216109</span></span>
+<span><span class="co">#&gt; 00:00:00.227311</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html" class="external-link">Sys.sleep</a></span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 00:00:00.216109</span></span></code></pre></div>
+<span><span class="co">#&gt; 00:00:00.227311</span></span></code></pre></div>
 <p>Restart the timer with <code><a href="reference/tmr_start.html">tmr_start()</a></code>.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/tmr_start.html">tmr_start</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 00:00:00.21697</span></span>
+<span><span class="co">#&gt; 00:00:00.228075</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html" class="external-link">Sys.sleep</a></span><span class="op">(</span><span class="fl">0.1</span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/tmr_elapsed.html">tmr_elapsed</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 00:00:00.324928</span></span></code></pre></div>
+<span><span class="co">#&gt; 00:00:00.338415</span></span></code></pre></div>
 <p>There are several options for printing and formatting including coercing to a hms object.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/tmr_stop.html">tmr_stop</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 00:00:00.333247</span></span>
+<span><span class="co">#&gt; 00:00:00.352069</span></span>
 <span><span class="fu"><a href="reference/tmr_print.html">tmr_print</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "00:00:00.333247 [my timer]"</span></span>
+<span><span class="co">#&gt; [1] "00:00:00.352069 [my timer]"</span></span>
 <span><span class="fu"><a href="reference/tmr_format.html">tmr_format</a></span><span class="op">(</span><span class="va">tmr</span>, digits <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "00:00:00.33325 [my timer]"</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] "00:00:00.35207 [my timer]"</span></span></code></pre></div>
 <p>If running <code><a href="reference/tmr_print.html">tmr_print()</a></code> behaves differently.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">tmr</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/tmr_start.html">tmr_start</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/tmr_print.html">tmr_print</a></span><span class="op">(</span><span class="va">tmr</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "14:44:58 (+00:00:01 =&gt; 14:44:59) [my timer]"</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] "19:57:37 (+00:00:01 =&gt; 19:57:38) [my timer]"</span></span></code></pre></div>
 <p>The time for a block of code to complete can be printed using <code><a href="reference/with_timer.html">with_timer()</a></code>.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/with_timer.html">with_timer</a></span><span class="op">(</span><span class="op">{</span></span>
@@ -124,7 +124,7 @@
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/Sys.sleep.html" class="external-link">Sys.sleep</a></span><span class="op">(</span><span class="fl">0.1</span><span class="op">)</span></span>
 <span>  <span class="fl">1</span> <span class="op">+</span> <span class="fl">1</span></span>
 <span><span class="op">}</span><span class="op">)</span></span>
-<span><span class="co">#&gt; 00:00:00.207</span></span>
+<span><span class="co">#&gt; 00:00:00.211</span></span>
 <span><span class="co">#&gt; [1] 2</span></span></code></pre></div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
