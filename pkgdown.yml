@@ -1,8 +1,8 @@
 pandoc: 3.1.11
 pkgdown: 2.1.1.9000
-pkgdown_sha: 09588af3fedb96db3736401949ce244559ebde17
+pkgdown_sha: c40ba2c989e786bbb2829b431114d26375bbe19a
 articles: {}
-last_built: 2024-11-01T15:59Z
+last_built: 2024-11-10T18:46Z
 urls:
   reference: https://poissonconsulting.github.io/hmstimer/reference
   article: https://poissonconsulting.github.io/hmstimer/articles
