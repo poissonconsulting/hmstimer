@@ -1,5 +1,48 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# hmstimer 0.3.0.9001
+
+## Continuous integration
+
+- Fetch tags for fledge workflow to avoid unnecessary NEWS entries (#32).
+
+- Use larger retry count for lock-threads workflow (#31).
+
+- Use Ubuntu 24.04 and styler PR (#30).
+
+- Use Ubuntu 24.04 and styler PR (#29).
+
+- Correctly detect branch protection (#28).
+
+- Use stable pak (#27).
+
+- Latest changes (#26).
+
+- Use pkgdown branch (#25).
+
+- Install via R CMD INSTALL ., not pak (#24).
+
+- Install local package for pkgdown builds.
+
+- Improve support for protected branches with fledge.
+
+- Improve support for protected branches, without fledge.
+
+- Sync with latest developments.
+
+- Fix edge case of no suggested packages.
+
+- Use workflows from actions-sync.
+
+- Sync rcc workflows.
+
+- Sync codecov workflows.
+
+## Uncategorized
+
+- Merge branch 'main' of github.com:poissonconsulting/hmstimer.
+
+
 # hmstimer 0.3.0.9000
 
 - Same as previous version.
