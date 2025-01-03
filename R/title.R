@@ -34,7 +34,7 @@ tmr_title <- function(x) {
 #' tmr_title(tmr) <- NULL
 #' tmr_print(tmr)
 `tmr_title<-` <- function(x, value) {
-  chk_title(value)
+  chk_null_or(value, vld = vld_string)
   value <- unname(value)
   attr(x, "title") <- value
   x

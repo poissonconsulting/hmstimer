@@ -15,8 +15,8 @@ tmr_timer <- function(seconds = 0, start = FALSE, ..., title = "") {
   chk_seconds(seconds)
   chk_flag(start)
   rlang::check_dots_empty()
-  chk_title(title)
-
+  chk_null_or(title, vld = vld_string)
+  
   seconds <- as.double(seconds)
 
   x <- as_hms(seconds)

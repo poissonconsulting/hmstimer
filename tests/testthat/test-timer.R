@@ -13,18 +13,18 @@ test_that("tmr_timer", {
   expect_error(tmr_timer(NA_real_), "^`seconds` must not be a missing value\\.$")
   expect_error(tmr_timer(c(1, 2)), "^`seconds` must be a scalar\\.$")
 
-  expect_error(tmr_timer(0, 1), "^`start` must be a flag \\(TRUE or FALSE\\)\\.$")
-  expect_error(tmr_timer(0, NA), "^`start` must be a flag \\(TRUE or FALSE\\)\\.$")
-  expect_error(tmr_timer(0, c(TRUE, FALSE)), "^`start` must be a flag \\(TRUE or FALSE\\)\\.$")
+  expect_error(tmr_timer(0, 1), "^`start` must be a flag")
+  expect_error(tmr_timer(0, NA), "^`start` must be a flag")
+  expect_error(tmr_timer(0, c(TRUE, FALSE)), "^`start` must be a flag")
 
   x <- tmr_timer(0, start = TRUE)
   expect_type(attr(x, "start"), "double")
 })
 
 test_that("tmr_timer title errors", {
-  expect_error(tmr_timer(title = 1), "`title` must be numeric\\.$")
-  expect_error(tmr_timer(title = c("1", "2")), "`title` must be a scalar\\.$")
-  expect_error(tmr_timer(title = NA_character_), "`title` must not be a missing value\\.$")
+  expect_error(tmr_timer(title = 1), "`title` must be a string")
+  expect_error(tmr_timer(title = c("1", "2")), "`title` must be a string")
+  expect_error(tmr_timer(title = NA_character_), "`title` must be a string")
 })
 
 test_that("tmr_timer dots empty", {

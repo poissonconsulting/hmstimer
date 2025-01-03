@@ -17,7 +17,7 @@
 #' fun()
 local_timer <- function(..., title = "", srcref = TRUE, .local_envir = rlang::caller_env()) {
   rlang::check_dots_empty()
-  chk_title(title)
+  chk_null_or(title, vld = vld_string)
   chk_env(.local_envir)
   chk_flag(srcref, "srcref")
 
