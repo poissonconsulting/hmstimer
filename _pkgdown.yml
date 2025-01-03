@@ -1,6 +1,10 @@
 url: https://poissonconsulting.github.io/hmstimer/
 template:
   bootstrap: 5
+  package: poissontemplate
+
+development:
+  mode: auto
 
 reference:
 - title: Create Timer
