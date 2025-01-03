@@ -11,7 +11,7 @@ stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://
 [![Codecov test
 coverage](https://codecov.io/gh/poissonconsulting/hmstimer/graph/badge.svg)](https://app.codecov.io/gh/poissonconsulting/hmstimer)
 [![License:
-MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/license/mit/)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/hmstimer)](https://cran.r-project.org/package=hmstimer)
 ![CRAN downloads](https://cranlogs.r-pkg.org/badges/hmstimer)
@@ -35,7 +35,7 @@ str(tmr)
 #>  'hms' num 00:00:00
 #>  - attr(*, "units")= chr "secs"
 #>  - attr(*, "title")= chr ""
-#>  - attr(*, "start")= num 1.72e+09
+#>  - attr(*, "start")= num 1.74e+09
 hms::as_hms(tmr)
 #> 00:00:00
 ```
@@ -47,11 +47,11 @@ tmr <- tmr_timer(start = TRUE, title = "my timer")
 
 Sys.sleep(0.1)
 tmr_elapsed(tmr)
-#> 00:00:00.106536
+#> 00:00:00.101705
 
 Sys.sleep(0.1)
 tmr_elapsed(tmr)
-#> 00:00:00.219374
+#> 00:00:00.20535
 ```
 
 Stop the timer with `tmr_stop()`.
@@ -59,11 +59,11 @@ Stop the timer with `tmr_stop()`.
 ``` r
 tmr <- tmr_stop(tmr)
 tmr_elapsed(tmr)
-#> 00:00:00.227311
+#> 00:00:00.212144
 
 Sys.sleep(1)
 tmr_elapsed(tmr)
-#> 00:00:00.227311
+#> 00:00:00.212144
 ```
 
 Restart the timer with `tmr_start()`.
@@ -71,10 +71,10 @@ Restart the timer with `tmr_start()`.
 ``` r
 tmr <- tmr_start(tmr)
 tmr_elapsed(tmr)
-#> 00:00:00.228075
+#> 00:00:00.212438
 Sys.sleep(0.1)
 tmr_elapsed(tmr)
-#> 00:00:00.338415
+#> 00:00:00.318767
 ```
 
 There are several options for printing and formatting including coercing
@@ -83,11 +83,11 @@ to a hms object.
 ``` r
 tmr <- tmr_stop(tmr)
 print(tmr)
-#> 00:00:00.352069
+#> 00:00:00.323969
 tmr_print(tmr)
-#> [1] "00:00:00.352069 [my timer]"
+#> [1] "00:00:00.323969 [my timer]"
 tmr_format(tmr, digits = 5)
-#> [1] "00:00:00.35207 [my timer]"
+#> [1] "00:00:00.32397 [my timer]"
 ```
 
 If running `tmr_print()` behaves differently.
@@ -95,7 +95,7 @@ If running `tmr_print()` behaves differently.
 ``` r
 tmr <- tmr_start(tmr)
 tmr_print(tmr)
-#> [1] "19:57:37 (+00:00:01 => 19:57:38) [my timer]"
+#> [1] "23:43:55 (+00:00:01 => 23:43:56) [my timer]"
 ```
 
 The time for a block of code to complete can be printed using
@@ -107,31 +107,38 @@ with_timer({
   Sys.sleep(0.1)
   1 + 1
 })
-#> 00:00:00.211
+#> 00:00:00.209
 #> [1] 2
 ```
 
 ## Installation
 
-To install the latest release version from CRAN.
+### Release
+
+To install the release version from
+[CRAN](https://CRAN.R-project.org/package=hmstimer).
 
 ``` r
 install.packages("hmstimer")
 ```
 
-To install the latest development version from
+The website for the release version is at
+<https://poissonconsulting.github.io/hmstimer/>.
+
+### Development
+
+To install the development version from
 [r-universe](https://poissonconsulting.r-universe.dev/hmstimer).
 
 ``` r
 install.packages("hmstimer", repos = c("https://poissonconsulting.r-universe.dev", "https://cloud.r-project.org"))
 ```
 
-To install the latest development version from
-[GitHub](https://github.com/poissonconsulting/hmstimer)
+or from [GitHub](https://github.com/poissonconsulting/hmstimer)
 
 ``` r
-# install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch))
-pak::pak("poissonconsulting/hmstimer")
+# install.packages("remotes")
+remotes::install_github("poissonconsulting/hmstimer")
 ```
 
 ## Contribution
