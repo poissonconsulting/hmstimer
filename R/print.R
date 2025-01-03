@@ -14,7 +14,7 @@
 #' x <- tmr_start(tmr_timer())
 #' tmr_print(x)
 tmr_print <- function(x, ..., print_title = TRUE) {
-  chk_x(x)
+  chk_time(x)
   rlang::check_dots_empty()
   chk_flag(print_title, "print_title")
 

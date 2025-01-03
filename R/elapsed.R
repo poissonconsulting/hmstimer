@@ -21,7 +21,7 @@
 #' Sys.sleep(0.01)
 #' print(tmr_elapsed(tmr))
 tmr_elapsed <- function(x) {
-  chk_x(x)
+  chk_time(x)
   if (!tmr_is_started(x)) {
     return(x)
   }

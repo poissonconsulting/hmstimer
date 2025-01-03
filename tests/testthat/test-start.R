@@ -5,9 +5,9 @@ test_that("tmr_start", {
   expect_true(tmr_is_started(tmr))
   expect_warning(tmr_start(tmr), "^`x` is already started\\.$")
 
-  expect_error(tmr_start(1), "^`x` must be class hms\\.$")
-  expect_error(tmr_start(hms::as_hms(NA)), "^`x` must not be a missing value\\.$")
-  expect_error(tmr_start(hms::as_hms(c(1, 2))), "^`x` must be a scalar\\.$")
+  expect_error(tmr_start(1), "^`x` must be a time")
+  expect_error(tmr_start(hms::as_hms(NA)), "^`x` must be a time")
+  expect_error(tmr_start(hms::as_hms(c(1, 2))), "^`x` must be a time")
 })
 
 test_that("tmr_start title preserved", {

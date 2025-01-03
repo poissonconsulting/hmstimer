@@ -22,6 +22,7 @@ Depends:
     R (>= 4.0)
 Imports:
     chk,
+    dttr2,
     hms,
     lifecycle,
     rlang

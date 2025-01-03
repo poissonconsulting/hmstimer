@@ -12,6 +12,6 @@
 #' tmr <- tmr_stop(tmr)
 #' print(tmr_is_started(tmr))
 tmr_is_started <- function(x) {
-  chk_x(x)
+  chk_time(x)
   !is.null(attr(x, "start"))
 }
