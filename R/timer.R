@@ -12,7 +12,7 @@
 #' class(tmr_timer(2))
 #' str(tmr_timer(2, start = TRUE, title = "a timer"))
 tmr_timer <- function(seconds = 0, start = FALSE, ..., title = "") {
-  chk_seconds(seconds)
+  chk_number(seconds)
   chk_flag(start)
   rlang::check_dots_empty()
   chk_null_or(title, vld = vld_string)
