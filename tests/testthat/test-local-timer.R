@@ -75,5 +75,5 @@ test_that("test_local_timer() title", {
 })
 
 test_that("local_timer .local_envir fails", {
-  expect_error(local_timer(.local_envir = 1), "^`env` must be an environment\\.$")
+  expect_error(local_timer(.local_envir = 1), "^`.local_envir` must be an environment\\.$")
 })

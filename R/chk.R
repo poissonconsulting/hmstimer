@@ -1,10 +1,3 @@
-chk_env <- function(env) {
-  if (is.environment(env)) {
-    return(invisible(env))
-  }
-  err("`env` must be an environment.")
-}
-
 chk_x <- function(x) {
   if (is_hms(x) && length(x) == 1L && !is.na(x)) {
     return(invisible())
