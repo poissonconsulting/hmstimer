@@ -34,19 +34,6 @@ chk_title <- function(title) {
   err("`title` must not be a missing value.")
 }
 
-chk_flag <- function(x, name) {
-  if (is.logical(x) && length(x) == 1L && !is.na(x)) {
-    return(invisible())
-  }
-  if (!is.logical(x)) err("`", name, "` must be class logical.")
-  if (length(x) != 1L) err("`", name, "` must be a scalar.")
-  err("`", name, "` must not be a missing value.")
-}
-
-chk_start <- function(start) {
-  chk_flag(start, "start")
-}
-
 chk_x <- function(x) {
   if (is_hms(x) && length(x) == 1L && !is.na(x)) {
     return(invisible())

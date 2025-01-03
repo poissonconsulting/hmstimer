@@ -21,6 +21,7 @@ BugReports: https://github.com/poissonconsulting/hmstimer/issues
 Depends:
     R (>= 4.0)
 Imports:
+    chk,
     hms,
     lifecycle,
     rlang

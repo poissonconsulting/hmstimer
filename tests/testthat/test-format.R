@@ -1,5 +1,5 @@
 test_that("format", {
-  expect_error(tmr_format(1), "^`x` must be class hms[.]$")
+  expect_error(tmr_format(1), "^`x` must be class hms\\.$")
   expect_identical(tmr_format(tmr_timer(61.36)), "00:01:01.360")
   expect_identical(tmr_format(tmr_timer(61.36), digits = 1), "00:01:01.4")
   expect_identical(tmr_format(tmr_timer(61.36), digits = 0), "00:01:01")
@@ -16,10 +16,10 @@ test_that("format", {
 
 test_that("tmr_format digit errors", {
   tmr <- tmr_timer()
-  expect_error(tmr_format(tmr, digits = 1:2), "^`digits` must be a scalar[.]$")
-  expect_error(tmr_format(tmr, digits = NA), "^`digits` must be numeric[.]$")
-  expect_error(tmr_format(tmr, digits = NA_real_), "`digits` must not be a missing value[.]$")
-  expect_error(tmr_format(tmr, digits = 0.5), "`digits` must be a whole number[.]$")
+  expect_error(tmr_format(tmr, digits = 1:2), "^`digits` must be a scalar\\.$")
+  expect_error(tmr_format(tmr, digits = NA), "^`digits` must be numeric\\.$")
+  expect_error(tmr_format(tmr, digits = NA_real_), "`digits` must not be a missing value\\.$")
+  expect_error(tmr_format(tmr, digits = 0.5), "`digits` must be a whole number\\.$")
 })
 
 test_that("format title", {
