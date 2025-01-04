@@ -108,15 +108,15 @@ The website for the release version is at <https://poissonconsulting.github.io/h
 
 ### Development
 
-To install the development version from [r-universe](https://poissonconsulting.r-universe.dev/hmstimer).
-```r
-install.packages("hmstimer", repos = c("https://poissonconsulting.r-universe.dev", "https://cloud.r-project.org"))
-```
-
-or from [GitHub](https://github.com/poissonconsulting/hmstimer)
+To install the development version from [GitHub](https://github.com/poissonconsulting/hmstimer)
 ```r
 # install.packages("remotes")
 remotes::install_github("poissonconsulting/hmstimer")
+```
+
+or from [r-universe](https://poissonconsulting.r-universe.dev/hmstimer).
+```r
+install.packages("hmstimer", repos = c("https://poissonconsulting.r-universe.dev", "https://cloud.r-project.org"))
 ```
 
 ## Contribution

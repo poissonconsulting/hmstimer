@@ -47,11 +47,11 @@ tmr <- tmr_timer(start = TRUE, title = "my timer")
 
 Sys.sleep(0.1)
 tmr_elapsed(tmr)
-#> 00:00:00.101705
+#> 00:00:00.105318
 
 Sys.sleep(0.1)
 tmr_elapsed(tmr)
-#> 00:00:00.20535
+#> 00:00:00.212553
 ```
 
 Stop the timer with `tmr_stop()`.
@@ -59,11 +59,11 @@ Stop the timer with `tmr_stop()`.
 ``` r
 tmr <- tmr_stop(tmr)
 tmr_elapsed(tmr)
-#> 00:00:00.212144
+#> 00:00:00.2237
 
 Sys.sleep(1)
 tmr_elapsed(tmr)
-#> 00:00:00.212144
+#> 00:00:00.2237
 ```
 
 Restart the timer with `tmr_start()`.
@@ -71,10 +71,10 @@ Restart the timer with `tmr_start()`.
 ``` r
 tmr <- tmr_start(tmr)
 tmr_elapsed(tmr)
-#> 00:00:00.212438
+#> 00:00:00.224159
 Sys.sleep(0.1)
 tmr_elapsed(tmr)
-#> 00:00:00.318767
+#> 00:00:00.33082
 ```
 
 There are several options for printing and formatting including coercing
@@ -83,11 +83,11 @@ to a hms object.
 ``` r
 tmr <- tmr_stop(tmr)
 print(tmr)
-#> 00:00:00.323969
+#> 00:00:00.340202
 tmr_print(tmr)
-#> [1] "00:00:00.323969 [my timer]"
+#> [1] "00:00:00.340202 [my timer]"
 tmr_format(tmr, digits = 5)
-#> [1] "00:00:00.32397 [my timer]"
+#> [1] "00:00:00.34020 [my timer]"
 ```
 
 If running `tmr_print()` behaves differently.
@@ -95,7 +95,7 @@ If running `tmr_print()` behaves differently.
 ``` r
 tmr <- tmr_start(tmr)
 tmr_print(tmr)
-#> [1] "23:43:55 (+00:00:01 => 23:43:56) [my timer]"
+#> [1] "00:49:50 (+00:00:01 => 00:49:51) [my timer]"
 ```
 
 The time for a block of code to complete can be printed using
@@ -107,7 +107,7 @@ with_timer({
   Sys.sleep(0.1)
   1 + 1
 })
-#> 00:00:00.209
+#> 00:00:00.208
 #> [1] 2
 ```
 
@@ -128,17 +128,17 @@ The website for the release version is at
 ### Development
 
 To install the development version from
-[r-universe](https://poissonconsulting.r-universe.dev/hmstimer).
-
-``` r
-install.packages("hmstimer", repos = c("https://poissonconsulting.r-universe.dev", "https://cloud.r-project.org"))
-```
-
-or from [GitHub](https://github.com/poissonconsulting/hmstimer)
+[GitHub](https://github.com/poissonconsulting/hmstimer)
 
 ``` r
 # install.packages("remotes")
 remotes::install_github("poissonconsulting/hmstimer")
+```
+
+or from [r-universe](https://poissonconsulting.r-universe.dev/hmstimer).
+
+``` r
+install.packages("hmstimer", repos = c("https://poissonconsulting.r-universe.dev", "https://cloud.r-project.org"))
 ```
 
 ## Contribution
