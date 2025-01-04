@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# hmstimer 0.3.0.9002
+
+- Added dependency `dttr2::chk_time()`.
+
+- Adding chk as a dependency.
+
+
 # hmstimer 0.3.0.9001
 
 ## Continuous integration
