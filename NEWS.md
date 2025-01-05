@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# hmstimer 0.3.0.9003
+
+- Merge branch 'main' of github.com:poissonconsulting/hmstimer.
+
+
 # hmstimer 0.3.0.9002
 
 - Added dependency `dttr2::chk_time()`.
