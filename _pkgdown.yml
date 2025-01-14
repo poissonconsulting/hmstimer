@@ -1,6 +1,5 @@
 url: https://poissonconsulting.github.io/hmstimer/
 template:
-  bootstrap: 5
   package: poissontemplate
 
 development:
