@@ -1,0 +1,210 @@
+# hmstimer
+
+`hmstimer` is an R package to track elapsed clock time using a
+[hms::hms](https://github.com/tidyverse/hms) scalar.
+
+`hmstimer` was originally developed to time Bayesian model runs. It
+should not be used to estimate how long extremely fast code takes to
+execute as the package code adds a small time cost.
+
+Create and start a timer with `tmr_timer(start = TRUE)`.
+
+``` r
+library(hmstimer)
+
+tmr <- tmr_timer(start = TRUE)
+Sys.sleep(0.1)
+str(tmr)
+#>  'hms' num 00:00:00
+#>  - attr(*, "units")= chr "secs"
+#>  - attr(*, "title")= chr ""
+#>  - attr(*, "start")= num 1.74e+09
+hms::as_hms(tmr)
+#> 00:00:00
+```
+
+Get the elapsed time with
+[`tmr_elapsed()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_elapsed.md).
+The title is optional.
+
+``` r
+tmr <- tmr_timer(start = TRUE, title = "my timer")
+
+Sys.sleep(0.1)
+tmr_elapsed(tmr)
+#> 00:00:00.105913
+
+Sys.sleep(0.1)
+tmr_elapsed(tmr)
+#> 00:00:00.215391
+```
+
+Stop the timer with
+[`tmr_stop()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_stop.md).
+
+``` r
+tmr <- tmr_stop(tmr)
+tmr_elapsed(tmr)
+#> 00:00:00.224024
+
+Sys.sleep(1)
+tmr_elapsed(tmr)
+#> 00:00:00.224024
+```
+
+Restart the timer with
+[`tmr_start()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_start.md).
+
+``` r
+tmr <- tmr_start(tmr)
+tmr_elapsed(tmr)
+#> 00:00:00.224456
+Sys.sleep(0.1)
+tmr_elapsed(tmr)
+#> 00:00:00.331804
+```
+
+There are several options for printing and formatting including coercing
+to a hms object.
+
+``` r
+tmr <- tmr_stop(tmr)
+print(tmr)
+#> 00:00:00.341066
+tmr_print(tmr)
+#> [1] "00:00:00.341066 [my timer]"
+tmr_format(tmr, digits = 5)
+#> [1] "00:00:00.34107 [my timer]"
+```
+
+If running
+[`tmr_print()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_print.md)
+behaves differently.
+
+``` r
+tmr <- tmr_start(tmr)
+tmr_print(tmr)
+#> [1] "17:19:17 (+00:00:01 => 17:19:18) [my timer]"
+```
+
+The time for a block of code to complete can be printed using
+[`with_timer()`](https://poissonconsulting.github.io/hmstimer/dev/reference/with_timer.md).
+
+``` r
+with_timer({
+  Sys.sleep(0.1)
+  Sys.sleep(0.1)
+  1 + 1
+})
+#> 00:00:00.207
+#> [1] 2
+```
+
+## Installation
+
+### Release
+
+To install the release version from
+[CRAN](https://CRAN.R-project.org/package=hmstimer).
+
+``` r
+install.packages("hmstimer")
+```
+
+The website for the release version is at
+<https://poissonconsulting.github.io/hmstimer/>.
+
+### Development
+
+To install the development version from
+[GitHub](https://github.com/poissonconsulting/hmstimer)
+
+``` r
+# install.packages("remotes")
+remotes::install_github("poissonconsulting/hmstimer")
+```
+
+or from [r-universe](https://poissonconsulting.r-universe.dev/hmstimer).
+
+``` r
+install.packages("hmstimer", repos = c("https://poissonconsulting.r-universe.dev", "https://cloud.r-project.org"))
+```
+
+## Contribution
+
+Please report any
+[issues](https://github.com/poissonconsulting/hmstimer/issues).
+
+[Pull requests](https://github.com/poissonconsulting/hmstimer/pulls) are
+always welcome.
+
+## Code of Conduct
+
+Please note that the hmstimer project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.
+
+# Package index
+
+## Create Timer
+
+Functions to create, start, stop or reset timer
+
+- [`tmr_timer()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_timer.md)
+  : Create hms Timer
+- [`tmr_start()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_start.md)
+  : Start hms Timer
+- [`tmr_stop()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_stop.md)
+  : Stop hms Timer
+- [`tmr_reset()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_reset.md)
+  : Reset hms Timer
+- [`hms_timer`](https://poissonconsulting.github.io/hmstimer/dev/reference/hms_timer.md)
+  : hms Timer
+
+## Round Timer
+
+Functions to round timer
+
+- [`tmr_round()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_round.md)
+  : Round hms Timer
+- [`tmr_floor()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_floor.md)
+  : Floor hms Timer
+- [`tmr_ceiling()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_ceiling.md)
+  : Ceiling hms Timer
+
+## Evaluate Timer
+
+Functions to evaluate, check and print timer
+
+- [`tmr_is_started()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_is_started.md)
+  : Is hms Timer Started
+- [`tmr_is_stopped()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_is_stopped.md)
+  : Is hms Timer Stopped
+- [`tmr_elapsed()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_elapsed.md)
+  : Elapsed Time hms Timer
+- [`tmr_print()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_print.md)
+  : Print hms Timer
+- [`tmr_format()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_format.md)
+  : Format hms Timer
+
+## Title
+
+Functions to confirm, get and set title
+
+- [`tmr_is_titled()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_is_titled.md)
+  : Is hms Timer Title
+- [`tmr_title()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_title.md)
+  : Get Title hms Timer
+- [`` `tmr_title<-`() ``](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_title-set.md)
+  : Set Title hms Timer
+
+## Miscellaneous Functions
+
+Miscellaneous functions
+
+- [`local_timer()`](https://poissonconsulting.github.io/hmstimer/dev/reference/local_timer.md)
+  : Local Timer
+- [`with_timer()`](https://poissonconsulting.github.io/hmstimer/dev/reference/with_timer.md)
+  : With Timer
+
