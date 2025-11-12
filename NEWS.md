@@ -1,5 +1,48 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# hmstimer 0.3.0.9004
+
+## Chore
+
+- Auto-update from GitHub Actions.
+
+  Run: https://github.com/poissonconsulting/hmstimer/actions/runs/17450837743
+
+## Continuous integration
+
+- Fix reviewdog and add commenting workflow (#50).
+
+- Use workflows for fledge (#49).
+
+- Sync (#48).
+
+- Use reviewdog for external PRs (#47).
+
+- Cleanup and fix macOS (#46).
+
+- Format with air, check detritus, better handling of `extra-packages` (#45).
+
+- Enhance permissions for workflow (#43).
+
+- Permissions, better tests for missing suggests, lints (#42).
+
+- Only fail covr builds if token is given (#41).
+
+- Always use `_R_CHECK_FORCE_SUGGESTS_=false` (#40).
+
+- Correct installation of xml2 (#39).
+
+- Explain (#38).
+
+- Add xml2 for covr, print testthat results (#37).
+
+- Fix (#36).
+
+- Use mainline styler (#35).
+
+- Sync (#34).
+
+
 # hmstimer 0.3.0.9003
 
 - Merge branch 'main' of github.com:poissonconsulting/hmstimer.
