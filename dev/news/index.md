@@ -1,5 +1,63 @@
 # Changelog
 
+## hmstimer 0.3.0.9004
+
+### Chore
+
+- Auto-update from GitHub Actions.
+
+  Run:
+  <https://github.com/poissonconsulting/hmstimer/actions/runs/17450837743>
+
+### Continuous integration
+
+- Fix reviewdog and add commenting workflow
+  ([\#50](https://github.com/poissonconsulting/hmstimer/issues/50)).
+
+- Use workflows for fledge
+  ([\#49](https://github.com/poissonconsulting/hmstimer/issues/49)).
+
+- Sync
+  ([\#48](https://github.com/poissonconsulting/hmstimer/issues/48)).
+
+- Use reviewdog for external PRs
+  ([\#47](https://github.com/poissonconsulting/hmstimer/issues/47)).
+
+- Cleanup and fix macOS
+  ([\#46](https://github.com/poissonconsulting/hmstimer/issues/46)).
+
+- Format with air, check detritus, better handling of `extra-packages`
+  ([\#45](https://github.com/poissonconsulting/hmstimer/issues/45)).
+
+- Enhance permissions for workflow
+  ([\#43](https://github.com/poissonconsulting/hmstimer/issues/43)).
+
+- Permissions, better tests for missing suggests, lints
+  ([\#42](https://github.com/poissonconsulting/hmstimer/issues/42)).
+
+- Only fail covr builds if token is given
+  ([\#41](https://github.com/poissonconsulting/hmstimer/issues/41)).
+
+- Always use `_R_CHECK_FORCE_SUGGESTS_=false`
+  ([\#40](https://github.com/poissonconsulting/hmstimer/issues/40)).
+
+- Correct installation of xml2
+  ([\#39](https://github.com/poissonconsulting/hmstimer/issues/39)).
+
+- Explain
+  ([\#38](https://github.com/poissonconsulting/hmstimer/issues/38)).
+
+- Add xml2 for covr, print testthat results
+  ([\#37](https://github.com/poissonconsulting/hmstimer/issues/37)).
+
+- Fix ([\#36](https://github.com/poissonconsulting/hmstimer/issues/36)).
+
+- Use mainline styler
+  ([\#35](https://github.com/poissonconsulting/hmstimer/issues/35)).
+
+- Sync
+  ([\#34](https://github.com/poissonconsulting/hmstimer/issues/34)).
+
 ## hmstimer 0.3.0.9003
 
 - Merge branch ‘main’ of github.com:poissonconsulting/hmstimer.
