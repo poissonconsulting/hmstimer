@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# hmstimer 0.3.0.9005
+
+## Continuous integration
+
+- Install binaries from r-universe for dev workflow (#51).
+
+
 # hmstimer 0.3.0.9004
 
 ## Chore
