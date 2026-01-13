@@ -1,5 +1,12 @@
 # Changelog
 
+## hmstimer 0.3.0.9005
+
+### Continuous integration
+
+- Install binaries from r-universe for dev workflow
+  ([\#51](https://github.com/poissonconsulting/hmstimer/issues/51)).
+
 ## hmstimer 0.3.0.9004
 
 ### Chore

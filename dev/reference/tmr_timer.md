@@ -56,5 +56,5 @@ str(tmr_timer(2, start = TRUE, title = "a timer"))
 #>  'hms' num 00:00:02
 #>  - attr(*, "units")= chr "secs"
 #>  - attr(*, "title")= chr "a timer"
-#>  - attr(*, "start")= num 1.76e+09
+#>  - attr(*, "start")= num 1.77e+09
 ```
