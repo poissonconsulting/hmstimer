@@ -1,5 +1,16 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# hmstimer 0.3.0.9006
+
+## Continuous integration
+
+- Fix comment (#54).
+
+- Tweaks (#53).
+
+- Test all R versions on branches that start with cran- (#52).
+
+
 # hmstimer 0.3.0.9005
 
 ## Continuous integration
