@@ -20,7 +20,7 @@ tmr_ceiling(tmr_timer(18.9))
 tmr_ceiling(tmr_timer(122.1))
 }
 \seealso{
-Other round: 
+Other round:
 \code{\link{tmr_floor}()},
 \code{\link{tmr_format}()},
 \code{\link{tmr_round}()}

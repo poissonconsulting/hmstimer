@@ -23,7 +23,7 @@ tmr <- tmr_stop(tmr)
 print(tmr_is_stopped(tmr))
 }
 \seealso{
-Other start_stop: 
+Other start_stop:
 \code{\link{tmr_elapsed}()},
 \code{\link{tmr_is_started}()},
 \code{\link{tmr_print}()},

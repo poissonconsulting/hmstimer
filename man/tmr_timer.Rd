@@ -28,7 +28,7 @@ class(tmr_timer(2))
 str(tmr_timer(2, start = TRUE, title = "a timer"))
 }
 \seealso{
-Other start_stop: 
+Other start_stop:
 \code{\link{tmr_elapsed}()},
 \code{\link{tmr_is_started}()},
 \code{\link{tmr_is_stopped}()},
