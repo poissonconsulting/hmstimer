@@ -1,5 +1,14 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# hmstimer 0.3.0.9008
+
+## Chore
+
+- Auto-update from GitHub Actions.
+
+  Run: https://github.com/poissonconsulting/hmstimer/actions/runs/22789319354
+
+
 # hmstimer 0.3.0.9007
 
 ## Chore
