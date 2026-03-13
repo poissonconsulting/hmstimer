@@ -21,8 +21,8 @@ tmr_floor(tmr_timer(122.1))
 }
 \seealso{
 Other round:
-\code{\link{tmr_ceiling}()},
-\code{\link{tmr_format}()},
-\code{\link{tmr_round}()}
+\code{\link[=tmr_ceiling]{tmr_ceiling()}},
+\code{\link[=tmr_format]{tmr_format()}},
+\code{\link[=tmr_round]{tmr_round()}}
 }
 \concept{round}

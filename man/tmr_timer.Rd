@@ -29,12 +29,12 @@ str(tmr_timer(2, start = TRUE, title = "a timer"))
 }
 \seealso{
 Other start_stop:
-\code{\link{tmr_elapsed}()},
-\code{\link{tmr_is_started}()},
-\code{\link{tmr_is_stopped}()},
-\code{\link{tmr_print}()},
-\code{\link{tmr_reset}()},
-\code{\link{tmr_start}()},
-\code{\link{tmr_stop}()}
+\code{\link[=tmr_elapsed]{tmr_elapsed()}},
+\code{\link[=tmr_is_started]{tmr_is_started()}},
+\code{\link[=tmr_is_stopped]{tmr_is_stopped()}},
+\code{\link[=tmr_print]{tmr_print()}},
+\code{\link[=tmr_reset]{tmr_reset()}},
+\code{\link[=tmr_start]{tmr_start()}},
+\code{\link[=tmr_stop]{tmr_stop()}}
 }
 \concept{start_stop}

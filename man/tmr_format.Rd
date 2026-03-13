@@ -31,8 +31,8 @@ tmr_format(tmr_timer(61.66), digits = 0)
 }
 \seealso{
 Other round:
-\code{\link{tmr_ceiling}()},
-\code{\link{tmr_floor}()},
-\code{\link{tmr_round}()}
+\code{\link[=tmr_ceiling]{tmr_ceiling()}},
+\code{\link[=tmr_floor]{tmr_floor()}},
+\code{\link[=tmr_round]{tmr_round()}}
 }
 \concept{round}
