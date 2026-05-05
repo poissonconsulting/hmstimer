@@ -1,5 +1,54 @@
 # Changelog
 
+## hmstimer 0.3.0.9010
+
+### Chore
+
+- Auto-update from GitHub Actions.
+
+  Run:
+  <https://github.com/poissonconsulting/hmstimer/actions/runs/25267051542>
+
+## hmstimer 0.3.0.9009
+
+### Chore
+
+- Auto-update from GitHub Actions.
+
+  Run:
+  <https://github.com/poissonconsulting/hmstimer/actions/runs/23032501756>
+
+## hmstimer 0.3.0.9008
+
+### Chore
+
+- Auto-update from GitHub Actions.
+
+  Run:
+  <https://github.com/poissonconsulting/hmstimer/actions/runs/22789319354>
+
+## hmstimer 0.3.0.9007
+
+### Chore
+
+- Auto-update from GitHub Actions.
+
+  Run:
+  <https://github.com/poissonconsulting/hmstimer/actions/runs/22745296744>
+
+## hmstimer 0.3.0.9006
+
+### Continuous integration
+
+- Fix comment
+  ([\#54](https://github.com/poissonconsulting/hmstimer/issues/54)).
+
+- Tweaks
+  ([\#53](https://github.com/poissonconsulting/hmstimer/issues/53)).
+
+- Test all R versions on branches that start with cran-
+  ([\#52](https://github.com/poissonconsulting/hmstimer/issues/52)).
+
 ## hmstimer 0.3.0.9005
 
 ### Continuous integration

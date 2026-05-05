@@ -10,6 +10,7 @@ execute as the package code adds a small time cost.
 Create and start a timer with `tmr_timer(start = TRUE)`.
 
 ``` r
+
 library(hmstimer)
 
 tmr <- tmr_timer(start = TRUE)
@@ -28,6 +29,7 @@ Get the elapsed time with
 The title is optional.
 
 ``` r
+
 tmr <- tmr_timer(start = TRUE, title = "my timer")
 
 Sys.sleep(0.1)
@@ -43,6 +45,7 @@ Stop the timer with
 [`tmr_stop()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_stop.md).
 
 ``` r
+
 tmr <- tmr_stop(tmr)
 tmr_elapsed(tmr)
 #> 00:00:00.224024
@@ -56,6 +59,7 @@ Restart the timer with
 [`tmr_start()`](https://poissonconsulting.github.io/hmstimer/dev/reference/tmr_start.md).
 
 ``` r
+
 tmr <- tmr_start(tmr)
 tmr_elapsed(tmr)
 #> 00:00:00.224456
@@ -68,6 +72,7 @@ There are several options for printing and formatting including coercing
 to a hms object.
 
 ``` r
+
 tmr <- tmr_stop(tmr)
 print(tmr)
 #> 00:00:00.341066
@@ -82,6 +87,7 @@ If running
 behaves differently.
 
 ``` r
+
 tmr <- tmr_start(tmr)
 tmr_print(tmr)
 #> [1] "17:19:17 (+00:00:01 => 17:19:18) [my timer]"
@@ -91,6 +97,7 @@ The time for a block of code to complete can be printed using
 [`with_timer()`](https://poissonconsulting.github.io/hmstimer/dev/reference/with_timer.md).
 
 ``` r
+
 with_timer({
   Sys.sleep(0.1)
   Sys.sleep(0.1)
@@ -108,6 +115,7 @@ To install the release version from
 [CRAN](https://CRAN.R-project.org/package=hmstimer).
 
 ``` r
+
 install.packages("hmstimer")
 ```
 
@@ -120,6 +128,7 @@ To install the development version from
 [GitHub](https://github.com/poissonconsulting/hmstimer)
 
 ``` r
+
 # install.packages("remotes")
 remotes::install_github("poissonconsulting/hmstimer")
 ```
@@ -127,6 +136,7 @@ remotes::install_github("poissonconsulting/hmstimer")
 or from [r-universe](https://poissonconsulting.r-universe.dev/hmstimer).
 
 ``` r
+
 install.packages("hmstimer", repos = c("https://poissonconsulting.r-universe.dev", "https://cloud.r-project.org"))
 ```
 
