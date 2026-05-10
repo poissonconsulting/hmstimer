@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# hmstimer 0.3.0.9012
+
+## Continuous integration
+
+- Tweak fledge workflow and ccache action.
+
+
 # hmstimer 0.3.0.9011
 
 ## Continuous integration
