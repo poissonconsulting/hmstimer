@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# hmstimer 0.3.0.9013
+
+## Continuous integration
+
+- Only run fledge on pushes to main.
+
+
 # hmstimer 0.3.0.9012
 
 ## Continuous integration
