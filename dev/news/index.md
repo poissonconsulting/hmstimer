@@ -1,5 +1,31 @@
 # Changelog
 
+## hmstimer 0.3.0.9013
+
+### Continuous integration
+
+- Only run fledge on pushes to main.
+
+## hmstimer 0.3.0.9012
+
+### Continuous integration
+
+- Tweak fledge workflow and ccache action.
+
+## hmstimer 0.3.0.9011
+
+### Continuous integration
+
+- Cosmetics.
+
+- Bump action versions.
+
+- Install clang-format-21.
+
+- Align fledge workflow.
+
+- Harmonize.
+
 ## hmstimer 0.3.0.9010
 
 ### Chore
