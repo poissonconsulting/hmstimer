@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# hmstimer 0.3.0.9015
+
+- Ci: Unify fledge.yaml across cynkratemplate and fledge (#86).
+
+
 # hmstimer 0.3.0.9014
 
 ## Chore
