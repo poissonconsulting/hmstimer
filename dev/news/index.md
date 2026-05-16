@@ -1,5 +1,19 @@
 # Changelog
 
+## hmstimer 0.3.0.9014
+
+### Chore
+
+- Add ccache to `.gitignore` and `.Rbuildignore`.
+
+### Continuous integration
+
+- Create snapshot update PR against correct branch.
+
+- Add reference to `/apply-patch` workflow in commit message.
+
+- Clarify rationale for not deploying on schedule.
+
 ## hmstimer 0.3.0.9013
 
 ### Continuous integration
