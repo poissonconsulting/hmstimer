@@ -1,5 +1,10 @@
 # Changelog
 
+## hmstimer 0.3.0.9015
+
+- Ci: Unify fledge.yaml across cynkratemplate and fledge
+  ([\#86](https://github.com/poissonconsulting/hmstimer/issues/86)).
+
 ## hmstimer 0.3.0.9014
 
 ### Chore
