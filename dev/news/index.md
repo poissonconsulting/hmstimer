@@ -1,5 +1,13 @@
 # Changelog
 
+## hmstimer 0.3.0.9016
+
+### Continuous integration
+
+- Update ccache-action reference.
+
+- Bump action version.
+
 ## hmstimer 0.3.0.9015
 
 - Ci: Unify fledge.yaml across cynkratemplate and fledge
