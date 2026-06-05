@@ -1,5 +1,12 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# hmstimer 0.3.0.9017
+
+- Merge pull request #55 from poissonconsulting/codeowners-joethorley.
+
+  Add CODEOWNERS assigning @joethorley
+
+
 # hmstimer 0.3.0.9016
 
 ## Continuous integration
