@@ -1,5 +1,13 @@
 # Changelog
 
+## hmstimer 0.3.0.9017
+
+- Merge pull request
+  [\#55](https://github.com/poissonconsulting/hmstimer/issues/55) from
+  poissonconsulting/codeowners-joethorley.
+
+  Add CODEOWNERS assigning [@joethorley](https://github.com/joethorley)
+
 ## hmstimer 0.3.0.9016
 
 ### Continuous integration
