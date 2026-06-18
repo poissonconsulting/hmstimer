@@ -1,5 +1,10 @@
 # Changelog
 
+## hmstimer 0.3.0.9018
+
+- Add fledge-bump workflow
+- Add fledge-tag-on-merge workflow
+
 ## hmstimer 0.3.0.9017
 
 - Merge pull request
