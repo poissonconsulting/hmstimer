@@ -22,12 +22,12 @@ Source:
 [`DESCRIPTION`](https://github.com/poissonconsulting/hmstimer/blob/main/DESCRIPTION)
 
 Thorley J, Müller K (2026). *hmstimer: 'hms' Based Timer*. R package
-version 0.3.0.9019, <https://github.com/poissonconsulting/hmstimer>.
+version 0.3.0.9020, <https://github.com/poissonconsulting/hmstimer>.
 
     @Manual{,
       title = {hmstimer: 'hms' Based Timer},
       author = {Joe Thorley and Kirill Müller},
       year = {2026},
-      note = {R package version 0.3.0.9019},
+      note = {R package version 0.3.0.9020},
       url = {https://github.com/poissonconsulting/hmstimer},
     }
