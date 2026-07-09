@@ -32,9 +32,23 @@ tmr_print <- function(x, ..., print_title = TRUE) {
   start <- as_hms(sys_time - as.double(time_passed))
 
   start <- format(structure(start, class = "POSIXct", tzone = "UTC"), "%T")
-  time_passed <- format(structure(time_passed, class = "POSIXct", tzone = "UTC"), "%T")
-  sys_time <- format(structure(sys_time, class = "POSIXct", tzone = "UTC"), "%T")
-  time_passed <- paste(start, " (+", time_passed, " => ", sys_time, ")", sep = "")
+  time_passed <- format(
+    structure(time_passed, class = "POSIXct", tzone = "UTC"),
+    "%T"
+  )
+  sys_time <- format(
+    structure(sys_time, class = "POSIXct", tzone = "UTC"),
+    "%T"
+  )
+  time_passed <- paste(
+    start,
+    " (+",
+    time_passed,
+    " => ",
+    sys_time,
+    ")",
+    sep = ""
+  )
 
   if (print_title) {
     time_passed <- paste_title(time_passed, tmr_title(x))

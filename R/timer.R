@@ -21,6 +21,8 @@ tmr_timer <- function(seconds = 0, start = FALSE, ..., title = "") {
 
   x <- as_hms(seconds)
   attr(x, "title") <- unname(title)
-  if (start) x <- tmr_start(x)
+  if (start) {
+    x <- tmr_start(x)
+  }
   x
 }
