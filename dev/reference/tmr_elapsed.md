@@ -51,14 +51,14 @@ Other start_stop:
 ``` r
 tmr <- tmr_start(tmr_timer())
 print(tmr_elapsed(tmr))
-#> 00:00:00.000621
+#> 00:00:00.000534
 Sys.sleep(0.01)
 print(tmr_elapsed(tmr))
-#> 00:00:00.012691
+#> 00:00:00.012182
 tmr <- tmr_stop(tmr)
 print(tmr_elapsed(tmr))
-#> 00:00:00.014023
+#> 00:00:00.013284
 Sys.sleep(0.01)
 print(tmr_elapsed(tmr))
-#> 00:00:00.014023
+#> 00:00:00.013284
 ```
