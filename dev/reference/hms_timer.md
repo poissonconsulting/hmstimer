@@ -21,7 +21,7 @@ str(tmr_timer(1.5, start = TRUE))
 #>  'hms' num 00:00:01.5
 #>  - attr(*, "units")= chr "secs"
 #>  - attr(*, "title")= chr ""
-#>  - attr(*, "start")= num 1.78e+09
+#>  - attr(*, "start")= num 1.79e+09
 
 x <- tmr_timer(1, start = TRUE)
 print(x)
@@ -30,7 +30,7 @@ Sys.sleep(0.1)
 print(x)
 #> 00:00:01
 print(tmr_elapsed(x))
-#> 00:00:01.103295
+#> 00:00:01.103494
 print(x)
 #> 00:00:01
 ```
