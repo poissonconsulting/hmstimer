@@ -15,14 +15,18 @@
 #'   10
 #' }
 #' fun()
-local_timer <- function(..., title = "", srcref = TRUE, .local_envir = rlang::caller_env()) {
+local_timer <- function(
+  ...,
+  title = "",
+  srcref = TRUE,
+  .local_envir = rlang::caller_env()
+) {
   rlang::check_dots_empty()
   chk_null_or(title, vld = vld_string)
   chk_environment(.local_envir)
   chk_flag(srcref, "srcref")
 
   rlang::check_installed("withr", reason = "to create a local_timer().")
-
 
   if (srcref) {
     caller <- sys.call()
